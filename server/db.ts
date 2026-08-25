@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { activationMetrics, channelMetrics, dashboardAssumptions, InsertUser, users } from "../drizzle/schema";
+import { activationMetrics, channelMetrics, dashboardAssumptions, dashboardAuditLogs, InsertUser, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -87,6 +87,39 @@ export async function getUserByOpenId(openId: string) {
   const result = await db.select().from(users).where(eq(users.openId, openId)).limit(1);
 
   return result.length > 0 ? result[0] : undefined;
+}
+
+export async function updateChannelMetric(id: number, patch: Partial<typeof channelMetrics.$inferInsert>, actorUserId: number) {
+  const db = await getDb();
+  if (!db) throw new Error("Database unavailable");
+  const before = (await db.select().from(channelMetrics).where(eq(channelMetrics.id, id)).limit(1))[0];
+  if (!before) throw new Error("Channel metric not found");
+  await db.update(channelMetrics).set(patch).where(eq(channelMetrics.id, id));
+  const after = (await db.select().from(channelMetrics).where(eq(channelMetrics.id, id)).limit(1))[0];
+  await db.insert(dashboardAuditLogs).values({ actorUserId, entityType: "channel_metric", entityKey: String(id), action: "update", beforeJson: JSON.stringify(before), afterJson: JSON.stringify(after) });
+  return after;
+}
+
+export async function updateActivationMetric(id: number, patch: Partial<typeof activationMetrics.$inferInsert>, actorUserId: number) {
+  const db = await getDb();
+  if (!db) throw new Error("Database unavailable");
+  const before = (await db.select().from(activationMetrics).where(eq(activationMetrics.id, id)).limit(1))[0];
+  if (!before) throw new Error("Activation metric not found");
+  await db.update(activationMetrics).set(patch).where(eq(activationMetrics.id, id));
+  const after = (await db.select().from(activationMetrics).where(eq(activationMetrics.id, id)).limit(1))[0];
+  await db.insert(dashboardAuditLogs).values({ actorUserId, entityType: "activation_metric", entityKey: String(id), action: "update", beforeJson: JSON.stringify(before), afterJson: JSON.stringify(after) });
+  return after;
+}
+
+export async function updateDashboardAssumption(id: number, patch: Partial<typeof dashboardAssumptions.$inferInsert>, actorUserId: number) {
+  const db = await getDb();
+  if (!db) throw new Error("Database unavailable");
+  const before = (await db.select().from(dashboardAssumptions).where(eq(dashboardAssumptions.id, id)).limit(1))[0];
+  if (!before) throw new Error("Assumption not found");
+  await db.update(dashboardAssumptions).set(patch).where(eq(dashboardAssumptions.id, id));
+  const after = (await db.select().from(dashboardAssumptions).where(eq(dashboardAssumptions.id, id)).limit(1))[0];
+  await db.insert(dashboardAuditLogs).values({ actorUserId, entityType: "dashboard_assumption", entityKey: String(id), action: "update", beforeJson: JSON.stringify(before), afterJson: JSON.stringify(after) });
+  return after;
 }
 
 export async function getDashboardData() {

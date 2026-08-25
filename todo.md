@@ -10,5 +10,16 @@
 - [x] Verify TypeScript compilation and automated tests.
 - [x] Confirm current phase is read-only, portfolio-simulation data only, with no scheduled job or external ingestion enabled.
 - [x] Document data provenance, disclosure boundaries, and access-control assumptions.
-- [ ] Future phase: add user-authenticated admin editing only after permissions, audit logging, and editing UX are approved.
-- [ ] Future phase: add scheduled public-data ingestion only after source, cadence, ownership, deployment, and data-quality requirements are confirmed.
+- [x] Implement owner-only authenticated editing procedures for channel, activation, and assumption records.
+- [x] Add audit-safe validation and authorization tests for editing.
+- [x] Add a guarded monthly public-data refresh architecture using official MOSPI context validation, provenance, and data-quality checks.
+- [x] Add the scheduled callback handler; production scheduling remains intentionally unactivated until deployment.
+- [x] Validate authorization, refresh idempotency logic, dashboard persistence, TypeScript, and Vitest suites.
+- [x] Save an upgraded checkpoint and explain deployment-gated scheduling.
+- [x] Add successful admin-update tests for database mutation and append-only audit-log behavior.
+- [x] Add input-validation tests for dashboard mutations.
+- [x] Add scheduled-refresh tests for cron-only access, duplicate-month skipping, and refresh-run persistence.
+- [x] Assert successful edits change persisted values and append exactly one audit row with correct before/after payloads.
+- [x] Validate updateActivation and updateAssumption mutation inputs.
+- [x] Test cron-only rejection and assert refresh_runs persistence for successful and skipped refreshes.
+- [x] Persist skipped monthly refresh outcomes and assert the skip record in tests.

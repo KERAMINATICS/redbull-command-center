@@ -64,4 +64,28 @@ export const dashboardAssumptions = mysqlTable("dashboard_assumptions", {
 
 export type ChannelMetric = typeof channelMetrics.$inferSelect;
 export type ActivationMetric = typeof activationMetrics.$inferSelect;
+export const refreshRuns = mysqlTable("refresh_runs", {
+  id: int("id").autoincrement().primaryKey(),
+  sourceKey: varchar("sourceKey", { length: 96 }).notNull(),
+  sourceUrl: text("sourceUrl").notNull(),
+  sourcePeriod: varchar("sourcePeriod", { length: 32 }).notNull(),
+  status: mysqlEnum("status", ["success", "skipped", "failed"]).notNull(),
+  recordCount: int("recordCount").notNull().default(0),
+  errorMessage: text("errorMessage"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export const dashboardAuditLogs = mysqlTable("dashboard_audit_logs", {
+  id: int("id").autoincrement().primaryKey(),
+  actorUserId: int("actorUserId").notNull(),
+  entityType: varchar("entityType", { length: 32 }).notNull(),
+  entityKey: varchar("entityKey", { length: 128 }).notNull(),
+  action: mysqlEnum("action", ["update"]).notNull(),
+  beforeJson: text("beforeJson").notNull(),
+  afterJson: text("afterJson").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
 export type DashboardAssumption = typeof dashboardAssumptions.$inferSelect;
+export type DashboardAuditLog = typeof dashboardAuditLogs.$inferSelect;
+export type RefreshRun = typeof refreshRuns.$inferSelect;
