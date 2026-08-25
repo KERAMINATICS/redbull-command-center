@@ -8,7 +8,7 @@
 - [x] Preserve the existing Red Bull India Commercial Command Center information architecture and functionality while applying the branding refinements.
 - [x] Verify the updated UI at desktop and mobile breakpoints, including logo visibility, icon alignment, and absence of unsupported imagery.
 - [x] Add or update Vitest coverage for the branding-related UI invariants where practical.
-- [ ] Save a checkpoint containing the completed and verified changes.
+- [x] Save a checkpoint containing the completed and verified changes.
 - [x] Use `/home/ubuntu/upload/pngwing.com(1).png` as the supplied Red Bull logo source for the implementation; do not re-open the image for inspection.
 - [x] Ensure the supplied logo is copied to the required external static-assets location and referenced through the project asset workflow.
 - [x] Use an appropriate cropped/contained treatment of the supplied logo for the favicon or app icon without fabricating a separate mark.
