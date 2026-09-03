@@ -1,0 +1,37 @@
+channel,month,actual_units,forecast_units,is_simulated
+Cafés,2025-07-01,72347,56027,True
+Cafés,2025-08-01,68061,57936,True
+Cafés,2025-09-01,66891,63256,True
+Cafés,2025-10-01,76247,65405,True
+Cafés,2025-11-01,84282,75312,True
+Cafés,2025-12-01,80174,74539,True
+Convenience,2025-07-01,232840,180755,True
+Convenience,2025-08-01,223959,180906,True
+Convenience,2025-09-01,215957,204398,True
+Convenience,2025-10-01,261852,218783,True
+Convenience,2025-11-01,275517,233561,True
+Convenience,2025-12-01,250135,239237,True
+E-commerce,2025-07-01,146548,105023,True
+E-commerce,2025-08-01,140684,105968,True
+E-commerce,2025-09-01,140880,123360,True
+E-commerce,2025-10-01,159941,126956,True
+E-commerce,2025-11-01,168572,143993,True
+E-commerce,2025-12-01,161023,139111,True
+Grocery,2025-07-01,161840,130704,True
+Grocery,2025-08-01,160064,131559,True
+Grocery,2025-09-01,160146,145494,True
+Grocery,2025-10-01,184275,154785,True
+Grocery,2025-11-01,186185,166256,True
+Grocery,2025-12-01,180007,166971,True
+Quick commerce,2025-07-01,187908,132484,True
+Quick commerce,2025-08-01,183082,142469,True
+Quick commerce,2025-09-01,191704,155786,True
+Quick commerce,2025-10-01,212291,173950,True
+Quick commerce,2025-11-01,239301,184504,True
+Quick commerce,2025-12-01,228255,187665,True
+Sports/events,2025-07-01,53307,40084,True
+Sports/events,2025-08-01,52600,41721,True
+Sports/events,2025-09-01,50185,44713,True
+Sports/events,2025-10-01,59777,49490,True
+Sports/events,2025-11-01,63882,56110,True
+Sports/events,2025-12-01,60126,53978,True

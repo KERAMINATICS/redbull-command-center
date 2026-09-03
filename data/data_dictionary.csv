@@ -1,0 +1,19 @@
+file,field,description,data_type
+channel_monthly.csv,month,Month start date,Date
+channel_monthly.csv,channel,Route-to-market channel,Category
+channel_monthly.csv,city,Modeled Indian city/market,Category
+channel_monthly.csv,units_sold,Simulated units sold,Whole number
+channel_monthly.csv,net_sales_inr,List sales less simulated discounts,Currency
+channel_monthly.csv,variable_cost_inr,Simulated variable cost,Currency
+channel_monthly.csv,marketing_spend_inr,Simulated trade/marketing spend,Currency
+channel_monthly.csv,active_consumers,Estimated active consumers in model,Whole number
+channel_monthly.csv,repeat_consumers,Estimated repeat consumers in model,Whole number
+channel_monthly.csv,new_consumers,Estimated new consumers in model,Whole number
+channel_monthly.csv,availability_rate,Modeled availability/listing rate,Percentage
+sports_activation_events.csv,attendance,Simulated event attendance,Whole number
+sports_activation_events.csv,social_impressions,Simulated social impressions,Whole number
+sports_activation_events.csv,qualified_leads,Simulated qualified leads,Whole number
+sports_activation_events.csv,conversions,Simulated conversions,Whole number
+sports_activation_events.csv,attributed_revenue_inr,Base-case simulated attributed revenue,Currency
+sports_activation_events.csv,activation_spend_inr,Simulated activation spend,Currency
+sports_activation_events.csv,contribution_profit_inr,Base-case simulated contribution profit,Currency

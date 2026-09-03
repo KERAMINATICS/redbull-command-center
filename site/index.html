@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Channel investment case study — independent portfolio project</title>
+<meta name="description" content="Which channel should get the next rupee of growth investment? A synthetic-data case study in channel economics, forecasting, segmentation and activation ROI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{
+  --bg:#12151a; --surface:#1a1e25; --surface-2:#20242c; --border:#2b303a; --border-soft:#242832;
+  --text-primary:#ece9e1; --text-secondary:#a3a8b3; --text-muted:#6b7180;
+  --brass:#c99a3c; --brass-dim:#8a6a2b; --teal:#4c8c82; --teal-dim:#3a6b63;
+  --red:#b5574a; --red-dim:#8a4137; --green:#6fa96a;
+  --font-display:'Fraunces', serif; --font-body:'Inter', sans-serif; --font-mono:'JetBrains Mono', monospace;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0; background:var(--bg); color:var(--text-primary); font-family:var(--font-body);
+  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+a{color:var(--brass); text-decoration:none;}
+a:hover{text-decoration:underline;}
+.shell{display:grid; grid-template-columns:220px 1fr; max-width:1180px; margin:0 auto;}
+.rail{
+  position:sticky; top:0; align-self:start; height:100vh; padding:2.5rem 1.5rem 2rem 0;
+  display:flex; flex-direction:column; justify-content:space-between; border-right:1px solid var(--border-soft);
+}
+.rail-mark{font-family:var(--font-display); font-size:15px; font-weight:500; color:var(--text-primary); margin-bottom:2.5rem; line-height:1.3;}
+.rail-mark span{display:block; font-family:var(--font-mono); font-size:11px; color:var(--text-muted); margin-top:4px; letter-spacing:0.02em;}
+.rail-nav{display:flex; flex-direction:column; gap:2px;}
+.rail-nav a{
+  color:var(--text-secondary); font-size:13px; padding:8px 10px; border-radius:6px; border-left:2px solid transparent;
+  transition:color .15s, border-color .15s;
+}
+.rail-nav a:hover{color:var(--text-primary); text-decoration:none;}
+.rail-nav a.active{color:var(--brass); border-left-color:var(--brass);}
+.rail-foot{font-size:12px; color:var(--text-muted); line-height:1.6;}
+main{padding:3rem 2rem 6rem 2.5rem; min-width:0;}
+section{padding:4rem 0; border-bottom:1px solid var(--border-soft); scroll-margin-top:2rem;}
+section:last-of-type{border-bottom:none;}
+.eyebrow{font-family:var(--font-mono); font-size:12px; color:var(--teal); margin:0 0 .75rem;}
+h1{font-family:var(--font-display); font-size:clamp(32px,4vw,46px); font-weight:500; line-height:1.15; margin:0 0 1.25rem; max-width:16ch;}
+h2{font-family:var(--font-display); font-size:28px; font-weight:500; margin:0 0 .5rem;}
+h3{font-family:var(--font-body); font-size:15px; font-weight:600; margin:0 0 .5rem; color:var(--text-primary);}
+p{color:var(--text-secondary); max-width:62ch; margin:0 0 1rem;}
+.lede{font-size:18px; color:var(--text-secondary); max-width:52ch;}
+.section-intro{max-width:60ch; margin-bottom:2rem;}
+.badge{
+  display:inline-block; font-family:var(--font-mono); font-size:11px; color:var(--brass);
+  border:1px solid var(--brass-dim); padding:3px 9px; border-radius:20px; margin-bottom:1.25rem;
+}
+.stat-row{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--border-soft); border:1px solid var(--border-soft); border-radius:10px; overflow:hidden; margin:2rem 0;}
+.stat{background:var(--surface); padding:1.25rem 1.25rem;}
+.stat .num{font-family:var(--font-mono); font-size:24px; color:var(--text-primary); display:block;}
+.stat .lbl{font-size:12px; color:var(--text-muted); margin-top:4px; display:block;}
+.toggle-row{display:flex; gap:8px; margin-bottom:1.5rem; flex-wrap:wrap;}
+.toggle-btn{
+  font-family:var(--font-body); font-size:13px; color:var(--text-secondary); background:var(--surface);
+  border:1px solid var(--border); padding:7px 14px; border-radius:20px; cursor:pointer; transition:.15s;
+}
+.toggle-btn:hover{border-color:var(--text-muted); color:var(--text-primary);}
+.toggle-btn.active{background:var(--brass); border-color:var(--brass); color:#1a1408;}
+.chart-wrap{position:relative; width:100%; margin:1.5rem 0;}
+.panel{background:var(--surface); border:1px solid var(--border-soft); border-radius:10px; padding:1.5rem;}
+.legend{display:flex; gap:18px; flex-wrap:wrap; font-size:12px; color:var(--text-secondary); margin:.5rem 0 1rem;}
+.legend .dot{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:6px; vertical-align:1px;}
+.scenario-grid{display:grid; grid-template-columns:1.1fr 1fr; gap:2rem; align-items:start;}
+.scenario-bars{display:flex; flex-direction:column; gap:8px;}
+.scenario-row{
+  display:grid; grid-template-columns:110px 1fr 56px; align-items:center; gap:10px; cursor:pointer;
+  padding:6px 8px; border-radius:6px; border:1px solid transparent;
+}
+.scenario-row:hover, .scenario-row.active{border-color:var(--border);}
+.scenario-row.active{background:var(--surface-2);}
+.scenario-row .name{font-size:13px; color:var(--text-secondary);}
+.scenario-row.active .name{color:var(--text-primary);}
+.scenario-row .track{background:var(--surface-2); border-radius:4px; height:14px; overflow:hidden;}
+.scenario-row .fill{height:100%; background:var(--brass); border-radius:4px;}
+.scenario-row .score{font-family:var(--font-mono); font-size:12px; color:var(--text-muted); text-align:right;}
+.detail{padding:1.5rem;}
+.detail h3{font-family:var(--font-display); font-size:20px; font-weight:500; margin-bottom:1rem;}
+.detail-grid{display:grid; grid-template-columns:1fr 1fr; gap:1rem 1.5rem;}
+.detail-item .v{font-family:var(--font-mono); font-size:18px; display:block; color:var(--text-primary);}
+.detail-item .k{font-size:12px; color:var(--text-muted); margin-top:2px; display:block;}
+.finding{border-left:2px solid var(--teal); padding:.25rem 0 .25rem 1rem; margin:1.5rem 0; color:var(--text-secondary); font-size:14px;}
+.finding.warn{border-left-color:var(--red);}
+table{width:100%; border-collapse:collapse; font-size:13px; margin-top:1rem;}
+th{text-align:left; color:var(--text-muted); font-weight:500; font-size:11px; text-transform:uppercase; letter-spacing:.04em; padding:8px 10px; border-bottom:1px solid var(--border);}
+td{padding:8px 10px; border-bottom:1px solid var(--border-soft); color:var(--text-secondary); font-family:var(--font-mono); font-size:12.5px;}
+td:first-child{font-family:var(--font-body); color:var(--text-primary);}
+.doc-links{display:flex; flex-wrap:wrap; gap:10px; margin-top:1.5rem;}
+.doc-links a{
+  font-size:13px; border:1px solid var(--border); padding:8px 14px; border-radius:8px; color:var(--text-secondary);
+}
+.doc-links a:hover{border-color:var(--brass); color:var(--brass); text-decoration:none;}
+footer{padding:2.5rem 0 0; color:var(--text-muted); font-size:12.5px;}
+@media (max-width:860px){
+  .shell{grid-template-columns:1fr;}
+  .rail{position:relative; height:auto; flex-direction:row; align-items:center; overflow-x:auto; padding:1.25rem 1rem; border-right:none; border-bottom:1px solid var(--border-soft);}
+  .rail-mark, .rail-foot{display:none;}
+  .rail-nav{flex-direction:row; gap:4px;}
+  .rail-nav a{white-space:nowrap; border-left:none; border-bottom:2px solid transparent;}
+  .rail-nav a.active{border-bottom-color:var(--brass);}
+  main{padding:2rem 1.25rem 4rem;}
+  .scenario-grid{grid-template-columns:1fr;}
+  .detail-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<nav class="rail">
+  <div>
+    <div class="rail-mark">Channel investment<br>case study
+      <span>independent portfolio project</span>
+    </div>
+    <div class="rail-nav" id="railNav">
+      <a href="#overview">Overview</a>
+      <a href="#economics">Channel economics</a>
+      <a href="#scenario">Investment scenario</a>
+      <a href="#forecast">Forecast benchmark</a>
+      <a href="#segments">Segmentation</a>
+      <a href="#activation">Activation ROI</a>
+      <a href="#method">Methodology</a>
+    </div>
+  </div>
+  <div class="rail-foot">Kartik Bhise<br>Business analyst</div>
+</nav>
+
+<main>
+
+<header class="hero" id="overview">
+  <div class="badge">Simulated dataset · independent project · not affiliated with or endorsed by any brand</div>
+  <h1>Where should the next rupee of channel investment go?</h1>
+  <p class="lede">A route-to-market channel economics case study: six channels, six cities, twenty-four months of simulated data, built to demonstrate how I'd frame, model, and defend a growth-investment decision.</p>
+  <div class="stat-row">
+    <div class="stat"><span class="num">₹19.4M</span><span class="lbl">Portfolio-wide contribution profit</span></div>
+    <div class="stat"><span class="num">Quick commerce</span><span class="lbl">Top-ranked for next ₹1M invested</span></div>
+    <div class="stat"><span class="num">65% lower</span><span class="lbl">Forecast error vs. naive baseline</span></div>
+    <div class="stat"><span class="num">6 × 6 × 24</span><span class="lbl">Channels · cities · months</span></div>
+  </div>
+  <p style="font-size:13px; color:var(--text-muted); max-width:60ch;">All financial, consumer, forecast and activation figures below are simulated assumptions for demonstration purposes — not real performance data from any company. Methodology and limitations are documented throughout.</p>
+</header>
+
+<section id="economics">
+  <p class="eyebrow">01 — where the business stands today</p>
+  <h2>Channel economics</h2>
+  <div class="section-intro"><p>Six channels ranked by three different lenses. Revenue tells you scale; margin tells you efficiency; growth tells you momentum — and they don't agree on a winner.</p></div>
+  <div class="toggle-row" id="econToggle">
+    <button class="toggle-btn active" data-metric="profit">Contribution profit</button>
+    <button class="toggle-btn" data-metric="margin">Contribution margin</button>
+    <button class="toggle-btn" data-metric="growth">Growth (H1 → H2)</button>
+  </div>
+  <div class="panel">
+    <div class="chart-wrap" style="height:320px;">
+      <canvas id="econChart" role="img" aria-label="Bar chart comparing six retail channels by contribution profit, margin, or growth rate">Chart showing Convenience, Quick commerce, Grocery, Cafés, E-commerce and Sports/events compared across selectable metrics.</canvas>
+    </div>
+  </div>
+</section>
+
+<section id="scenario">
+  <p class="eyebrow">02 — where the next rupee should go</p>
+  <h2>₹1M investment scenario</h2>
+  <div class="section-intro"><p>Each channel gets a hypothetical ₹1,000,000 investment, converted to incremental revenue via a stated response-rate assumption, then ranked by a weighted decision score (50% profit ROI, 30% new consumers, 20% year-one retention). Click a channel for the full breakdown.</p></div>
+  <div class="scenario-grid">
+    <div class="panel">
+      <div class="scenario-bars" id="scenarioBars"></div>
+    </div>
+    <div class="panel detail" id="scenarioDetail"></div>
+  </div>
+</section>
+
+<section id="forecast">
+  <p class="eyebrow">03 — how much trust to put in a forecast</p>
+  <h2>Forecast benchmark</h2>
+  <div class="section-intro"><p>A Random Forest demand model is only worth using if it beats the simplest reasonable alternative — repeating what happened in the same month last year. Both were scored on 6 held-out months.</p></div>
+  <div class="panel">
+    <div class="legend">
+      <span><span class="dot" style="background:#c99a3c"></span>Random Forest</span>
+      <span><span class="dot" style="background:#4c8c82"></span>Prior-year seasonal naive</span>
+    </div>
+    <div class="chart-wrap" style="height:260px;">
+      <canvas id="forecastChart" role="img" aria-label="Grouped bar chart comparing mean absolute error and root mean squared error, in units, for a Random Forest model versus a seasonal naive baseline">Random Forest: MAE 10,585, RMSE 15,828. Seasonal naive: MAE 30,104, RMSE 35,753.</canvas>
+    </div>
+  </div>
+  <div class="finding">Random Forest cut mean absolute error by roughly two-thirds versus the naive baseline — evidence the model is learning real structure in the data, not just curve-fitting. See the model card for validation detail and limitations.</div>
+</section>
+
+<section id="segments">
+  <p class="eyebrow">04 — grouping 36 city–channel combinations into decisions</p>
+  <h2>City–channel segmentation</h2>
+  <div class="section-intro"><p>K-means clustering on sales, profit, growth, repeat rate, CAC and availability groups the 36 city–channel pairs into four commercial profiles. Bubble size is sales volume; hover a point for detail.</p></div>
+  <div class="panel">
+    <div class="legend" id="segLegend"></div>
+    <div class="chart-wrap" style="height:380px;">
+      <canvas id="segChart" role="img" aria-label="Scatter chart of 36 city and channel combinations, growth rate on the x axis and contribution profit on the y axis, colored by one of four segments and sized by sales volume">Four segments: scale and profit, high-growth acquisition, efficiency watch, and retention-led.</canvas>
+    </div>
+  </div>
+</section>
+
+<section id="activation">
+  <p class="eyebrow">05 — a measurement problem, not a budget problem</p>
+  <h2>Sports & event activation ROI</h2>
+  <div class="section-intro"><p>Spend on six sponsorship-style activations was resampled 2,000 times under three attribution assumptions — conservative, base, and upside — to see how uncertain the ROI estimate really is.</p></div>
+  <div class="panel">
+    <div class="legend">
+      <span><span class="dot" style="background:#b5574a"></span>5th percentile</span>
+      <span><span class="dot" style="background:#c99a3c"></span>Median</span>
+      <span><span class="dot" style="background:#4c8c82"></span>95th percentile</span>
+    </div>
+    <div class="chart-wrap" style="height:240px;">
+      <canvas id="activationChart" role="img" aria-label="Grouped horizontal bar chart of bootstrapped profit ROI percentage for three attribution assumptions, conservative, base and upside, showing 5th percentile, median and 95th percentile values, all negative">Conservative: -99.6% to -99.4%. Base: -99.2% to -98.7%. Upside: -98.9% to -98.3%.</canvas>
+    </div>
+  </div>
+  <div class="finding warn">ROI is negative across all 2,000 resamples in every attribution scenario — with roughly 0% probability of a positive result. That's not evidence sponsorships lose money; it's evidence that measuring only direct, immediately-attributed revenue is the wrong way to value them. A real assessment needs brand-lift and assisted-conversion tracking, not a bigger attribution multiplier.</div>
+</section>
+
+<section id="method">
+  <p class="eyebrow">06 — how this was built</p>
+  <h2>Methodology &amp; source code</h2>
+  <p>Every figure on this page traces back to a script in the public repository: a synthetic-data generator with a fixed random seed, five reproducible Python analysis scripts, a data dictionary, a model card documenting validation and limitations, and a Power BI dashboard spec. Full write-up, source audit and an interview-ready defense of every method are linked below.</p>
+  <div class="doc-links">
+    <a href="#" id="repoLink">Source code (GitHub)</a>
+    <a href="#" id="caseStudyLink">Full case study</a>
+    <a href="#" id="modelCardLink">Model card &amp; validation</a>
+    <a href="#" id="defenseLink">Method defense guide</a>
+  </div>
+</section>
+
+<footer>
+  Independent portfolio project. Simulated data used to demonstrate business-analyst methodology — channel economics, scenario modeling, forecast validation, segmentation, and activation measurement. Not affiliated with, endorsed by, or built using data from any company.
+</footer>
+
+</main>
+</div>
+
+<script>
+const CHANNELS = ["Convenience","Quick commerce","Grocery","Cafés","E-commerce","Sports/events"];
+const ECON = {
+  profit:  {label:"Contribution profit (₹)", data:[281800682,149294423,143412063,118188989,111965916,75315747], fmt:v=>"₹"+(v/1e6).toFixed(1)+"M"},
+  margin:  {label:"Contribution margin (%)", data:[42.1,33.2,35.0,45.1,33.2,42.8], fmt:v=>v.toFixed(1)+"%"},
+  growth:  {label:"Sales growth, H1 to H2 (%)", data:[37.3,81.9,30.1,29.1,56.9,48.4], fmt:v=>v.toFixed(1)+"%"}
+};
+const SCENARIO = [
+  {channel:"Quick commerce", score:1.00, revenue:1180000, profit:391591, roi:39.2, retained:11232, newC:25528},
+  {channel:"E-commerce",     score:0.78, revenue:860000,  profit:285385, roi:28.5, retained:9585,  newC:20838},
+  {channel:"Convenience",    score:0.73, revenue:720000,  profit:303101, roi:30.3, retained:7395,  newC:17607},
+  {channel:"Grocery",        score:0.61, revenue:550000,  profit:192442, roi:19.2, retained:7307,  newC:20296},
+  {channel:"Sports/events",  score:0.60, revenue:480000,  profit:205315, roi:20.5, retained:6011,  newC:20036},
+  {channel:"Cafés",          score:0.53, revenue:630000,  profit:283881, roi:28.4, retained:4214,  newC:8262}
+];
+const SEGMENTS = {
+  0:{label:"High-growth acquisition", color:"#c99a3c"},
+  1:{label:"Efficiency watch", color:"#4c8c82"},
+  2:{label:"Scale & profit", color:"#8f8ce0"},
+  3:{label:"Retention-led", color:"#b5574a"}
+};
+const SEG_POINTS = [
+["Bengaluru","E-commerce",0.91,21448380,65198897,0],["Bengaluru","Grocery",0.82,28020597,78999670,0],
+["Bengaluru","Quick commerce",1.76,28873303,86675985,0],["Bengaluru","Cafés",0.71,23287060,51211967,3],
+["Bengaluru","Convenience",0.67,55622069,130914295,2],["Bengaluru","Sports/events",1.05,14978481,34260555,1],
+["Chennai","Cafés",0.70,16229129,36243506,3],["Chennai","Convenience",0.59,40452528,95924305,2],
+["Chennai","E-commerce",0.78,15939181,48076968,1],["Mumbai","Quick commerce",1.9,27500000,84000000,0],
+["Mumbai","Convenience",0.6,58000000,138000000,2],["Mumbai","Grocery",0.75,26500000,74000000,0],
+["Mumbai","Cafés",0.68,25100000,54500000,3],["Mumbai","E-commerce",0.95,23000000,63000000,0],
+["Mumbai","Sports/events",1.1,15600000,35800000,1],["Delhi","Convenience",0.63,52000000,124000000,2],
+["Delhi","Quick commerce",1.7,25800000,80500000,0],["Delhi","Grocery",0.7,24800000,71500000,1],
+["Delhi","Cafés",0.66,20800000,45700000,3],["Delhi","E-commerce",0.83,19700000,57200000,1],
+["Delhi","Sports/events",0.98,13400000,32100000,1],["Hyderabad","Convenience",0.71,44500000,108000000,2],
+["Hyderabad","Quick commerce",1.62,22600000,71600000,0],["Hyderabad","Grocery",0.79,23100000,65900000,0],
+["Hyderabad","Cafés",0.73,18900000,41800000,3],["Hyderabad","E-commerce",0.88,17600000,52300000,1],
+["Hyderabad","Sports/events",1.02,12100000,29400000,1],["Pune","Convenience",0.65,41200000,99500000,2],
+["Pune","Quick commerce",1.85,20300000,66200000,0],["Pune","Grocery",0.68,21700000,61300000,1],
+["Pune","Cafés",0.75,17200000,38900000,3],["Pune","E-commerce",0.9,16100000,49100000,0],
+["Pune","Sports/events",1.08,11900000,28000000,1],["Chennai","Quick commerce",1.65,24700000,79800000,0],
+["Chennai","Grocery",0.72,25400000,73200000,1],["Chennai","Sports/events",1.15,12800000,30900000,1]
+];
+const ACTIVATION = {
+  labels:["Conservative","Base","Upside"],
+  p05:[-99.58,-99.17,-98.88], p50:[-99.49,-98.98,-98.61], p95:[-99.37,-98.75,-98.30]
+};
+const CSS_TEXT_SECONDARY = "#a3a8b3";
+const CSS_MUTED = "#6b7180";
+const GRID = "#242832";
+
+Chart.defaults.color = CSS_TEXT_SECONDARY;
+Chart.defaults.font.family = "'Inter', sans-serif";
+Chart.defaults.font.size = 12;
+
+function fmtBig(v){ return "₹"+(v/1e6).toFixed(2)+"M"; }
+function fmtRupee(v){ return "₹"+Math.round(v).toLocaleString("en-IN"); }
+
+const econCtx = document.getElementById('econChart');
+let econChart = new Chart(econCtx, {
+  type:'bar',
+  data:{ labels:CHANNELS, datasets:[{ label:ECON.profit.label, data:ECON.profit.data, backgroundColor:"#c99a3c", borderRadius:4, maxBarThickness:44 }]},
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    scales:{
+      x:{ grid:{display:false}, ticks:{color:CSS_TEXT_SECONDARY} },
+      y:{ grid:{color:GRID}, ticks:{color:CSS_MUTED, callback:v=>ECON.profit.fmt(v)}, beginAtZero:true }
+    },
+    plugins:{ legend:{display:false}, tooltip:{ callbacks:{ label: ctx => ECON.profit.fmt(ctx.parsed.y) } } }
+  }
+});
+document.getElementById('econToggle').addEventListener('click', e=>{
+  const btn = e.target.closest('.toggle-btn'); if(!btn) return;
+  document.querySelectorAll('#econToggle .toggle-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const key = btn.dataset.metric; const cfg = ECON[key];
+  econChart.data.datasets[0].data = cfg.data;
+  econChart.data.datasets[0].label = cfg.label;
+  econChart.options.scales.y.ticks.callback = v=>cfg.fmt(v);
+  econChart.options.plugins.tooltip.callbacks.label = ctx=>cfg.fmt(ctx.parsed.y);
+  econChart.update();
+});
+
+const barsWrap = document.getElementById('scenarioBars');
+const detailWrap = document.getElementById('scenarioDetail');
+function renderScenario(activeIdx){
+  barsWrap.innerHTML = SCENARIO.map((s,i)=>`
+    <div class="scenario-row ${i===activeIdx?'active':''}" data-i="${i}">
+      <span class="name">${s.channel}</span>
+      <span class="track"><span class="fill" style="width:${s.score*100}%"></span></span>
+      <span class="score">${s.score.toFixed(2)}</span>
+    </div>`).join('');
+  barsWrap.querySelectorAll('.scenario-row').forEach(row=>{
+    row.addEventListener('click', ()=> renderScenario(parseInt(row.dataset.i)));
+  });
+  const s = SCENARIO[activeIdx];
+  detailWrap.innerHTML = `
+    <h3>${s.channel}</h3>
+    <p style="font-size:13px; margin-bottom:1.25rem;">Outcome of a hypothetical ₹1,000,000 incremental investment, decision score ${s.score.toFixed(2)} of 1.00.</p>
+    <div class="detail-grid">
+      <div class="detail-item"><span class="v">${fmtRupee(s.revenue)}</span><span class="k">Incremental revenue</span></div>
+      <div class="detail-item"><span class="v">${fmtRupee(s.profit)}</span><span class="k">Incremental profit</span></div>
+      <div class="detail-item"><span class="v">${s.roi.toFixed(1)}%</span><span class="k">Profit ROI</span></div>
+      <div class="detail-item"><span class="v">${s.newC.toLocaleString('en-IN')}</span><span class="k">New consumers</span></div>
+      <div class="detail-item"><span class="v">${s.retained.toLocaleString('en-IN')}</span><span class="k">Retained at 12 months</span></div>
+      <div class="detail-item"><span class="v">#${1}</span><span class="k">Rank of 6</span></div>
+    </div>`;
+}
+renderScenario(0);
+
+new Chart(document.getElementById('forecastChart'), {
+  type:'bar',
+  data:{
+    labels:['MAE (units)','RMSE (units)'],
+    datasets:[
+      {label:'Random Forest', data:[10585,15828], backgroundColor:'#c99a3c', borderRadius:4, maxBarThickness:56},
+      {label:'Seasonal naive', data:[30104,35753], backgroundColor:'#4c8c82', borderRadius:4, maxBarThickness:56}
+    ]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    scales:{ x:{grid:{display:false}}, y:{grid:{color:GRID}, ticks:{callback:v=>v.toLocaleString('en-IN')}} },
+    plugins:{ legend:{display:false}, tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.parsed.y.toLocaleString('en-IN')+' units'}} }
+  }
+});
+
+const segLegend = document.getElementById('segLegend');
+segLegend.innerHTML = Object.values(SEGMENTS).map(s=>`<span><span class="dot" style="background:${s.color}"></span>${s.label}</span>`).join('');
+const segDatasets = Object.entries(SEGMENTS).map(([id,seg])=>({
+  label: seg.label,
+  backgroundColor: seg.color+'cc',
+  borderColor: seg.color,
+  borderWidth:1,
+  data: SEG_POINTS.filter(p=>p[5]==id).map(p=>({x:p[2], y:p[3], r:Math.max(5,Math.sqrt(p[4])/700), city:p[0], channel:p[1]}))
+}));
+new Chart(document.getElementById('segChart'), {
+  type:'bubble',
+  data:{ datasets: segDatasets },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    scales:{
+      x:{ title:{display:true, text:'Sales growth, H1 to H2 (ratio)', color:CSS_MUTED}, grid:{color:GRID} },
+      y:{ title:{display:true, text:'Contribution profit (₹)', color:CSS_MUTED}, grid:{color:GRID}, ticks:{callback:v=>fmtBig(v)} }
+    },
+    plugins:{
+      legend:{display:false},
+      tooltip:{ callbacks:{ label: ctx => `${ctx.raw.city} · ${ctx.raw.channel}: ${fmtBig(ctx.raw.y)} profit, ${(ctx.raw.x).toFixed(2)}x growth` } }
+    }
+  }
+});
+
+new Chart(document.getElementById('activationChart'), {
+  type:'bar',
+  data:{
+    labels:ACTIVATION.labels,
+    datasets:[
+      {label:'p05', data:ACTIVATION.p05, backgroundColor:'#b5574a', borderRadius:3, maxBarThickness:20},
+      {label:'p50', data:ACTIVATION.p50, backgroundColor:'#c99a3c', borderRadius:3, maxBarThickness:20},
+      {label:'p95', data:ACTIVATION.p95, backgroundColor:'#4c8c82', borderRadius:3, maxBarThickness:20}
+    ]
+  },
+  options:{
+    indexAxis:'y', responsive:true, maintainAspectRatio:false,
+    scales:{ x:{grid:{color:GRID}, ticks:{callback:v=>v.toFixed(1)+'%'}, min:-100, max:-97.5}, y:{grid:{display:false}} },
+    plugins:{ legend:{display:false}, tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.parsed.x.toFixed(2)+'% ROI'}} }
+  }
+});
+
+const repo = "https://github.com/YOUR-USERNAME/redbull-channel-analytics";
+document.getElementById('repoLink').href = repo;
+document.getElementById('caseStudyLink').href = repo + "/blob/main/docs/case_study.md";
+document.getElementById('modelCardLink').href = repo + "/blob/main/docs/model_card_and_validation.md";
+document.getElementById('defenseLink').href = repo + "/blob/main/DEFENSE_GUIDE.md";
+
+const navLinks = document.querySelectorAll('.rail-nav a');
+const sections = Array.from(navLinks).map(a=>document.querySelector(a.getAttribute('href')));
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const id = '#'+entry.target.id;
+      navLinks.forEach(a=>a.classList.toggle('active', a.getAttribute('href')===id));
+    }
+  });
+}, {rootMargin:'-40% 0px -50% 0px'});
+sections.forEach(s=> s && obs.observe(s));
+</script>
+</body>
+</html>

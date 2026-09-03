@@ -1,0 +1,865 @@
+month,channel,city,units_sold,list_sales_inr,discounts_inr,net_sales_inr,variable_cost_inr,marketing_spend_inr,active_consumers,repeat_consumers,new_consumers,outlets_or_listings,availability_rate,is_simulated,data_note
+2024-01-01,Grocery,Mumbai,19957,2494625,268466.37,2226158.63,1357076,144847.94,15282,5980,2143,48,0.6121,True,Simulated assumption; not Red Bull private data
+2024-01-01,Grocery,Delhi NCR,19454,2431750,242153.59,2189596.41,1322872,111473.18,14803,6231,2345,48,0.5985,True,Simulated assumption; not Red Bull private data
+2024-01-01,Grocery,Bengaluru,20767,2595875,283518.27,2312356.73,1412156,145444.29,15295,6382,2216,54,0.6161,True,Simulated assumption; not Red Bull private data
+2024-01-01,Grocery,Hyderabad,17051,2131375,190314.32,1941060.68,1159468,109929.61,12767,5439,1956,47,0.6098,True,Simulated assumption; not Red Bull private data
+2024-01-01,Grocery,Pune,15887,1985875,173156.25,1812718.75,1080316,106371.13,12254,5126,1760,35,0.6363,True,Simulated assumption; not Red Bull private data
+2024-01-01,Grocery,Chennai,16350,2043750,242350.64,1801399.36,1111800,131608.3,12178,5135,1846,41,0.6256,True,Simulated assumption; not Red Bull private data
+2024-01-01,Convenience,Mumbai,28328,4107560,398321.75,3709238.25,2039616,181470.38,21199,9656,2711,64,0.604,True,Simulated assumption; not Red Bull private data
+2024-01-01,Convenience,Delhi NCR,29453,4270685,312278.65,3958406.35,2120616,177536.9,22331,10087,2854,71,0.6347,True,Simulated assumption; not Red Bull private data
+2024-01-01,Convenience,Bengaluru,30507,4423515,432534.24,3990980.76,2196504,140436.1,21856,10805,2814,65,0.5917,True,Simulated assumption; not Red Bull private data
+2024-01-01,Convenience,Hyderabad,23817,3453465,196894.79,3256570.21,1714824,131996.27,17864,8446,2340,59,0.6123,True,Simulated assumption; not Red Bull private data
+2024-01-01,Convenience,Pune,21368,3098360,283250.15,2815109.85,1538496,105861.48,15358,7063,2045,48,0.6203,True,Simulated assumption; not Red Bull private data
+2024-01-01,Convenience,Chennai,21687,3144615,289363.28,2855251.72,1561464,134577.23,15767,7456,2041,44,0.5838,True,Simulated assumption; not Red Bull private data
+2024-01-01,E-commerce,Mumbai,14290,1972020,270033.65,1701986.35,1000300,134764.41,10016,4941,1919,20,0.6384,True,Simulated assumption; not Red Bull private data
+2024-01-01,E-commerce,Delhi NCR,14415,1989270,291745.46,1697524.54,1009050,82417.06,10341,5322,1700,21,0.6259,True,Simulated assumption; not Red Bull private data
+2024-01-01,E-commerce,Bengaluru,14414,1989132,308606.37,1680525.63,1008980,125442.36,10260,5171,1848,23,0.614,True,Simulated assumption; not Red Bull private data
+2024-01-01,E-commerce,Hyderabad,12542,1730796,249948.69,1480847.31,877940,72210.96,9617,4949,1761,20,0.5903,True,Simulated assumption; not Red Bull private data
+2024-01-01,E-commerce,Pune,11274,1555812,239604.71,1316207.29,789180,102768.8,7747,3959,1378,20,0.5946,True,Simulated assumption; not Red Bull private data
+2024-01-01,E-commerce,Chennai,11862,1636956,291112.73,1345843.27,830340,98655.84,9632,4885,1647,20,0.6267,True,Simulated assumption; not Red Bull private data
+2024-01-01,Quick commerce,Mumbai,16744,2511600,451275.43,2060324.57,1239056,117994.07,12197,5819,2581,23,0.5941,True,Simulated assumption; not Red Bull private data
+2024-01-01,Quick commerce,Delhi NCR,16082,2412300,381464.06,2030835.94,1190068,105291.07,11913,5819,2518,24,0.6075,True,Simulated assumption; not Red Bull private data
+2024-01-01,Quick commerce,Bengaluru,16805,2520750,429476.33,2091273.67,1243570,125817.88,13359,5968,2923,22,0.6433,True,Simulated assumption; not Red Bull private data
+2024-01-01,Quick commerce,Hyderabad,13954,2093100,438763.52,1654336.48,1032596,95133.73,9954,4650,2042,20,0.5881,True,Simulated assumption; not Red Bull private data
+2024-01-01,Quick commerce,Pune,14633,2194950,448460.55,1746489.45,1082842,139052.92,10669,4956,2386,21,0.6097,True,Simulated assumption; not Red Bull private data
+2024-01-01,Quick commerce,Chennai,13155,1973250,449224.6,1524025.4,973470,123785.4,9707,4273,1899,21,0.6631,True,Simulated assumption; not Red Bull private data
+2024-01-01,Cafés,Mumbai,8880,1554000,70725.68,1483274.32,728160,103404.48,6116,3258,694,20,0.6199,True,Simulated assumption; not Red Bull private data
+2024-01-01,Cafés,Delhi NCR,8910,1559250,71591.29,1487658.71,730620,79509.76,6444,3624,636,21,0.5989,True,Simulated assumption; not Red Bull private data
+2024-01-01,Cafés,Bengaluru,8942,1564850,30561.01,1534288.99,733244,116674.06,6680,3503,735,20,0.6118,True,Simulated assumption; not Red Bull private data
+2024-01-01,Cafés,Hyderabad,7672,1342600,100787.57,1241812.43,629104,121423.58,5495,2948,597,20,0.6244,True,Simulated assumption; not Red Bull private data
+2024-01-01,Cafés,Pune,7163,1253525,28693.56,1224831.44,587366,83844.5,5682,3330,598,20,0.5834,True,Simulated assumption; not Red Bull private data
+2024-01-01,Cafés,Chennai,6922,1211350,42678.68,1168671.32,567604,62752.27,4843,2602,475,20,0.5934,True,Simulated assumption; not Red Bull private data
+2024-01-01,Sports/events,Mumbai,5756,920960,15438.99,905521.01,448968,90544.85,3993,1363,1281,20,0.5926,True,Simulated assumption; not Red Bull private data
+2024-01-01,Sports/events,Delhi NCR,6763,1082080,82154.58,999925.42,527514,56981.56,4972,1811,1566,20,0.6139,True,Simulated assumption; not Red Bull private data
+2024-01-01,Sports/events,Bengaluru,6413,1026080,50722.66,975357.34,500214,69578.27,4760,1631,1363,20,0.6258,True,Simulated assumption; not Red Bull private data
+2024-01-01,Sports/events,Hyderabad,5096,815360,13141.01,802218.99,397488,89754.44,3826,1394,1112,20,0.602,True,Simulated assumption; not Red Bull private data
+2024-01-01,Sports/events,Pune,4726,756160,28667.81,727492.19,368628,60362.83,3748,1367,1045,20,0.6498,True,Simulated assumption; not Red Bull private data
+2024-01-01,Sports/events,Chennai,4655,744800,27236.39,717563.61,363090,50299.86,3602,1317,986,20,0.6266,True,Simulated assumption; not Red Bull private data
+2024-02-01,Grocery,Mumbai,21503,2687875,272313.1,2415561.9,1462204,102700.3,15709,6633,2529,40,0.6261,True,Simulated assumption; not Red Bull private data
+2024-02-01,Grocery,Delhi NCR,21417,2677125,279526.15,2397598.85,1456356,102786.82,14695,6242,2394,44,0.6536,True,Simulated assumption; not Red Bull private data
+2024-02-01,Grocery,Bengaluru,22558,2819750,258816.03,2560933.97,1533944,141823.77,16425,7212,2535,61,0.6614,True,Simulated assumption; not Red Bull private data
+2024-02-01,Grocery,Hyderabad,19674,2459250,272920.6,2186329.4,1337832,130568.55,15000,6234,2257,44,0.6567,True,Simulated assumption; not Red Bull private data
+2024-02-01,Grocery,Pune,17910,2238750,157926.82,2080823.18,1217880,138104.84,13254,5794,2062,48,0.6503,True,Simulated assumption; not Red Bull private data
+2024-02-01,Grocery,Chennai,16330,2041250,123901.82,1917348.18,1110440,139334.26,11801,5218,1826,36,0.6067,True,Simulated assumption; not Red Bull private data
+2024-02-01,Convenience,Mumbai,27297,3958065,319889.04,3638175.96,1965384,132423.85,20173,10074,2702,53,0.6396,True,Simulated assumption; not Red Bull private data
+2024-02-01,Convenience,Delhi NCR,28852,4183540,342217.08,3841322.92,2077344,164020.85,19321,9082,2585,60,0.6689,True,Simulated assumption; not Red Bull private data
+2024-02-01,Convenience,Bengaluru,31710,4597950,410178.13,4187771.87,2283120,193100.72,23899,11900,3143,76,0.6388,True,Simulated assumption; not Red Bull private data
+2024-02-01,Convenience,Hyderabad,23835,3456075,201891.35,3254183.65,1716120,123252.76,17664,8775,2174,56,0.669,True,Simulated assumption; not Red Bull private data
+2024-02-01,Convenience,Pune,21946,3182170,195418.0,2986752.0,1580112,156808.0,16560,7951,2295,55,0.653,True,Simulated assumption; not Red Bull private data
+2024-02-01,Convenience,Chennai,24750,3588750,336814.64,3251935.36,1782000,158390.31,16617,8424,2110,59,0.6647,True,Simulated assumption; not Red Bull private data
+2024-02-01,E-commerce,Mumbai,14708,2029704,263746.87,1765957.13,1029560,106986.17,10356,5257,1912,21,0.5967,True,Simulated assumption; not Red Bull private data
+2024-02-01,E-commerce,Delhi NCR,15277,2108226,236642.92,1871583.08,1069390,97596.44,11314,5795,2050,23,0.6377,True,Simulated assumption; not Red Bull private data
+2024-02-01,E-commerce,Bengaluru,15726,2170188,397690.46,1772497.54,1100820,89977.32,11527,5929,2034,23,0.6254,True,Simulated assumption; not Red Bull private data
+2024-02-01,E-commerce,Hyderabad,13567,1872246,312780.12,1559465.88,949690,112490.22,9355,4434,1487,20,0.6507,True,Simulated assumption; not Red Bull private data
+2024-02-01,E-commerce,Pune,12546,1731348,281998.32,1449349.68,878220,114873.94,9608,4792,1846,20,0.6111,True,Simulated assumption; not Red Bull private data
+2024-02-01,E-commerce,Chennai,10882,1501716,232976.21,1268739.79,761740,76155.32,7800,4009,1524,20,0.6418,True,Simulated assumption; not Red Bull private data
+2024-02-01,Quick commerce,Mumbai,18513,2776950,483151.54,2293798.46,1369962,153782.57,12569,5969,2559,25,0.6053,True,Simulated assumption; not Red Bull private data
+2024-02-01,Quick commerce,Delhi NCR,17807,2671050,490519.42,2180530.58,1317718,134895.17,13216,6156,2958,24,0.5951,True,Simulated assumption; not Red Bull private data
+2024-02-01,Quick commerce,Bengaluru,18345,2751750,623768.23,2127981.77,1357530,156221.2,13645,6247,2915,30,0.6839,True,Simulated assumption; not Red Bull private data
+2024-02-01,Quick commerce,Hyderabad,14951,2242650,452419.94,1790230.06,1106374,102201.84,10582,4924,2219,21,0.6112,True,Simulated assumption; not Red Bull private data
+2024-02-01,Quick commerce,Pune,12559,1883850,301907.33,1581942.67,929366,94029.55,9031,4111,2080,20,0.6079,True,Simulated assumption; not Red Bull private data
+2024-02-01,Quick commerce,Chennai,13228,1984200,414088.08,1570111.92,978872,117837.93,9762,4587,2015,20,0.6035,True,Simulated assumption; not Red Bull private data
+2024-02-01,Cafés,Mumbai,10725,1876875,94141.19,1782733.81,879450,106026.07,8172,4508,925,25,0.6277,True,Simulated assumption; not Red Bull private data
+2024-02-01,Cafés,Delhi NCR,9263,1621025,49462.24,1571562.76,759566,120397.28,6853,3912,767,21,0.6433,True,Simulated assumption; not Red Bull private data
+2024-02-01,Cafés,Bengaluru,10220,1788500,75623.46,1712876.54,838040,118631.84,7266,3717,739,26,0.6544,True,Simulated assumption; not Red Bull private data
+2024-02-01,Cafés,Hyderabad,7071,1237425,39613.68,1197811.32,579822,80007.13,4985,2974,560,20,0.6436,True,Simulated assumption; not Red Bull private data
+2024-02-01,Cafés,Pune,7253,1269275,13931.61,1255343.39,594746,98523.6,5209,2944,582,20,0.6148,True,Simulated assumption; not Red Bull private data
+2024-02-01,Cafés,Chennai,7669,1342075,97227.14,1244847.86,628858,95415.63,5330,3068,580,20,0.6209,True,Simulated assumption; not Red Bull private data
+2024-02-01,Sports/events,Mumbai,6339,1014240,67321.34,946918.66,494442,79068.45,5026,1786,1388,20,0.6433,True,Simulated assumption; not Red Bull private data
+2024-02-01,Sports/events,Delhi NCR,6281,1004960,0.0,1004960.0,489918,81986.84,4902,1616,1365,20,0.6113,True,Simulated assumption; not Red Bull private data
+2024-02-01,Sports/events,Bengaluru,6454,1032640,37372.94,995267.06,503412,94705.6,4785,1734,1317,20,0.6486,True,Simulated assumption; not Red Bull private data
+2024-02-01,Sports/events,Hyderabad,5328,852480,33780.33,818699.67,415584,96563.75,4299,1542,1227,20,0.6062,True,Simulated assumption; not Red Bull private data
+2024-02-01,Sports/events,Pune,4703,752480,0.0,752480.0,366834,69717.91,3556,1282,991,20,0.6505,True,Simulated assumption; not Red Bull private data
+2024-02-01,Sports/events,Chennai,4550,728000,18934.4,709065.6,354900,72505.58,3421,1169,988,20,0.6095,True,Simulated assumption; not Red Bull private data
+2024-03-01,Grocery,Mumbai,22072,2759000,288994.45,2470005.55,1500896,136128.71,17102,7119,2611,42,0.6151,True,Simulated assumption; not Red Bull private data
+2024-03-01,Grocery,Delhi NCR,21771,2721375,252150.43,2469224.57,1480428,102154.93,17350,6986,2493,52,0.6843,True,Simulated assumption; not Red Bull private data
+2024-03-01,Grocery,Bengaluru,25190,3148750,218651.22,2930098.78,1712920,153067.82,17362,6965,2549,57,0.6643,True,Simulated assumption; not Red Bull private data
+2024-03-01,Grocery,Hyderabad,17784,2223000,235730.24,1987269.76,1209312,108809.84,12821,5625,1862,40,0.6575,True,Simulated assumption; not Red Bull private data
+2024-03-01,Grocery,Pune,19316,2414500,287502.15,2126997.85,1313488,111264.99,14562,5894,2209,40,0.6552,True,Simulated assumption; not Red Bull private data
+2024-03-01,Grocery,Chennai,16725,2090625,166905.1,1923719.9,1137300,130524.96,12462,5121,2004,38,0.6448,True,Simulated assumption; not Red Bull private data
+2024-03-01,Convenience,Mumbai,31145,4516025,391642.5,4124382.5,2242440,142552.77,22248,10525,3089,67,0.5837,True,Simulated assumption; not Red Bull private data
+2024-03-01,Convenience,Delhi NCR,35452,5140540,618270.35,4522269.65,2552544,176524.89,23872,11334,3058,83,0.6162,True,Simulated assumption; not Red Bull private data
+2024-03-01,Convenience,Bengaluru,34359,4982055,470749.54,4511305.46,2473848,199348.59,25780,13263,3380,79,0.6404,True,Simulated assumption; not Red Bull private data
+2024-03-01,Convenience,Hyderabad,23965,3474925,331443.28,3143481.72,1725480,139585.08,17219,8799,2218,64,0.6164,True,Simulated assumption; not Red Bull private data
+2024-03-01,Convenience,Pune,25779,3737955,353915.11,3384039.89,1856088,150278.4,18950,9482,2423,53,0.6436,True,Simulated assumption; not Red Bull private data
+2024-03-01,Convenience,Chennai,23727,3440415,197615.45,3242799.55,1708344,170894.04,16137,7307,2148,54,0.5799,True,Simulated assumption; not Red Bull private data
+2024-03-01,E-commerce,Mumbai,17810,2457780,466046.95,1991733.05,1246700,107471.85,12270,6314,2247,30,0.6545,True,Simulated assumption; not Red Bull private data
+2024-03-01,E-commerce,Delhi NCR,16765,2313570,415731.36,1897838.64,1173550,112877.04,12497,6522,2190,23,0.632,True,Simulated assumption; not Red Bull private data
+2024-03-01,E-commerce,Bengaluru,19671,2714598,515149.38,2199448.62,1376970,137034.78,14063,7108,2500,30,0.5877,True,Simulated assumption; not Red Bull private data
+2024-03-01,E-commerce,Hyderabad,13793,1903434,284244.32,1619189.68,965510,89936.98,9644,4667,1718,21,0.6379,True,Simulated assumption; not Red Bull private data
+2024-03-01,E-commerce,Pune,13744,1896672,273556.35,1623115.65,962080,77705.79,9605,4649,1777,20,0.6602,True,Simulated assumption; not Red Bull private data
+2024-03-01,E-commerce,Chennai,13668,1886184,320007.77,1566176.23,956760,129534.15,9935,4930,1679,20,0.6611,True,Simulated assumption; not Red Bull private data
+2024-03-01,Quick commerce,Mumbai,19063,2859450,546801.73,2312648.27,1410662,115217.22,14595,6177,2835,25,0.6805,True,Simulated assumption; not Red Bull private data
+2024-03-01,Quick commerce,Delhi NCR,20300,3045000,630511.93,2414488.07,1502200,106017.64,14205,6636,2991,30,0.6393,True,Simulated assumption; not Red Bull private data
+2024-03-01,Quick commerce,Bengaluru,21102,3165300,655070.21,2510229.79,1561548,118179.21,15958,6924,2974,32,0.6737,True,Simulated assumption; not Red Bull private data
+2024-03-01,Quick commerce,Hyderabad,14895,2234250,389841.83,1844408.17,1102230,82682.11,11318,5533,2438,20,0.6217,True,Simulated assumption; not Red Bull private data
+2024-03-01,Quick commerce,Pune,15609,2341350,468940.29,1872409.71,1155066,114475.61,12372,6046,2745,20,0.6654,True,Simulated assumption; not Red Bull private data
+2024-03-01,Quick commerce,Chennai,15518,2327700,502761.46,1824938.54,1148332,98482.52,11657,5501,2525,22,0.5994,True,Simulated assumption; not Red Bull private data
+2024-03-01,Cafés,Mumbai,10007,1751225,91222.23,1660002.77,820574,116663.45,7697,4489,904,24,0.6778,True,Simulated assumption; not Red Bull private data
+2024-03-01,Cafés,Delhi NCR,10065,1761375,88599.5,1672775.5,825330,114815.59,7369,4061,757,23,0.642,True,Simulated assumption; not Red Bull private data
+2024-03-01,Cafés,Bengaluru,11217,1962975,186362.94,1776612.06,919794,83567.89,8164,4497,888,24,0.6402,True,Simulated assumption; not Red Bull private data
+2024-03-01,Cafés,Hyderabad,7896,1381800,43316.04,1338483.96,647472,79089.72,5779,2979,631,20,0.6705,True,Simulated assumption; not Red Bull private data
+2024-03-01,Cafés,Pune,8128,1422400,107598.76,1314801.24,666496,101051.17,5604,3119,628,21,0.6715,True,Simulated assumption; not Red Bull private data
+2024-03-01,Cafés,Chennai,7212,1262100,58932.86,1203167.14,591384,84298.22,5243,2863,560,20,0.6314,True,Simulated assumption; not Red Bull private data
+2024-03-01,Sports/events,Mumbai,7083,1133280,16204.03,1117075.97,552474,79161.4,5337,1939,1459,20,0.6799,True,Simulated assumption; not Red Bull private data
+2024-03-01,Sports/events,Delhi NCR,5933,949280,899.93,948380.07,462774,96418.14,4432,1597,1277,20,0.5772,True,Simulated assumption; not Red Bull private data
+2024-03-01,Sports/events,Bengaluru,7832,1253120,49997.42,1203122.58,610896,63558.14,5755,2017,1594,20,0.6797,True,Simulated assumption; not Red Bull private data
+2024-03-01,Sports/events,Hyderabad,5614,898240,68207.56,830032.44,437892,111606.4,4195,1602,1210,20,0.6531,True,Simulated assumption; not Red Bull private data
+2024-03-01,Sports/events,Pune,5727,916320,100310.78,816009.22,446706,75120.87,4439,1577,1255,20,0.6448,True,Simulated assumption; not Red Bull private data
+2024-03-01,Sports/events,Chennai,5227,836320,30914.07,805405.93,407706,56763.79,3967,1331,1188,20,0.6079,True,Simulated assumption; not Red Bull private data
+2024-04-01,Grocery,Mumbai,25561,3195125,314846.72,2880278.28,1738148,125018.09,19491,7801,2864,58,0.6548,True,Simulated assumption; not Red Bull private data
+2024-04-01,Grocery,Delhi NCR,23175,2896875,309883.37,2586991.63,1575900,161717.11,17146,6724,2320,55,0.6505,True,Simulated assumption; not Red Bull private data
+2024-04-01,Grocery,Bengaluru,26312,3289000,320396.28,2968603.72,1789216,167943.29,20154,8135,2845,57,0.6632,True,Simulated assumption; not Red Bull private data
+2024-04-01,Grocery,Hyderabad,20404,2550500,334430.96,2216069.04,1387472,96875.56,14031,5721,2045,46,0.657,True,Simulated assumption; not Red Bull private data
+2024-04-01,Grocery,Pune,21145,2643125,243712.89,2399412.11,1437860,130703.55,15066,6433,2086,51,0.6586,True,Simulated assumption; not Red Bull private data
+2024-04-01,Grocery,Chennai,20750,2593750,249814.28,2343935.72,1411000,152699.8,16575,6906,2327,49,0.6291,True,Simulated assumption; not Red Bull private data
+2024-04-01,Convenience,Mumbai,35080,5086600,311330.97,4775269.03,2525760,183852.23,24968,12398,3433,93,0.6692,True,Simulated assumption; not Red Bull private data
+2024-04-01,Convenience,Delhi NCR,29679,4303455,490962.75,3812492.25,2136888,146017.1,20912,10079,2640,69,0.7031,True,Simulated assumption; not Red Bull private data
+2024-04-01,Convenience,Bengaluru,36365,5272925,399461.01,4873463.99,2618280,188005.17,26624,12782,3538,94,0.6972,True,Simulated assumption; not Red Bull private data
+2024-04-01,Convenience,Hyderabad,29114,4221530,370399.16,3851130.84,2096208,146606.4,21176,10498,2872,70,0.6782,True,Simulated assumption; not Red Bull private data
+2024-04-01,Convenience,Pune,28754,4169330,384700.61,3784629.39,2070288,157867.23,20689,10047,2295,70,0.5648,True,Simulated assumption; not Red Bull private data
+2024-04-01,Convenience,Chennai,26387,3826115,141234.97,3684880.03,1899864,181726.03,18365,8595,2551,60,0.7121,True,Simulated assumption; not Red Bull private data
+2024-04-01,E-commerce,Mumbai,19252,2656776,451524.4,2205251.6,1347640,107025.88,14074,6790,2519,27,0.6219,True,Simulated assumption; not Red Bull private data
+2024-04-01,E-commerce,Delhi NCR,17416,2403408,393207.64,2010200.36,1219120,116552.74,12683,6278,2270,25,0.6714,True,Simulated assumption; not Red Bull private data
+2024-04-01,E-commerce,Bengaluru,18385,2537130,367902.1,2169227.9,1286950,120211.54,13150,6248,2419,27,0.6177,True,Simulated assumption; not Red Bull private data
+2024-04-01,E-commerce,Hyderabad,16093,2220834,390282.8,1830551.2,1126510,137013.62,11999,5704,2195,22,0.6439,True,Simulated assumption; not Red Bull private data
+2024-04-01,E-commerce,Pune,15998,2207724,423361.74,1784362.26,1119860,105397.03,12246,6099,2243,24,0.659,True,Simulated assumption; not Red Bull private data
+2024-04-01,E-commerce,Chennai,14762,2037156,352976.2,1684179.8,1033340,119377.73,10422,5135,1935,21,0.6645,True,Simulated assumption; not Red Bull private data
+2024-04-01,Quick commerce,Mumbai,21395,3209250,695611.3,2513638.7,1583230,149999.36,15911,7002,3582,29,0.6146,True,Simulated assumption; not Red Bull private data
+2024-04-01,Quick commerce,Delhi NCR,19882,2982300,518544.15,2463755.85,1471268,109995.88,14406,6548,3118,29,0.6639,True,Simulated assumption; not Red Bull private data
+2024-04-01,Quick commerce,Bengaluru,23392,3508800,737710.15,2771089.85,1731008,160259.01,16887,7175,3552,33,0.6821,True,Simulated assumption; not Red Bull private data
+2024-04-01,Quick commerce,Hyderabad,18144,2721600,625126.64,2096473.36,1342656,138818.56,13550,6117,2845,27,0.6421,True,Simulated assumption; not Red Bull private data
+2024-04-01,Quick commerce,Pune,17804,2670600,587911.13,2082688.87,1317496,114058.29,13551,6385,2860,23,0.6345,True,Simulated assumption; not Red Bull private data
+2024-04-01,Quick commerce,Chennai,16873,2530950,472170.07,2058779.93,1248602,144728.38,12577,5533,2614,24,0.7171,True,Simulated assumption; not Red Bull private data
+2024-04-01,Cafés,Mumbai,11857,2074975,32301.36,2042673.64,972274,119093.04,8686,4797,976,27,0.6924,True,Simulated assumption; not Red Bull private data
+2024-04-01,Cafés,Delhi NCR,11236,1966300,75876.02,1890423.98,921352,85714.25,8078,4276,908,29,0.6541,True,Simulated assumption; not Red Bull private data
+2024-04-01,Cafés,Bengaluru,10664,1866200,84124.3,1782075.7,874448,97717.59,7196,3831,800,28,0.7262,True,Simulated assumption; not Red Bull private data
+2024-04-01,Cafés,Hyderabad,9722,1701350,60117.84,1641232.16,797204,72587.22,6964,3888,768,23,0.6458,True,Simulated assumption; not Red Bull private data
+2024-04-01,Cafés,Pune,7887,1380225,20768.6,1359456.4,646734,71165.54,5621,3027,618,20,0.6605,True,Simulated assumption; not Red Bull private data
+2024-04-01,Cafés,Chennai,8782,1536850,51636.05,1485213.95,720124,70064.83,6454,3670,754,22,0.6714,True,Simulated assumption; not Red Bull private data
+2024-04-01,Sports/events,Mumbai,7656,1224960,55072.58,1169887.42,597168,79055.02,5873,2013,1635,20,0.677,True,Simulated assumption; not Red Bull private data
+2024-04-01,Sports/events,Delhi NCR,7070,1131200,75999.62,1055200.38,551460,85793.02,5225,1887,1521,20,0.647,True,Simulated assumption; not Red Bull private data
+2024-04-01,Sports/events,Bengaluru,7290,1166400,45257.33,1121142.67,568620,57983.57,5440,1907,1558,20,0.6492,True,Simulated assumption; not Red Bull private data
+2024-04-01,Sports/events,Hyderabad,6081,972960,72274.9,900685.1,474318,59404.98,4157,1449,1189,20,0.6905,True,Simulated assumption; not Red Bull private data
+2024-04-01,Sports/events,Pune,6263,1002080,25930.38,976149.62,488514,67022.2,4680,1679,1357,20,0.598,True,Simulated assumption; not Red Bull private data
+2024-04-01,Sports/events,Chennai,5416,866560,0.0,866560.0,422448,95510.9,4153,1519,1181,20,0.6818,True,Simulated assumption; not Red Bull private data
+2024-05-01,Grocery,Mumbai,29636,3704500,387496.06,3317003.94,2015248,128987.55,21380,9198,3224,70,0.7048,True,Simulated assumption; not Red Bull private data
+2024-05-01,Grocery,Delhi NCR,25024,3128000,121141.8,3006858.2,1701632,118599.08,18199,7575,2524,54,0.6465,True,Simulated assumption; not Red Bull private data
+2024-05-01,Grocery,Bengaluru,32040,4005000,646549.59,3358450.41,2178720,129664.89,23301,9392,3161,75,0.6431,True,Simulated assumption; not Red Bull private data
+2024-05-01,Grocery,Hyderabad,21085,2635625,257971.65,2377653.35,1433780,129066.09,15653,6658,2396,44,0.6894,True,Simulated assumption; not Red Bull private data
+2024-05-01,Grocery,Pune,22884,2860500,228824.86,2631675.14,1556112,98229.47,15958,6628,2437,57,0.6645,True,Simulated assumption; not Red Bull private data
+2024-05-01,Grocery,Chennai,22279,2784875,385132.82,2399742.18,1514972,157419.27,16935,7594,2789,47,0.6448,True,Simulated assumption; not Red Bull private data
+2024-05-01,Convenience,Mumbai,35907,5206515,609802.5,4596712.5,2585304,172215.17,25699,12516,3323,81,0.6511,True,Simulated assumption; not Red Bull private data
+2024-05-01,Convenience,Delhi NCR,34986,5072970,315495.99,4757474.01,2518992,177521.49,25841,12788,3277,82,0.6502,True,Simulated assumption; not Red Bull private data
+2024-05-01,Convenience,Bengaluru,36495,5291775,72535.9,5219239.1,2627640,165481.15,24241,11148,3360,86,0.7003,True,Simulated assumption; not Red Bull private data
+2024-05-01,Convenience,Hyderabad,32666,4736570,427591.79,4308978.21,2351952,149210.53,24343,11982,3073,81,0.6822,True,Simulated assumption; not Red Bull private data
+2024-05-01,Convenience,Pune,28106,4075370,270038.84,3805331.16,2023632,161369.95,20586,9994,2570,67,0.6823,True,Simulated assumption; not Red Bull private data
+2024-05-01,Convenience,Chennai,31035,4500075,429553.61,4070521.39,2234520,196661.71,21745,11052,2751,80,0.6697,True,Simulated assumption; not Red Bull private data
+2024-05-01,E-commerce,Mumbai,18981,2619378,418304.88,2201073.12,1328670,117776.42,12943,6690,2506,25,0.6755,True,Simulated assumption; not Red Bull private data
+2024-05-01,E-commerce,Delhi NCR,19621,2707698,411205.13,2296492.87,1373470,117091.33,14247,7557,2502,30,0.6704,True,Simulated assumption; not Red Bull private data
+2024-05-01,E-commerce,Bengaluru,21292,2938296,557966.1,2380329.9,1490440,149438.72,15413,7480,2866,31,0.6828,True,Simulated assumption; not Red Bull private data
+2024-05-01,E-commerce,Hyderabad,18693,2579634,537658.0,2041976.0,1308510,116456.81,13797,6747,2486,25,0.7085,True,Simulated assumption; not Red Bull private data
+2024-05-01,E-commerce,Pune,16361,2257818,404358.17,1853459.83,1145270,131279.32,10865,5049,2033,23,0.6743,True,Simulated assumption; not Red Bull private data
+2024-05-01,E-commerce,Chennai,15787,2178606,298120.66,1880485.34,1105090,105267.47,11859,5964,2087,21,0.6148,True,Simulated assumption; not Red Bull private data
+2024-05-01,Quick commerce,Mumbai,25790,3868500,798617.05,3069882.95,1908460,186561.01,18393,8118,3676,37,0.6159,True,Simulated assumption; not Red Bull private data
+2024-05-01,Quick commerce,Delhi NCR,24749,3712350,799479.67,2912870.33,1831426,156463.0,16332,7250,3641,27,0.6593,True,Simulated assumption; not Red Bull private data
+2024-05-01,Quick commerce,Bengaluru,26653,3997950,681650.4,3316299.6,1972322,182149.1,19841,9307,4549,37,0.6774,True,Simulated assumption; not Red Bull private data
+2024-05-01,Quick commerce,Hyderabad,21568,3235200,526928.71,2708271.29,1596032,118765.95,15446,7099,2990,31,0.6922,True,Simulated assumption; not Red Bull private data
+2024-05-01,Quick commerce,Pune,17671,2650650,549541.63,2101108.37,1307654,101849.56,13330,5728,2648,27,0.6748,True,Simulated assumption; not Red Bull private data
+2024-05-01,Quick commerce,Chennai,20373,3055950,642664.11,2413285.89,1507602,108342.87,15318,7714,3182,27,0.6787,True,Simulated assumption; not Red Bull private data
+2024-05-01,Cafés,Mumbai,11806,2066050,125976.94,1940073.06,968092,142222.46,9294,5170,984,30,0.6653,True,Simulated assumption; not Red Bull private data
+2024-05-01,Cafés,Delhi NCR,12086,2115050,92381.08,2022668.92,991052,133094.76,8833,5183,994,27,0.6553,True,Simulated assumption; not Red Bull private data
+2024-05-01,Cafés,Bengaluru,12416,2172800,86350.33,2086449.67,1018112,108989.44,9276,4792,1064,28,0.6774,True,Simulated assumption; not Red Bull private data
+2024-05-01,Cafés,Hyderabad,10717,1875475,40932.81,1834542.19,878794,128639.63,8020,4177,918,26,0.6279,True,Simulated assumption; not Red Bull private data
+2024-05-01,Cafés,Pune,9744,1705200,84224.2,1620975.8,799008,103795.56,7072,3929,835,25,0.5963,True,Simulated assumption; not Red Bull private data
+2024-05-01,Cafés,Chennai,9036,1581300,66515.86,1514784.14,740952,88603.67,6536,3751,679,22,0.6451,True,Simulated assumption; not Red Bull private data
+2024-05-01,Sports/events,Mumbai,8974,1435840,18956.25,1416883.75,699972,63363.24,6820,2294,2161,22,0.6634,True,Simulated assumption; not Red Bull private data
+2024-05-01,Sports/events,Delhi NCR,7382,1181120,52428.34,1128691.66,575796,70334.26,5437,1943,1537,20,0.6854,True,Simulated assumption; not Red Bull private data
+2024-05-01,Sports/events,Bengaluru,8904,1424640,51853.58,1372786.42,694512,101757.8,6781,2405,2185,20,0.6995,True,Simulated assumption; not Red Bull private data
+2024-05-01,Sports/events,Hyderabad,6498,1039680,66745.05,972934.95,506844,66194.86,5042,1876,1464,20,0.6628,True,Simulated assumption; not Red Bull private data
+2024-05-01,Sports/events,Pune,7023,1123680,44681.19,1078998.81,547794,95934.1,5049,1870,1531,20,0.6866,True,Simulated assumption; not Red Bull private data
+2024-05-01,Sports/events,Chennai,5906,944960,21948.39,923011.61,460668,55800.94,4119,1495,1189,20,0.5941,True,Simulated assumption; not Red Bull private data
+2024-06-01,Grocery,Mumbai,29392,3674000,252833.89,3421166.11,1998656,146184.16,22004,8791,3538,69,0.6873,True,Simulated assumption; not Red Bull private data
+2024-06-01,Grocery,Delhi NCR,28924,3615500,571771.42,3043728.58,1966832,176229.53,20839,8652,3205,68,0.6701,True,Simulated assumption; not Red Bull private data
+2024-06-01,Grocery,Bengaluru,28494,3561750,486818.32,3074931.68,1937592,172237.98,21105,9417,3222,73,0.6619,True,Simulated assumption; not Red Bull private data
+2024-06-01,Grocery,Hyderabad,23317,2914625,229252.8,2685372.2,1585556,152315.02,17235,6912,2409,49,0.6358,True,Simulated assumption; not Red Bull private data
+2024-06-01,Grocery,Pune,23099,2887375,296640.63,2590734.37,1570732,139827.74,15505,6468,2306,64,0.6436,True,Simulated assumption; not Red Bull private data
+2024-06-01,Grocery,Chennai,22712,2839000,256171.66,2582828.34,1544416,116664.1,17139,7227,2613,57,0.6598,True,Simulated assumption; not Red Bull private data
+2024-06-01,Convenience,Mumbai,34808,5047160,514565.35,4532594.65,2506176,164071.22,25588,12017,3322,78,0.6532,True,Simulated assumption; not Red Bull private data
+2024-06-01,Convenience,Delhi NCR,34102,4944790,351869.43,4592920.57,2455344,202105.81,23746,11682,2904,77,0.6644,True,Simulated assumption; not Red Bull private data
+2024-06-01,Convenience,Bengaluru,39704,5757080,651290.79,5105789.21,2858688,203247.61,29559,13141,3834,109,0.6833,True,Simulated assumption; not Red Bull private data
+2024-06-01,Convenience,Hyderabad,31860,4619700,377419.46,4242280.54,2293920,162880.19,21397,9665,2810,71,0.7128,True,Simulated assumption; not Red Bull private data
+2024-06-01,Convenience,Pune,26435,3833075,276443.82,3556631.18,1903320,187817.43,17173,8175,2211,60,0.707,True,Simulated assumption; not Red Bull private data
+2024-06-01,Convenience,Chennai,27974,4056230,446035.2,3610194.8,2014128,160167.49,20923,10238,2762,71,0.6509,True,Simulated assumption; not Red Bull private data
+2024-06-01,E-commerce,Mumbai,19871,2742198,603883.79,2138314.21,1390970,146484.58,13476,6518,2609,27,0.701,True,Simulated assumption; not Red Bull private data
+2024-06-01,E-commerce,Delhi NCR,20112,2775456,488269.0,2287187.0,1407840,135672.11,14488,6792,2503,29,0.6899,True,Simulated assumption; not Red Bull private data
+2024-06-01,E-commerce,Bengaluru,20862,2878956,376635.23,2502320.77,1460340,160719.78,14950,7115,2606,28,0.6993,True,Simulated assumption; not Red Bull private data
+2024-06-01,E-commerce,Hyderabad,17094,2358972,448742.6,1910229.4,1196580,144837.54,12501,6071,2121,22,0.6641,True,Simulated assumption; not Red Bull private data
+2024-06-01,E-commerce,Pune,16630,2294940,323387.24,1971552.76,1164100,111959.65,11326,5667,2016,24,0.6797,True,Simulated assumption; not Red Bull private data
+2024-06-01,E-commerce,Chennai,14641,2020458,270054.45,1750403.55,1024870,77228.53,11086,5113,2029,22,0.6762,True,Simulated assumption; not Red Bull private data
+2024-06-01,Quick commerce,Mumbai,23765,3564750,761983.36,2802766.64,1758610,141728.11,16281,6874,3580,31,0.6686,True,Simulated assumption; not Red Bull private data
+2024-06-01,Quick commerce,Delhi NCR,21989,3298350,545345.7,2753004.3,1627186,151502.77,15639,7289,3358,32,0.686,True,Simulated assumption; not Red Bull private data
+2024-06-01,Quick commerce,Bengaluru,24100,3615000,865590.8,2749409.2,1783400,165824.04,18455,8865,3600,33,0.714,True,Simulated assumption; not Red Bull private data
+2024-06-01,Quick commerce,Hyderabad,20524,3078600,654824.31,2423775.69,1518776,162632.68,14805,6879,3069,29,0.682,True,Simulated assumption; not Red Bull private data
+2024-06-01,Quick commerce,Pune,19992,2998800,548924.98,2449875.02,1479408,116547.27,13605,6329,2748,29,0.6812,True,Simulated assumption; not Red Bull private data
+2024-06-01,Quick commerce,Chennai,19739,2960850,648563.44,2312286.56,1460686,160165.31,15115,6382,3426,29,0.7069,True,Simulated assumption; not Red Bull private data
+2024-06-01,Cafés,Mumbai,11435,2001125,39028.15,1962096.85,937670,124789.61,8235,4574,954,23,0.7043,True,Simulated assumption; not Red Bull private data
+2024-06-01,Cafés,Delhi NCR,11425,1999375,100382.72,1898992.28,936850,124221.92,8399,4229,953,23,0.6813,True,Simulated assumption; not Red Bull private data
+2024-06-01,Cafés,Bengaluru,13209,2311575,108692.06,2202882.94,1083138,109379.04,9255,4999,1082,32,0.6704,True,Simulated assumption; not Red Bull private data
+2024-06-01,Cafés,Hyderabad,8995,1574125,69401.34,1504723.66,737590,116630.14,6026,3401,667,25,0.6525,True,Simulated assumption; not Red Bull private data
+2024-06-01,Cafés,Pune,10346,1810550,85880.63,1724669.37,848372,135110.85,7248,4017,797,25,0.6625,True,Simulated assumption; not Red Bull private data
+2024-06-01,Cafés,Chennai,8197,1434475,68520.55,1365954.45,672154,118861.96,6014,3281,608,21,0.6891,True,Simulated assumption; not Red Bull private data
+2024-06-01,Sports/events,Mumbai,8101,1296160,15359.01,1280800.99,631878,71861.48,5797,2047,1784,20,0.696,True,Simulated assumption; not Red Bull private data
+2024-06-01,Sports/events,Delhi NCR,8042,1286720,21285.04,1265434.96,627276,83136.88,6211,2194,1659,20,0.6667,True,Simulated assumption; not Red Bull private data
+2024-06-01,Sports/events,Bengaluru,8714,1394240,0.0,1394240.0,679692,110508.55,7120,2407,2085,20,0.6677,True,Simulated assumption; not Red Bull private data
+2024-06-01,Sports/events,Hyderabad,5894,943040,31625.31,911414.69,459732,83409.97,4733,1676,1390,20,0.6759,True,Simulated assumption; not Red Bull private data
+2024-06-01,Sports/events,Pune,5656,904960,14005.16,890954.84,441168,85366.07,4201,1458,1226,20,0.6668,True,Simulated assumption; not Red Bull private data
+2024-06-01,Sports/events,Chennai,5717,914720,41306.27,873413.73,445926,54065.87,4027,1416,1280,20,0.6824,True,Simulated assumption; not Red Bull private data
+2024-07-01,Grocery,Mumbai,26179,3272375,250293.31,3022081.69,1780172,158979.38,19349,8100,2897,61,0.656,True,Simulated assumption; not Red Bull private data
+2024-07-01,Grocery,Delhi NCR,27309,3413625,297283.15,3116341.85,1857012,142804.73,20001,8159,3016,62,0.7289,True,Simulated assumption; not Red Bull private data
+2024-07-01,Grocery,Bengaluru,25912,3239000,364920.57,2874079.43,1762016,152778.47,18530,7625,2823,59,0.7143,True,Simulated assumption; not Red Bull private data
+2024-07-01,Grocery,Hyderabad,21395,2674375,215654.24,2458720.76,1454860,112583.52,15432,6730,2387,57,0.7487,True,Simulated assumption; not Red Bull private data
+2024-07-01,Grocery,Pune,21268,2658500,197345.97,2461154.03,1446224,138003.36,15207,6246,2160,46,0.6884,True,Simulated assumption; not Red Bull private data
+2024-07-01,Grocery,Chennai,21159,2644875,184035.8,2460839.2,1438812,121176.61,17370,7180,2614,45,0.7347,True,Simulated assumption; not Red Bull private data
+2024-07-01,Convenience,Mumbai,37416,5425320,585866.84,4839453.16,2693952,196245.17,27541,12700,3842,94,0.6944,True,Simulated assumption; not Red Bull private data
+2024-07-01,Convenience,Delhi NCR,33580,4869100,92954.08,4776145.92,2417760,179672.86,25700,12814,3075,81,0.7174,True,Simulated assumption; not Red Bull private data
+2024-07-01,Convenience,Bengaluru,38113,5526385,212995.78,5313389.22,2744136,193078.73,27485,12337,3514,88,0.6883,True,Simulated assumption; not Red Bull private data
+2024-07-01,Convenience,Hyderabad,29504,4278080,281982.0,3996098.0,2124288,174852.85,21916,10407,2790,70,0.644,True,Simulated assumption; not Red Bull private data
+2024-07-01,Convenience,Pune,28925,4194125,385548.62,3808576.38,2082600,181614.2,21924,9804,2568,70,0.6918,True,Simulated assumption; not Red Bull private data
+2024-07-01,Convenience,Chennai,26909,3901805,328744.33,3573060.67,1937448,189442.1,20374,9945,2614,53,0.7112,True,Simulated assumption; not Red Bull private data
+2024-07-01,E-commerce,Mumbai,21407,2954166,592437.95,2361728.05,1498490,154754.61,15988,8234,3102,28,0.6863,True,Simulated assumption; not Red Bull private data
+2024-07-01,E-commerce,Delhi NCR,19999,2759862,520735.73,2239126.27,1399930,116620.29,14785,7542,2673,29,0.6855,True,Simulated assumption; not Red Bull private data
+2024-07-01,E-commerce,Bengaluru,20352,2808576,581254.39,2227321.61,1424640,118310.64,14807,7631,2465,26,0.6411,True,Simulated assumption; not Red Bull private data
+2024-07-01,E-commerce,Hyderabad,15938,2199444,375703.26,1823740.74,1115660,82872.09,11897,5814,2166,22,0.7088,True,Simulated assumption; not Red Bull private data
+2024-07-01,E-commerce,Pune,15626,2156388,392199.97,1764188.03,1093820,81747.08,11838,6000,1982,23,0.6649,True,Simulated assumption; not Red Bull private data
+2024-07-01,E-commerce,Chennai,16379,2260302,464068.99,1796233.01,1146530,140861.88,11986,5949,2230,22,0.6979,True,Simulated assumption; not Red Bull private data
+2024-07-01,Quick commerce,Mumbai,23794,3569100,791620.52,2777479.48,1760756,163111.49,16598,7350,3166,35,0.7372,True,Simulated assumption; not Red Bull private data
+2024-07-01,Quick commerce,Delhi NCR,21559,3233850,762002.5,2471847.5,1595366,110169.53,16692,7555,3523,25,0.6987,True,Simulated assumption; not Red Bull private data
+2024-07-01,Quick commerce,Bengaluru,25709,3856350,668733.54,3187616.46,1902466,176721.07,19243,9169,3882,33,0.6381,True,Simulated assumption; not Red Bull private data
+2024-07-01,Quick commerce,Hyderabad,19523,2928450,566185.53,2362264.47,1444702,129609.93,14561,6592,2893,26,0.7188,True,Simulated assumption; not Red Bull private data
+2024-07-01,Quick commerce,Pune,19154,2873100,617927.45,2255172.55,1417396,158477.84,13380,6161,2830,26,0.7029,True,Simulated assumption; not Red Bull private data
+2024-07-01,Quick commerce,Chennai,18931,2839650,512526.05,2327123.95,1400894,102958.97,12250,5869,2180,25,0.7176,True,Simulated assumption; not Red Bull private data
+2024-07-01,Cafés,Mumbai,10751,1881425,79147.47,1802277.53,881582,77586.69,8066,4137,937,25,0.6622,True,Simulated assumption; not Red Bull private data
+2024-07-01,Cafés,Delhi NCR,10645,1862875,65986.99,1796888.01,872890,96134.19,7896,4081,851,23,0.7243,True,Simulated assumption; not Red Bull private data
+2024-07-01,Cafés,Bengaluru,13180,2306500,37474.91,2269025.09,1080760,107598.97,9057,4863,956,28,0.6944,True,Simulated assumption; not Red Bull private data
+2024-07-01,Cafés,Hyderabad,8453,1479275,28553.13,1450721.87,693146,72037.01,5652,3026,593,20,0.742,True,Simulated assumption; not Red Bull private data
+2024-07-01,Cafés,Pune,9312,1629600,83778.21,1545821.79,763584,88205.08,6535,3621,682,23,0.6619,True,Simulated assumption; not Red Bull private data
+2024-07-01,Cafés,Chennai,8487,1485225,63628.3,1421596.7,695934,120202.55,5960,3246,647,20,0.7041,True,Simulated assumption; not Red Bull private data
+2024-07-01,Sports/events,Mumbai,8038,1286080,46247.06,1239832.94,626964,86226.3,6189,2209,1767,20,0.7344,True,Simulated assumption; not Red Bull private data
+2024-07-01,Sports/events,Delhi NCR,8118,1298880,0.0,1298880.0,633204,64535.35,6110,2320,1815,20,0.678,True,Simulated assumption; not Red Bull private data
+2024-07-01,Sports/events,Bengaluru,8250,1320000,40624.56,1279375.44,643500,96941.0,6085,2205,1696,20,0.658,True,Simulated assumption; not Red Bull private data
+2024-07-01,Sports/events,Hyderabad,6834,1093440,43484.06,1049955.94,533052,54157.79,5296,1912,1565,20,0.6897,True,Simulated assumption; not Red Bull private data
+2024-07-01,Sports/events,Pune,7119,1139040,19055.52,1119984.48,555282,56407.89,5171,1889,1518,20,0.7201,True,Simulated assumption; not Red Bull private data
+2024-07-01,Sports/events,Chennai,5688,910080,25159.29,884920.71,443664,102751.8,4351,1497,1373,20,0.6917,True,Simulated assumption; not Red Bull private data
+2024-08-01,Grocery,Mumbai,26200,3275000,457699.16,2817300.84,1781600,141977.34,18825,8067,2891,62,0.6843,True,Simulated assumption; not Red Bull private data
+2024-08-01,Grocery,Delhi NCR,24949,3118625,321992.56,2796632.44,1696532,160891.47,17328,7421,2261,60,0.692,True,Simulated assumption; not Red Bull private data
+2024-08-01,Grocery,Bengaluru,26170,3271250,434115.04,2837134.96,1779560,128697.1,19007,8014,2956,60,0.7289,True,Simulated assumption; not Red Bull private data
+2024-08-01,Grocery,Hyderabad,21680,2710000,203676.97,2506323.03,1474240,117340.15,16422,7359,2369,45,0.6791,True,Simulated assumption; not Red Bull private data
+2024-08-01,Grocery,Pune,20966,2620750,305346.37,2315403.63,1425688,150832.98,14778,6373,2080,54,0.7754,True,Simulated assumption; not Red Bull private data
+2024-08-01,Grocery,Chennai,20104,2513000,274322.29,2238677.71,1367072,150419.11,13762,5658,1951,42,0.7471,True,Simulated assumption; not Red Bull private data
+2024-08-01,Convenience,Mumbai,36345,5270025,457551.81,4812473.19,2616840,194596.99,26345,13072,3419,90,0.6991,True,Simulated assumption; not Red Bull private data
+2024-08-01,Convenience,Delhi NCR,31674,4592730,328133.0,4264597.0,2280528,157895.23,22877,11002,2782,75,0.7053,True,Simulated assumption; not Red Bull private data
+2024-08-01,Convenience,Bengaluru,35017,5077465,132520.82,4944944.18,2521224,158973.31,25955,11955,3400,90,0.7234,True,Simulated assumption; not Red Bull private data
+2024-08-01,Convenience,Hyderabad,28492,4131340,320665.75,3810674.25,2051424,151066.83,21186,10238,2840,68,0.7245,True,Simulated assumption; not Red Bull private data
+2024-08-01,Convenience,Pune,29180,4231100,348493.76,3882606.24,2100960,153307.69,20613,9268,2886,70,0.6611,True,Simulated assumption; not Red Bull private data
+2024-08-01,Convenience,Chennai,27835,4036075,250860.27,3785214.73,2004120,177926.91,19901,10020,2451,62,0.7093,True,Simulated assumption; not Red Bull private data
+2024-08-01,E-commerce,Mumbai,20701,2856738,513531.15,2343206.85,1449070,127456.85,15174,7716,2695,29,0.7067,True,Simulated assumption; not Red Bull private data
+2024-08-01,E-commerce,Delhi NCR,20257,2795466,490261.71,2305204.29,1417990,118087.44,14758,7170,2665,28,0.7088,True,Simulated assumption; not Red Bull private data
+2024-08-01,E-commerce,Bengaluru,20269,2797122,629808.75,2167313.25,1418830,123134.33,15371,7711,3090,28,0.7121,True,Simulated assumption; not Red Bull private data
+2024-08-01,E-commerce,Hyderabad,16232,2240016,336069.28,1903946.72,1136240,116816.28,12204,6170,2335,23,0.6957,True,Simulated assumption; not Red Bull private data
+2024-08-01,E-commerce,Pune,16176,2232288,530390.8,1701897.2,1132320,128568.02,11437,5529,2155,22,0.7072,True,Simulated assumption; not Red Bull private data
+2024-08-01,E-commerce,Chennai,15721,2169498,365370.11,1804127.89,1100470,88451.53,10941,5513,2028,23,0.6838,True,Simulated assumption; not Red Bull private data
+2024-08-01,Quick commerce,Mumbai,23132,3469800,752728.42,2717071.58,1711768,123715.9,16306,7842,3532,34,0.7352,True,Simulated assumption; not Red Bull private data
+2024-08-01,Quick commerce,Delhi NCR,21071,3160650,854375.0,2306275.0,1559254,166063.75,15056,6719,2991,29,0.6736,True,Simulated assumption; not Red Bull private data
+2024-08-01,Quick commerce,Bengaluru,25051,3757650,783004.3,2974645.7,1853774,166903.42,18725,8795,3858,41,0.7099,True,Simulated assumption; not Red Bull private data
+2024-08-01,Quick commerce,Hyderabad,18720,2808000,430853.57,2377146.43,1385280,145848.15,13723,6285,2814,31,0.7177,True,Simulated assumption; not Red Bull private data
+2024-08-01,Quick commerce,Pune,17980,2697000,588357.18,2108642.82,1330520,117793.36,13191,6104,2513,25,0.7044,True,Simulated assumption; not Red Bull private data
+2024-08-01,Quick commerce,Chennai,17280,2592000,504458.33,2087541.67,1278720,126112.21,12569,5800,2719,26,0.6966,True,Simulated assumption; not Red Bull private data
+2024-08-01,Cafés,Mumbai,11558,2022650,78066.39,1944583.61,947756,80058.17,8185,4626,944,30,0.7485,True,Simulated assumption; not Red Bull private data
+2024-08-01,Cafés,Delhi NCR,10891,1905925,54013.15,1851911.85,893062,121983.45,7818,4202,796,26,0.6848,True,Simulated assumption; not Red Bull private data
+2024-08-01,Cafés,Bengaluru,11179,1956325,102022.03,1854302.97,916678,131230.63,8132,4496,920,31,0.7109,True,Simulated assumption; not Red Bull private data
+2024-08-01,Cafés,Hyderabad,8721,1526175,94816.74,1431358.26,715122,85932.9,6683,3556,696,20,0.7017,True,Simulated assumption; not Red Bull private data
+2024-08-01,Cafés,Pune,8719,1525825,41864.58,1483960.42,714958,126708.63,6081,3181,700,21,0.6885,True,Simulated assumption; not Red Bull private data
+2024-08-01,Cafés,Chennai,8118,1420650,14839.86,1405810.14,665676,60974.95,6123,3245,670,20,0.6445,True,Simulated assumption; not Red Bull private data
+2024-08-01,Sports/events,Mumbai,7332,1173120,65512.48,1107607.52,571896,88766.5,5525,2064,1646,20,0.6844,True,Simulated assumption; not Red Bull private data
+2024-08-01,Sports/events,Delhi NCR,7481,1196960,40044.45,1156915.55,583518,78165.39,5759,2117,1652,20,0.6926,True,Simulated assumption; not Red Bull private data
+2024-08-01,Sports/events,Bengaluru,7635,1221600,49363.88,1172236.12,595530,82176.61,5904,2134,1449,20,0.7512,True,Simulated assumption; not Red Bull private data
+2024-08-01,Sports/events,Hyderabad,5738,918080,14998.26,903081.74,447564,85821.9,4284,1601,1259,20,0.7131,True,Simulated assumption; not Red Bull private data
+2024-08-01,Sports/events,Pune,6933,1109280,52621.15,1056658.85,540774,90074.31,4846,1771,1485,20,0.6933,True,Simulated assumption; not Red Bull private data
+2024-08-01,Sports/events,Chennai,6181,988960,58470.89,930489.11,482118,106253.32,4474,1582,1277,20,0.6817,True,Simulated assumption; not Red Bull private data
+2024-09-01,Grocery,Mumbai,24859,3107375,96120.78,3011254.22,1690412,131247.39,17984,8064,2699,65,0.7225,True,Simulated assumption; not Red Bull private data
+2024-09-01,Grocery,Delhi NCR,24936,3117000,376097.79,2740902.21,1695648,136144.85,18444,7880,2817,58,0.7261,True,Simulated assumption; not Red Bull private data
+2024-09-01,Grocery,Bengaluru,25986,3248250,506271.13,2741978.87,1767048,138552.02,20142,8797,3023,50,0.7289,True,Simulated assumption; not Red Bull private data
+2024-09-01,Grocery,Hyderabad,22612,2826500,125816.4,2700683.6,1537616,105420.76,17355,7058,2401,54,0.7152,True,Simulated assumption; not Red Bull private data
+2024-09-01,Grocery,Pune,20104,2513000,220418.95,2292581.05,1367072,153519.64,15332,6675,2396,53,0.7112,True,Simulated assumption; not Red Bull private data
+2024-09-01,Grocery,Chennai,18903,2362875,114908.9,2247966.1,1285404,123712.69,13409,5597,1941,50,0.7347,True,Simulated assumption; not Red Bull private data
+2024-09-01,Convenience,Mumbai,36247,5255815,506074.62,4749740.38,2609784,208700.36,26666,12268,3087,87,0.7241,True,Simulated assumption; not Red Bull private data
+2024-09-01,Convenience,Delhi NCR,36718,5324110,586885.24,4737224.76,2643696,206030.57,25731,12198,3425,105,0.753,True,Simulated assumption; not Red Bull private data
+2024-09-01,Convenience,Bengaluru,35526,5151270,556259.53,4595010.47,2557872,161621.31,26749,12344,3435,83,0.7558,True,Simulated assumption; not Red Bull private data
+2024-09-01,Convenience,Hyderabad,24928,3614560,257112.93,3357447.07,1794816,121755.37,17686,8501,2289,58,0.7358,True,Simulated assumption; not Red Bull private data
+2024-09-01,Convenience,Pune,26755,3879475,161690.23,3717784.77,1926360,168690.7,19049,8628,2559,69,0.7149,True,Simulated assumption; not Red Bull private data
+2024-09-01,Convenience,Chennai,27307,3959515,122661.26,3836853.74,1966104,138237.83,20178,9384,2471,62,0.7114,True,Simulated assumption; not Red Bull private data
+2024-09-01,E-commerce,Mumbai,20642,2848596,438384.09,2410211.91,1444940,140964.17,15600,7876,2710,27,0.6748,True,Simulated assumption; not Red Bull private data
+2024-09-01,E-commerce,Delhi NCR,18904,2608752,462449.11,2146302.89,1323280,148718.24,13453,6514,2612,23,0.68,True,Simulated assumption; not Red Bull private data
+2024-09-01,E-commerce,Bengaluru,22254,3071052,607298.2,2463753.8,1557780,142084.61,15775,8057,2509,27,0.709,True,Simulated assumption; not Red Bull private data
+2024-09-01,E-commerce,Hyderabad,16030,2212140,461778.17,1750361.83,1122100,90842.94,12186,6542,2130,22,0.7616,True,Simulated assumption; not Red Bull private data
+2024-09-01,E-commerce,Pune,16598,2290524,302223.23,1988300.77,1161860,136912.13,12120,6008,2077,21,0.7229,True,Simulated assumption; not Red Bull private data
+2024-09-01,E-commerce,Chennai,14889,2054682,400433.86,1654248.14,1042230,135078.3,11075,5349,2067,22,0.7811,True,Simulated assumption; not Red Bull private data
+2024-09-01,Quick commerce,Mumbai,23511,3526650,672170.3,2854479.7,1739814,177186.22,17788,8029,3660,35,0.6953,True,Simulated assumption; not Red Bull private data
+2024-09-01,Quick commerce,Delhi NCR,23372,3505800,665178.75,2840621.25,1729528,144948.48,16708,7190,3172,30,0.6832,True,Simulated assumption; not Red Bull private data
+2024-09-01,Quick commerce,Bengaluru,23347,3502050,686873.63,2815176.37,1727678,150364.71,16574,7506,3710,35,0.7164,True,Simulated assumption; not Red Bull private data
+2024-09-01,Quick commerce,Hyderabad,19340,2901000,546764.07,2354235.93,1431160,158759.04,14499,6457,3050,23,0.7213,True,Simulated assumption; not Red Bull private data
+2024-09-01,Quick commerce,Pune,18658,2798700,613065.68,2185634.32,1380692,158673.87,13187,6112,2764,26,0.7131,True,Simulated assumption; not Red Bull private data
+2024-09-01,Quick commerce,Chennai,18933,2839950,575594.32,2264355.68,1401042,119753.2,13869,6561,2810,28,0.697,True,Simulated assumption; not Red Bull private data
+2024-09-01,Cafés,Mumbai,12437,2176475,168168.6,2008306.4,1019834,122481.91,8177,4411,954,30,0.7222,True,Simulated assumption; not Red Bull private data
+2024-09-01,Cafés,Delhi NCR,10978,1921150,144502.58,1776647.42,900196,114241.88,8203,4751,918,28,0.7083,True,Simulated assumption; not Red Bull private data
+2024-09-01,Cafés,Bengaluru,12563,2198525,76868.08,2121656.92,1030166,123212.48,9345,5162,997,29,0.7519,True,Simulated assumption; not Red Bull private data
+2024-09-01,Cafés,Hyderabad,8251,1443925,92239.38,1351685.62,676582,107101.41,6370,3477,637,22,0.7331,True,Simulated assumption; not Red Bull private data
+2024-09-01,Cafés,Pune,8535,1493625,72066.93,1421558.07,699870,84672.94,6017,3442,679,20,0.7196,True,Simulated assumption; not Red Bull private data
+2024-09-01,Cafés,Chennai,8795,1539125,70223.81,1468901.19,721190,123433.91,5927,3329,672,21,0.7262,True,Simulated assumption; not Red Bull private data
+2024-09-01,Sports/events,Mumbai,8086,1293760,28445.24,1265314.76,630708,106581.5,5916,2106,1888,20,0.7285,True,Simulated assumption; not Red Bull private data
+2024-09-01,Sports/events,Delhi NCR,7429,1188640,0.0,1188640.0,579462,107967.86,5081,1854,1445,20,0.737,True,Simulated assumption; not Red Bull private data
+2024-09-01,Sports/events,Bengaluru,8685,1389600,91540.11,1298059.89,677430,119084.07,6493,2446,2041,22,0.6925,True,Simulated assumption; not Red Bull private data
+2024-09-01,Sports/events,Hyderabad,6520,1043200,36547.07,1006652.93,508560,73669.81,4957,1926,1483,20,0.7206,True,Simulated assumption; not Red Bull private data
+2024-09-01,Sports/events,Pune,6217,994720,28020.81,966699.19,484926,77979.12,4460,1676,1382,20,0.7402,True,Simulated assumption; not Red Bull private data
+2024-09-01,Sports/events,Chennai,5921,947360,26361.24,920998.76,461838,105012.15,4594,1658,1426,20,0.7316,True,Simulated assumption; not Red Bull private data
+2024-10-01,Grocery,Mumbai,32230,4028750,318949.83,3709800.17,2191640,155335.06,24464,9696,3518,84,0.7352,True,Simulated assumption; not Red Bull private data
+2024-10-01,Grocery,Delhi NCR,29367,3670875,191456.35,3479418.65,1996956,133012.33,22896,9586,3469,76,0.7056,True,Simulated assumption; not Red Bull private data
+2024-10-01,Grocery,Bengaluru,29516,3689500,277372.29,3412127.71,2007088,123838.82,20623,8155,3220,66,0.7182,True,Simulated assumption; not Red Bull private data
+2024-10-01,Grocery,Hyderabad,22781,2847625,152575.01,2695049.99,1549108,129994.16,17438,7126,2832,51,0.7109,True,Simulated assumption; not Red Bull private data
+2024-10-01,Grocery,Pune,22899,2862375,396249.85,2466125.15,1557132,136476.33,16794,7387,2703,50,0.7269,True,Simulated assumption; not Red Bull private data
+2024-10-01,Grocery,Chennai,20435,2554375,261194.86,2293180.14,1389580,115321.53,15084,6588,2399,47,0.7227,True,Simulated assumption; not Red Bull private data
+2024-10-01,Convenience,Mumbai,38523,5585835,539632.48,5046202.52,2773656,202845.69,28020,12993,3468,102,0.7241,True,Simulated assumption; not Red Bull private data
+2024-10-01,Convenience,Delhi NCR,37298,5408210,654441.29,4753768.71,2685456,205760.15,29830,13788,3509,97,0.7073,True,Simulated assumption; not Red Bull private data
+2024-10-01,Convenience,Bengaluru,39897,5785065,459810.51,5325254.49,2872584,173734.75,28014,13362,3723,87,0.7105,True,Simulated assumption; not Red Bull private data
+2024-10-01,Convenience,Hyderabad,30127,4368415,311535.39,4056879.61,2169144,187554.2,22095,10457,2833,71,0.7116,True,Simulated assumption; not Red Bull private data
+2024-10-01,Convenience,Pune,33745,4893025,475976.66,4417048.34,2429640,168147.78,25109,11951,3323,90,0.7407,True,Simulated assumption; not Red Bull private data
+2024-10-01,Convenience,Chennai,30599,4436855,158238.82,4278616.18,2203128,148679.8,22137,10996,2778,64,0.7315,True,Simulated assumption; not Red Bull private data
+2024-10-01,E-commerce,Mumbai,22584,3116592,392965.11,2723626.89,1580880,119754.59,15170,7245,2589,32,0.7189,True,Simulated assumption; not Red Bull private data
+2024-10-01,E-commerce,Delhi NCR,23227,3205326,657022.63,2548303.37,1625890,150809.68,16990,8611,2926,35,0.7002,True,Simulated assumption; not Red Bull private data
+2024-10-01,E-commerce,Bengaluru,25250,3484500,665136.78,2819363.22,1767500,143262.37,18234,9244,2812,36,0.7252,True,Simulated assumption; not Red Bull private data
+2024-10-01,E-commerce,Hyderabad,19530,2695140,454762.55,2240377.45,1367100,143256.32,13555,6743,2448,28,0.732,True,Simulated assumption; not Red Bull private data
+2024-10-01,E-commerce,Pune,16908,2333304,457290.78,1876013.22,1183560,126225.1,12931,6072,2348,23,0.7187,True,Simulated assumption; not Red Bull private data
+2024-10-01,E-commerce,Chennai,17005,2346690,345854.73,2000835.27,1190350,139672.87,11741,5630,1975,27,0.7164,True,Simulated assumption; not Red Bull private data
+2024-10-01,Quick commerce,Mumbai,27207,4081050,813594.14,3267455.86,2013318,173651.82,19744,9863,4434,36,0.7442,True,Simulated assumption; not Red Bull private data
+2024-10-01,Quick commerce,Delhi NCR,24208,3631200,650754.36,2980445.64,1791392,139576.43,18557,8848,3805,34,0.7467,True,Simulated assumption; not Red Bull private data
+2024-10-01,Quick commerce,Bengaluru,28193,4228950,887180.43,3341769.57,2086282,169395.21,20748,9904,4096,42,0.7363,True,Simulated assumption; not Red Bull private data
+2024-10-01,Quick commerce,Hyderabad,23951,3592650,785905.5,2806744.5,1772374,178789.05,16411,7408,3599,32,0.7106,True,Simulated assumption; not Red Bull private data
+2024-10-01,Quick commerce,Pune,23969,3595350,555360.2,3039989.8,1773706,146763.89,18100,8608,3910,33,0.7239,True,Simulated assumption; not Red Bull private data
+2024-10-01,Quick commerce,Chennai,23892,3583800,678452.37,2905347.63,1768008,119852.23,17178,8030,3425,38,0.7115,True,Simulated assumption; not Red Bull private data
+2024-10-01,Cafés,Mumbai,13305,2328375,145586.62,2182788.38,1091010,88520.21,9625,5295,1055,30,0.7168,True,Simulated assumption; not Red Bull private data
+2024-10-01,Cafés,Delhi NCR,12047,2108225,183393.99,1924831.01,987854,140051.61,8503,4856,966,29,0.7216,True,Simulated assumption; not Red Bull private data
+2024-10-01,Cafés,Bengaluru,12557,2197475,141372.49,2056102.51,1029674,107997.65,9401,5328,983,27,0.7307,True,Simulated assumption; not Red Bull private data
+2024-10-01,Cafés,Hyderabad,9236,1616300,150563.69,1465736.31,757352,67739.22,6290,3382,679,21,0.7147,True,Simulated assumption; not Red Bull private data
+2024-10-01,Cafés,Pune,9584,1677200,84162.19,1593037.81,785888,73705.62,7122,4020,816,20,0.7355,True,Simulated assumption; not Red Bull private data
+2024-10-01,Cafés,Chennai,8892,1556100,104102.27,1451997.73,729144,72945.59,6378,3734,769,20,0.7903,True,Simulated assumption; not Red Bull private data
+2024-10-01,Sports/events,Mumbai,9313,1490080,10608.41,1479471.59,726414,75616.3,6673,2443,1924,23,0.7338,True,Simulated assumption; not Red Bull private data
+2024-10-01,Sports/events,Delhi NCR,8556,1368960,82012.32,1286947.68,667368,102042.53,6665,2448,2003,20,0.7019,True,Simulated assumption; not Red Bull private data
+2024-10-01,Sports/events,Bengaluru,8840,1414400,22357.35,1392042.65,689520,104349.6,6854,2454,2129,23,0.7341,True,Simulated assumption; not Red Bull private data
+2024-10-01,Sports/events,Hyderabad,7888,1262080,11930.07,1250149.93,615264,57153.75,5916,2104,1639,20,0.7438,True,Simulated assumption; not Red Bull private data
+2024-10-01,Sports/events,Pune,8111,1297760,13516.14,1284243.86,632658,102897.58,5748,2106,1794,20,0.7423,True,Simulated assumption; not Red Bull private data
+2024-10-01,Sports/events,Chennai,6380,1020800,0.0,1020800.0,497640,56102.6,4400,1590,1132,20,0.7146,True,Simulated assumption; not Red Bull private data
+2024-11-01,Grocery,Mumbai,31856,3982000,315445.5,3666554.5,2166208,154017.87,24350,10496,3860,75,0.7476,True,Simulated assumption; not Red Bull private data
+2024-11-01,Grocery,Delhi NCR,30297,3787125,427141.66,3359983.34,2060196,181633.14,22062,9000,3379,71,0.7234,True,Simulated assumption; not Red Bull private data
+2024-11-01,Grocery,Bengaluru,30140,3767500,314374.82,3453125.18,2049520,159904.72,22313,9088,3482,68,0.7048,True,Simulated assumption; not Red Bull private data
+2024-11-01,Grocery,Hyderabad,24853,3106625,389976.37,2716648.63,1690004,147154.8,18371,8024,2758,53,0.7536,True,Simulated assumption; not Red Bull private data
+2024-11-01,Grocery,Pune,27039,3379875,297007.38,3082867.62,1838652,168434.96,18170,7726,2990,72,0.7858,True,Simulated assumption; not Red Bull private data
+2024-11-01,Grocery,Chennai,24555,3069375,228686.84,2840688.16,1669740,139102.59,18284,7337,2654,55,0.7625,True,Simulated assumption; not Red Bull private data
+2024-11-01,Convenience,Mumbai,43903,6365935,636707.95,5729227.05,3161016,219024.24,31646,14793,4292,114,0.7664,True,Simulated assumption; not Red Bull private data
+2024-11-01,Convenience,Delhi NCR,35417,5135465,313877.13,4821587.87,2550024,204322.83,27321,12929,3418,95,0.7716,True,Simulated assumption; not Red Bull private data
+2024-11-01,Convenience,Bengaluru,44066,6389570,515071.02,5874498.98,3172752,246241.36,32457,16451,4308,111,0.7692,True,Simulated assumption; not Red Bull private data
+2024-11-01,Convenience,Hyderabad,36997,5364565,272295.13,5092269.87,2663784,176607.03,26650,11665,3095,80,0.7533,True,Simulated assumption; not Red Bull private data
+2024-11-01,Convenience,Pune,34322,4976690,412293.83,4564396.17,2471184,208223.93,23780,11403,3138,76,0.7407,True,Simulated assumption; not Red Bull private data
+2024-11-01,Convenience,Chennai,34948,5067460,202704.82,4864755.18,2516256,199326.16,27582,13224,3769,82,0.7392,True,Simulated assumption; not Red Bull private data
+2024-11-01,E-commerce,Mumbai,25225,3481050,540952.62,2940097.38,1765750,143573.51,17769,8845,3100,42,0.7378,True,Simulated assumption; not Red Bull private data
+2024-11-01,E-commerce,Delhi NCR,23906,3299028,688278.86,2610749.14,1673420,160217.1,16467,8104,2995,38,0.7455,True,Simulated assumption; not Red Bull private data
+2024-11-01,E-commerce,Bengaluru,26870,3708060,758643.15,2949416.85,1880900,135746.4,19495,10562,3423,36,0.7097,True,Simulated assumption; not Red Bull private data
+2024-11-01,E-commerce,Hyderabad,21513,2968794,677703.28,2291090.72,1505910,101638.99,16427,8411,3247,26,0.7334,True,Simulated assumption; not Red Bull private data
+2024-11-01,E-commerce,Pune,17553,2422314,383784.08,2038529.92,1228710,126840.0,12627,6476,2541,24,0.7295,True,Simulated assumption; not Red Bull private data
+2024-11-01,E-commerce,Chennai,19816,2734608,472995.86,2261612.14,1387120,108573.61,14047,7283,2576,23,0.7094,True,Simulated assumption; not Red Bull private data
+2024-11-01,Quick commerce,Mumbai,31384,4707600,1118200.45,3589399.55,2322416,150007.29,22835,10508,4971,39,0.719,True,Simulated assumption; not Red Bull private data
+2024-11-01,Quick commerce,Delhi NCR,29446,4416900,913520.46,3503379.54,2179004,181886.11,20511,9552,4542,43,0.7435,True,Simulated assumption; not Red Bull private data
+2024-11-01,Quick commerce,Bengaluru,30342,4551300,899350.12,3651949.88,2245308,184225.17,23348,10695,4684,41,0.745,True,Simulated assumption; not Red Bull private data
+2024-11-01,Quick commerce,Hyderabad,25895,3884250,740579.46,3143670.54,1916230,146174.54,19645,9486,4330,34,0.7174,True,Simulated assumption; not Red Bull private data
+2024-11-01,Quick commerce,Pune,23527,3529050,699124.97,2829925.03,1740998,176726.54,16931,7658,3436,32,0.7695,True,Simulated assumption; not Red Bull private data
+2024-11-01,Quick commerce,Chennai,26160,3924000,804345.25,3119654.75,1935840,129065.96,18942,8714,4028,38,0.7919,True,Simulated assumption; not Red Bull private data
+2024-11-01,Cafés,Mumbai,14272,2497600,72098.19,2425501.81,1170304,129655.28,9639,5444,1127,31,0.7398,True,Simulated assumption; not Red Bull private data
+2024-11-01,Cafés,Delhi NCR,12231,2140425,14696.47,2125728.53,1002942,86700.23,8650,4572,962,27,0.7282,True,Simulated assumption; not Red Bull private data
+2024-11-01,Cafés,Bengaluru,13213,2312275,158351.88,2153923.12,1083466,146694.69,9581,5448,1119,29,0.7634,True,Simulated assumption; not Red Bull private data
+2024-11-01,Cafés,Hyderabad,12319,2155825,65529.41,2090295.59,1010158,118749.93,9350,5024,1132,30,0.7146,True,Simulated assumption; not Red Bull private data
+2024-11-01,Cafés,Pune,11168,1954400,72203.43,1882196.57,915776,98192.76,8026,4421,916,26,0.7077,True,Simulated assumption; not Red Bull private data
+2024-11-01,Cafés,Chennai,10353,1811775,53765.6,1758009.4,848946,76011.61,7943,4487,886,26,0.7233,True,Simulated assumption; not Red Bull private data
+2024-11-01,Sports/events,Mumbai,9202,1472320,38529.47,1433790.53,717756,107652.95,6958,2521,2087,22,0.7461,True,Simulated assumption; not Red Bull private data
+2024-11-01,Sports/events,Delhi NCR,9272,1483520,65149.4,1418370.6,723216,122617.4,6718,2449,2013,20,0.7413,True,Simulated assumption; not Red Bull private data
+2024-11-01,Sports/events,Bengaluru,9694,1551040,22350.39,1528689.61,756132,70186.21,7600,2838,2263,26,0.7353,True,Simulated assumption; not Red Bull private data
+2024-11-01,Sports/events,Hyderabad,7818,1250880,132335.67,1118544.33,609804,75343.61,5741,2093,1734,20,0.7844,True,Simulated assumption; not Red Bull private data
+2024-11-01,Sports/events,Pune,7686,1229760,44245.21,1185514.79,599508,100147.17,5831,2089,1639,20,0.8068,True,Simulated assumption; not Red Bull private data
+2024-11-01,Sports/events,Chennai,6649,1063840,24907.76,1038932.24,518622,62501.14,4951,1816,1475,20,0.7239,True,Simulated assumption; not Red Bull private data
+2024-12-01,Grocery,Mumbai,27473,3434125,372640.38,3061484.62,1868164,172909.68,19531,7861,3085,69,0.7764,True,Simulated assumption; not Red Bull private data
+2024-12-01,Grocery,Delhi NCR,29022,3627750,366340.45,3261409.55,1973496,181200.7,22157,9363,3427,71,0.7273,True,Simulated assumption; not Red Bull private data
+2024-12-01,Grocery,Bengaluru,28724,3590500,224582.2,3365917.8,1953232,153262.24,21783,8710,3107,64,0.7431,True,Simulated assumption; not Red Bull private data
+2024-12-01,Grocery,Hyderabad,21855,2731875,180163.68,2551711.32,1486140,106953.29,16184,6516,2413,56,0.7195,True,Simulated assumption; not Red Bull private data
+2024-12-01,Grocery,Pune,23957,2994625,284006.81,2710618.19,1629076,147530.7,17274,7550,2551,62,0.7627,True,Simulated assumption; not Red Bull private data
+2024-12-01,Grocery,Chennai,22219,2777375,253932.3,2523442.7,1510892,114077.39,17067,7030,2565,52,0.7696,True,Simulated assumption; not Red Bull private data
+2024-12-01,Convenience,Mumbai,42444,6154380,334616.84,5819763.16,3055968,204497.32,29349,14683,4241,109,0.7877,True,Simulated assumption; not Red Bull private data
+2024-12-01,Convenience,Delhi NCR,35218,5106610,419427.76,4687182.24,2535696,186803.27,25968,12206,3221,83,0.7674,True,Simulated assumption; not Red Bull private data
+2024-12-01,Convenience,Bengaluru,40604,5887580,257175.74,5630404.26,2923488,213343.31,28363,14028,3597,100,0.7794,True,Simulated assumption; not Red Bull private data
+2024-12-01,Convenience,Hyderabad,34669,5027005,495321.08,4531683.92,2496168,201855.09,26433,12309,3480,84,0.7641,True,Simulated assumption; not Red Bull private data
+2024-12-01,Convenience,Pune,30117,4366965,386144.15,3980820.85,2168424,176120.49,22750,10991,3127,71,0.7169,True,Simulated assumption; not Red Bull private data
+2024-12-01,Convenience,Chennai,29533,4282285,446013.87,3836271.13,2126376,136594.48,20998,10659,2610,68,0.7547,True,Simulated assumption; not Red Bull private data
+2024-12-01,E-commerce,Mumbai,23904,3298752,470716.87,2828035.13,1673280,131934.08,17043,8639,2646,34,0.7442,True,Simulated assumption; not Red Bull private data
+2024-12-01,E-commerce,Delhi NCR,23986,3310068,494979.49,2815088.51,1679020,160411.1,17320,8545,2818,31,0.776,True,Simulated assumption; not Red Bull private data
+2024-12-01,E-commerce,Bengaluru,23291,3214158,376863.99,2837294.01,1630370,144014.98,18120,9303,3170,36,0.7335,True,Simulated assumption; not Red Bull private data
+2024-12-01,E-commerce,Hyderabad,17844,2462472,480742.24,1981729.76,1249080,108539.82,12766,6153,2272,26,0.7396,True,Simulated assumption; not Red Bull private data
+2024-12-01,E-commerce,Pune,17855,2463990,453001.7,2010988.3,1249850,143800.49,13215,6593,2326,25,0.7658,True,Simulated assumption; not Red Bull private data
+2024-12-01,E-commerce,Chennai,18518,2555484,566154.65,1989329.35,1296260,108796.99,15131,7702,2789,27,0.7268,True,Simulated assumption; not Red Bull private data
+2024-12-01,Quick commerce,Mumbai,28184,4227600,798604.04,3428995.96,2085616,161948.69,20503,9477,4539,43,0.748,True,Simulated assumption; not Red Bull private data
+2024-12-01,Quick commerce,Delhi NCR,29701,4455150,816406.78,3638743.22,2197874,144167.39,20360,9262,4310,45,0.7748,True,Simulated assumption; not Red Bull private data
+2024-12-01,Quick commerce,Bengaluru,30993,4648950,962786.62,3686163.38,2293482,200942.34,22093,10069,4643,44,0.7049,True,Simulated assumption; not Red Bull private data
+2024-12-01,Quick commerce,Hyderabad,23887,3583050,681004.93,2902045.07,1767638,150082.36,17326,8106,3442,29,0.7433,True,Simulated assumption; not Red Bull private data
+2024-12-01,Quick commerce,Pune,24893,3733950,818119.12,2915830.88,1842082,176206.01,17165,7831,3650,36,0.7655,True,Simulated assumption; not Red Bull private data
+2024-12-01,Quick commerce,Chennai,21821,3273150,579589.03,2693560.97,1614754,169111.42,16514,7382,3408,24,0.7365,True,Simulated assumption; not Red Bull private data
+2024-12-01,Cafés,Mumbai,11933,2088275,77035.69,2011239.31,978506,98829.79,8581,4346,954,26,0.7641,True,Simulated assumption; not Red Bull private data
+2024-12-01,Cafés,Delhi NCR,12211,2136925,38365.75,2098559.25,1001302,100666.28,8907,4920,967,25,0.7151,True,Simulated assumption; not Red Bull private data
+2024-12-01,Cafés,Bengaluru,13088,2290400,81086.63,2209313.37,1073216,85251.29,9668,5265,1012,30,0.7576,True,Simulated assumption; not Red Bull private data
+2024-12-01,Cafés,Hyderabad,11457,2004975,116533.39,1888441.61,939474,127373.93,8233,4595,904,26,0.7133,True,Simulated assumption; not Red Bull private data
+2024-12-01,Cafés,Pune,9346,1635550,60890.11,1574659.89,766372,129257.97,6521,3455,738,23,0.7294,True,Simulated assumption; not Red Bull private data
+2024-12-01,Cafés,Chennai,8512,1489600,64789.09,1424810.91,697984,121877.58,6232,3526,661,21,0.7141,True,Simulated assumption; not Red Bull private data
+2024-12-01,Sports/events,Mumbai,9345,1495200,0.0,1495200.0,728910,111112.41,6871,2618,2041,22,0.6971,True,Simulated assumption; not Red Bull private data
+2024-12-01,Sports/events,Delhi NCR,8735,1397600,0.0,1397600.0,681330,113003.21,6230,2247,1817,22,0.7554,True,Simulated assumption; not Red Bull private data
+2024-12-01,Sports/events,Bengaluru,9320,1491200,90530.54,1400669.46,726960,104909.69,7251,2520,2398,22,0.7615,True,Simulated assumption; not Red Bull private data
+2024-12-01,Sports/events,Hyderabad,8151,1304160,56245.03,1247914.97,635778,104053.92,5692,2149,1622,20,0.72,True,Simulated assumption; not Red Bull private data
+2024-12-01,Sports/events,Pune,6814,1090240,47049.36,1043190.64,531492,102404.9,5027,1931,1602,20,0.7536,True,Simulated assumption; not Red Bull private data
+2024-12-01,Sports/events,Chennai,7156,1144960,23659.37,1121300.63,558168,63822.82,5250,1954,1481,20,0.7125,True,Simulated assumption; not Red Bull private data
+2025-01-01,Grocery,Mumbai,26398,3299750,388066.3,2911683.7,1795064,161473.09,20621,8404,3129,58,0.7583,True,Simulated assumption; not Red Bull private data
+2025-01-01,Grocery,Delhi NCR,23129,2891125,344926.5,2546198.5,1572772,113928.19,16171,6463,2485,64,0.7981,True,Simulated assumption; not Red Bull private data
+2025-01-01,Grocery,Bengaluru,26635,3329375,175126.36,3154248.64,1811180,145621.14,18441,7663,2917,66,0.7313,True,Simulated assumption; not Red Bull private data
+2025-01-01,Grocery,Hyderabad,17289,2161125,249109.75,1912015.25,1175652,113944.97,13340,5606,1951,44,0.7884,True,Simulated assumption; not Red Bull private data
+2025-01-01,Grocery,Pune,19642,2455250,325936.87,2129313.13,1335656,119515.23,14920,6324,2248,45,0.7337,True,Simulated assumption; not Red Bull private data
+2025-01-01,Grocery,Chennai,17611,2201375,167562.53,2033812.47,1197548,106419.71,13746,5764,2165,45,0.7582,True,Simulated assumption; not Red Bull private data
+2025-01-01,Convenience,Mumbai,32901,4770645,452578.0,4318067.0,2368872,194250.24,24626,11327,3227,88,0.7595,True,Simulated assumption; not Red Bull private data
+2025-01-01,Convenience,Delhi NCR,33122,4802690,437971.11,4364718.89,2384784,169373.69,24670,11263,3106,85,0.7729,True,Simulated assumption; not Red Bull private data
+2025-01-01,Convenience,Bengaluru,35387,5131115,371431.43,4759683.57,2547864,164502.76,25842,12689,3237,84,0.7562,True,Simulated assumption; not Red Bull private data
+2025-01-01,Convenience,Hyderabad,26006,3770870,152192.0,3618678.0,1872432,135254.28,19274,8822,2312,61,0.803,True,Simulated assumption; not Red Bull private data
+2025-01-01,Convenience,Pune,28085,4072325,306772.5,3765552.5,2022120,139450.02,20886,9556,2842,65,0.7856,True,Simulated assumption; not Red Bull private data
+2025-01-01,Convenience,Chennai,25254,3661830,218412.6,3443417.4,1818288,154716.35,18320,8918,2349,57,0.8041,True,Simulated assumption; not Red Bull private data
+2025-01-01,E-commerce,Mumbai,18810,2595780,509353.87,2086426.13,1316700,118509.3,13273,6361,2512,23,0.7872,True,Simulated assumption; not Red Bull private data
+2025-01-01,E-commerce,Delhi NCR,18710,2581980,422623.5,2159356.5,1309700,93318.23,13923,6760,2596,26,0.7326,True,Simulated assumption; not Red Bull private data
+2025-01-01,E-commerce,Bengaluru,21877,3019026,500413.03,2518612.97,1531390,158423.31,16367,7842,3018,33,0.7821,True,Simulated assumption; not Red Bull private data
+2025-01-01,E-commerce,Hyderabad,16448,2269824,430412.78,1839411.22,1151360,110301.59,11940,5842,1945,24,0.7687,True,Simulated assumption; not Red Bull private data
+2025-01-01,E-commerce,Pune,14290,1972020,362732.17,1609287.83,1000300,102880.28,11246,5638,2018,20,0.8148,True,Simulated assumption; not Red Bull private data
+2025-01-01,E-commerce,Chennai,14888,2054544,296694.25,1757849.75,1042160,100311.24,10590,5285,2034,24,0.7752,True,Simulated assumption; not Red Bull private data
+2025-01-01,Quick commerce,Mumbai,27781,4167150,794196.83,3372953.17,2055794,142938.27,19887,8579,4467,42,0.8244,True,Simulated assumption; not Red Bull private data
+2025-01-01,Quick commerce,Delhi NCR,25448,3817200,630837.79,3186362.21,1883152,147881.17,19244,8341,4337,38,0.763,True,Simulated assumption; not Red Bull private data
+2025-01-01,Quick commerce,Bengaluru,24239,3635850,785808.32,2850041.68,1793686,120890.08,17428,7497,3817,37,0.7465,True,Simulated assumption; not Red Bull private data
+2025-01-01,Quick commerce,Hyderabad,19775,2966250,619071.43,2347178.57,1463350,144380.9,14123,6295,3121,28,0.8146,True,Simulated assumption; not Red Bull private data
+2025-01-01,Quick commerce,Pune,18218,2732700,549703.78,2182996.22,1348132,149048.15,13683,6454,3044,24,0.7608,True,Simulated assumption; not Red Bull private data
+2025-01-01,Quick commerce,Chennai,17023,2553450,499745.29,2053704.71,1259702,118448.83,13137,6093,2573,21,0.8056,True,Simulated assumption; not Red Bull private data
+2025-01-01,Cafés,Mumbai,10095,1766625,84342.25,1682282.75,827790,128816.77,6845,3952,738,26,0.7653,True,Simulated assumption; not Red Bull private data
+2025-01-01,Cafés,Delhi NCR,10236,1791300,153583.02,1637716.98,839352,99536.46,7589,4265,849,23,0.8119,True,Simulated assumption; not Red Bull private data
+2025-01-01,Cafés,Bengaluru,10844,1897700,51857.64,1845842.36,889208,129877.14,7941,4301,887,25,0.7245,True,Simulated assumption; not Red Bull private data
+2025-01-01,Cafés,Hyderabad,8078,1413650,71020.09,1342629.91,662396,83274.61,5853,3274,660,20,0.7157,True,Simulated assumption; not Red Bull private data
+2025-01-01,Cafés,Pune,9117,1595475,25487.04,1569987.96,747594,81292.37,6731,3613,743,20,0.778,True,Simulated assumption; not Red Bull private data
+2025-01-01,Cafés,Chennai,7657,1339975,71580.6,1268394.4,627874,121563.28,5577,2937,626,22,0.7978,True,Simulated assumption; not Red Bull private data
+2025-01-01,Sports/events,Mumbai,7456,1192960,57212.81,1135747.19,581568,117819.24,5269,1982,1467,20,0.7599,True,Simulated assumption; not Red Bull private data
+2025-01-01,Sports/events,Delhi NCR,6736,1077760,3717.03,1074042.97,525408,60293.08,4847,1699,1350,20,0.7582,True,Simulated assumption; not Red Bull private data
+2025-01-01,Sports/events,Bengaluru,8014,1282240,32742.9,1249497.1,625092,99805.02,5914,2164,1772,20,0.766,True,Simulated assumption; not Red Bull private data
+2025-01-01,Sports/events,Hyderabad,5862,937920,9806.18,928113.82,457236,60125.92,4452,1628,1309,20,0.7814,True,Simulated assumption; not Red Bull private data
+2025-01-01,Sports/events,Pune,6181,988960,52788.43,936171.57,482118,59094.43,4868,1766,1456,20,0.7702,True,Simulated assumption; not Red Bull private data
+2025-01-01,Sports/events,Chennai,5835,933600,10835.55,922764.45,455130,103105.34,4289,1547,1216,20,0.8026,True,Simulated assumption; not Red Bull private data
+2025-02-01,Grocery,Mumbai,23984,2998000,249360.82,2748639.18,1630912,123027.41,17163,6777,2655,69,0.7668,True,Simulated assumption; not Red Bull private data
+2025-02-01,Grocery,Delhi NCR,24922,3115250,181715.81,2933534.19,1694696,132917.88,19348,8045,2810,58,0.7949,True,Simulated assumption; not Red Bull private data
+2025-02-01,Grocery,Bengaluru,24809,3101125,292481.0,2808644.0,1687012,144015.83,18203,7304,2784,50,0.7649,True,Simulated assumption; not Red Bull private data
+2025-02-01,Grocery,Hyderabad,20566,2570750,305879.74,2264870.26,1398488,114892.02,15138,6618,2375,50,0.7992,True,Simulated assumption; not Red Bull private data
+2025-02-01,Grocery,Pune,18881,2360125,280289.83,2079835.17,1283908,116188.72,14168,6064,2241,41,0.7533,True,Simulated assumption; not Red Bull private data
+2025-02-01,Grocery,Chennai,18397,2299625,256402.45,2043222.55,1250996,124361.38,13780,5412,1969,48,0.8216,True,Simulated assumption; not Red Bull private data
+2025-02-01,Convenience,Mumbai,33940,4921300,244138.76,4677161.24,2443680,150175.42,26538,12518,3367,90,0.7666,True,Simulated assumption; not Red Bull private data
+2025-02-01,Convenience,Delhi NCR,30624,4440480,435411.46,4005068.54,2204928,202210.55,22907,10356,2820,77,0.7748,True,Simulated assumption; not Red Bull private data
+2025-02-01,Convenience,Bengaluru,34326,4977270,358474.71,4618795.29,2471472,185643.72,25357,12590,2863,76,0.78,True,Simulated assumption; not Red Bull private data
+2025-02-01,Convenience,Hyderabad,29023,4208335,326265.57,3882069.43,2089656,141903.47,20926,9859,2686,75,0.7577,True,Simulated assumption; not Red Bull private data
+2025-02-01,Convenience,Pune,27433,3977785,311977.01,3665807.99,1975176,180000.54,19783,9814,2730,64,0.7707,True,Simulated assumption; not Red Bull private data
+2025-02-01,Convenience,Chennai,25560,3706200,266007.53,3440192.47,1840320,155062.1,18829,9112,2310,56,0.8296,True,Simulated assumption; not Red Bull private data
+2025-02-01,E-commerce,Mumbai,19635,2709630,448591.05,2261038.95,1374450,131031.08,14440,7366,2581,27,0.7718,True,Simulated assumption; not Red Bull private data
+2025-02-01,E-commerce,Delhi NCR,19681,2715978,367829.1,2348148.9,1377670,97175.81,15372,7709,2444,27,0.8445,True,Simulated assumption; not Red Bull private data
+2025-02-01,E-commerce,Bengaluru,20294,2800572,536755.27,2263816.73,1420580,108849.01,14321,6821,2532,29,0.7292,True,Simulated assumption; not Red Bull private data
+2025-02-01,E-commerce,Hyderabad,16856,2326128,328614.47,1997513.53,1179920,104010.81,12452,5961,2321,21,0.8171,True,Simulated assumption; not Red Bull private data
+2025-02-01,E-commerce,Pune,15146,2090148,265670.44,1824477.56,1060220,140278.07,11748,5938,2174,21,0.7503,True,Simulated assumption; not Red Bull private data
+2025-02-01,E-commerce,Chennai,14356,1981128,312516.09,1668611.91,1004920,81801.25,10608,5095,1939,20,0.7834,True,Simulated assumption; not Red Bull private data
+2025-02-01,Quick commerce,Mumbai,27714,4157100,780632.44,3376467.56,2050836,136566.71,21306,9541,4486,36,0.7657,True,Simulated assumption; not Red Bull private data
+2025-02-01,Quick commerce,Delhi NCR,23815,3572250,691042.45,2881207.55,1762310,154318.92,16460,6951,3274,35,0.736,True,Simulated assumption; not Red Bull private data
+2025-02-01,Quick commerce,Bengaluru,29267,4390050,727856.81,3662193.19,2165758,201481.55,21716,10213,4711,36,0.7702,True,Simulated assumption; not Red Bull private data
+2025-02-01,Quick commerce,Hyderabad,23973,3595950,573713.39,3022236.61,1774002,139510.3,16826,7458,3269,37,0.8366,True,Simulated assumption; not Red Bull private data
+2025-02-01,Quick commerce,Pune,18743,2811450,528851.38,2282598.62,1386982,129287.49,13597,6185,2762,27,0.7859,True,Simulated assumption; not Red Bull private data
+2025-02-01,Quick commerce,Chennai,18957,2843550,591677.58,2251872.42,1402818,134431.14,14257,6561,3126,28,0.7405,True,Simulated assumption; not Red Bull private data
+2025-02-01,Cafés,Mumbai,10379,1816325,25690.91,1790634.09,851078,91119.42,7706,4290,894,25,0.7812,True,Simulated assumption; not Red Bull private data
+2025-02-01,Cafés,Delhi NCR,10712,1874600,149955.34,1724644.66,878384,106151.73,8177,4515,885,23,0.7936,True,Simulated assumption; not Red Bull private data
+2025-02-01,Cafés,Bengaluru,11184,1957200,158388.88,1798811.12,917088,128466.36,7425,4075,815,25,0.8356,True,Simulated assumption; not Red Bull private data
+2025-02-01,Cafés,Hyderabad,8695,1521625,73563.24,1448061.76,712990,80881.81,6514,3331,689,22,0.7603,True,Simulated assumption; not Red Bull private data
+2025-02-01,Cafés,Pune,9121,1596175,46733.0,1549442.0,747922,120551.53,6709,3631,729,20,0.7511,True,Simulated assumption; not Red Bull private data
+2025-02-01,Cafés,Chennai,7845,1372875,32797.42,1340077.58,643290,97721.33,5300,2937,589,21,0.7593,True,Simulated assumption; not Red Bull private data
+2025-02-01,Sports/events,Mumbai,7930,1268800,47456.31,1221343.69,618540,99195.16,6094,2253,1796,20,0.7671,True,Simulated assumption; not Red Bull private data
+2025-02-01,Sports/events,Delhi NCR,7184,1149440,0.0,1149440.0,560352,83031.07,5120,1871,1573,20,0.7831,True,Simulated assumption; not Red Bull private data
+2025-02-01,Sports/events,Bengaluru,7939,1270240,5267.97,1264972.03,619242,96914.4,6067,2132,1848,20,0.7598,True,Simulated assumption; not Red Bull private data
+2025-02-01,Sports/events,Hyderabad,6493,1038880,0.0,1038880.0,506454,71980.47,4898,1901,1521,20,0.768,True,Simulated assumption; not Red Bull private data
+2025-02-01,Sports/events,Pune,5843,934880,39024.15,895855.85,455754,68584.65,4423,1606,1326,20,0.7803,True,Simulated assumption; not Red Bull private data
+2025-02-01,Sports/events,Chennai,6332,1013120,27530.51,985589.49,493896,104380.26,4664,1679,1365,20,0.7421,True,Simulated assumption; not Red Bull private data
+2025-03-01,Grocery,Mumbai,25716,3214500,197492.08,3017007.92,1748688,138343.5,18489,7937,2749,62,0.7574,True,Simulated assumption; not Red Bull private data
+2025-03-01,Grocery,Delhi NCR,26912,3364000,297575.89,3066424.11,1830016,142307.22,19285,8145,3210,63,0.7707,True,Simulated assumption; not Red Bull private data
+2025-03-01,Grocery,Bengaluru,28143,3517875,336505.64,3181369.36,1913724,116509.28,20743,8271,2961,66,0.7839,True,Simulated assumption; not Red Bull private data
+2025-03-01,Grocery,Hyderabad,21991,2748875,235977.91,2512897.09,1495388,120267.5,16806,7034,2571,50,0.8023,True,Simulated assumption; not Red Bull private data
+2025-03-01,Grocery,Pune,22253,2781625,304291.02,2477333.98,1513204,127227.47,16809,7035,2552,57,0.7717,True,Simulated assumption; not Red Bull private data
+2025-03-01,Grocery,Chennai,20479,2559875,215771.37,2344103.63,1392572,108732.99,14615,6122,2181,40,0.7825,True,Simulated assumption; not Red Bull private data
+2025-03-01,Convenience,Mumbai,37762,5475490,416504.39,5058985.61,2718864,194813.98,26223,12223,2963,86,0.7781,True,Simulated assumption; not Red Bull private data
+2025-03-01,Convenience,Delhi NCR,38975,5651375,380058.19,5271316.81,2806200,233270.85,28537,13520,3900,92,0.7675,True,Simulated assumption; not Red Bull private data
+2025-03-01,Convenience,Bengaluru,38501,5582645,207081.42,5375563.58,2772072,218812.33,30662,14749,3833,82,0.8018,True,Simulated assumption; not Red Bull private data
+2025-03-01,Convenience,Hyderabad,32242,4675090,167763.73,4507326.27,2321424,197676.71,23945,11405,3200,77,0.7685,True,Simulated assumption; not Red Bull private data
+2025-03-01,Convenience,Pune,29355,4256475,537423.84,3719051.16,2113560,186816.22,19354,9704,2700,70,0.802,True,Simulated assumption; not Red Bull private data
+2025-03-01,Convenience,Chennai,27563,3996635,375535.33,3621099.67,1984536,140597.75,19468,9145,2673,70,0.7703,True,Simulated assumption; not Red Bull private data
+2025-03-01,E-commerce,Mumbai,21974,3032412,459897.4,2572514.6,1538180,107594.06,15341,7766,2864,31,0.8133,True,Simulated assumption; not Red Bull private data
+2025-03-01,E-commerce,Delhi NCR,21711,2996118,486546.33,2509571.67,1519770,158731.78,16432,7995,3009,30,0.7617,True,Simulated assumption; not Red Bull private data
+2025-03-01,E-commerce,Bengaluru,25392,3504096,542337.42,2961758.58,1777440,165332.72,17721,8955,3166,46,0.7951,True,Simulated assumption; not Red Bull private data
+2025-03-01,E-commerce,Hyderabad,20176,2784288,446834.73,2337453.27,1412320,127524.19,14728,7878,2635,24,0.7781,True,Simulated assumption; not Red Bull private data
+2025-03-01,E-commerce,Pune,18271,2521398,520323.13,2001074.87,1278970,111596.83,12923,6334,2368,28,0.8143,True,Simulated assumption; not Red Bull private data
+2025-03-01,E-commerce,Chennai,15836,2185368,396426.42,1788941.58,1108520,143233.73,11762,5604,2093,23,0.7596,True,Simulated assumption; not Red Bull private data
+2025-03-01,Quick commerce,Mumbai,28650,4297500,749455.82,3548044.18,2120100,162847.1,21880,10278,4611,38,0.7612,True,Simulated assumption; not Red Bull private data
+2025-03-01,Quick commerce,Delhi NCR,28397,4259550,797507.34,3462042.66,2101378,160546.42,19056,8524,4242,40,0.7526,True,Simulated assumption; not Red Bull private data
+2025-03-01,Quick commerce,Bengaluru,29780,4467000,1156486.33,3310513.67,2203720,196039.99,22165,10064,4485,49,0.8131,True,Simulated assumption; not Red Bull private data
+2025-03-01,Quick commerce,Hyderabad,24406,3660900,807405.75,2853494.25,1806044,123233.95,18793,8389,4002,30,0.737,True,Simulated assumption; not Red Bull private data
+2025-03-01,Quick commerce,Pune,21621,3243150,674436.65,2568713.35,1599954,138580.3,16182,7996,3634,30,0.7882,True,Simulated assumption; not Red Bull private data
+2025-03-01,Quick commerce,Chennai,22932,3439800,764298.3,2675501.7,1696968,173793.1,16822,7819,3630,32,0.785,True,Simulated assumption; not Red Bull private data
+2025-03-01,Cafés,Mumbai,12704,2223200,187851.08,2035348.92,1041728,133113.87,9785,5308,1163,31,0.8698,True,Simulated assumption; not Red Bull private data
+2025-03-01,Cafés,Delhi NCR,11051,1933925,39041.98,1894883.02,906182,109523.65,8091,4753,860,28,0.8171,True,Simulated assumption; not Red Bull private data
+2025-03-01,Cafés,Bengaluru,11685,2044875,138266.67,1906608.33,958170,107990.98,8835,4961,981,28,0.786,True,Simulated assumption; not Red Bull private data
+2025-03-01,Cafés,Hyderabad,9801,1715175,113235.22,1601939.78,803682,76849.74,6746,3600,703,21,0.7936,True,Simulated assumption; not Red Bull private data
+2025-03-01,Cafés,Pune,9470,1657250,81745.69,1575504.31,776540,121208.33,6653,3846,722,21,0.8001,True,Simulated assumption; not Red Bull private data
+2025-03-01,Cafés,Chennai,8545,1495375,6111.96,1489263.04,700690,82847.25,5730,3274,677,20,0.7953,True,Simulated assumption; not Red Bull private data
+2025-03-01,Sports/events,Mumbai,8405,1344800,77967.71,1266832.29,655590,90138.14,6103,2160,1699,20,0.8169,True,Simulated assumption; not Red Bull private data
+2025-03-01,Sports/events,Delhi NCR,7736,1237760,31435.61,1206324.39,603408,94615.34,5864,2247,1734,20,0.8072,True,Simulated assumption; not Red Bull private data
+2025-03-01,Sports/events,Bengaluru,8748,1399680,33609.86,1366070.14,682344,74929.83,6896,2261,2079,20,0.7777,True,Simulated assumption; not Red Bull private data
+2025-03-01,Sports/events,Hyderabad,6807,1089120,78751.96,1010368.04,530946,65882.27,5053,1845,1432,20,0.7664,True,Simulated assumption; not Red Bull private data
+2025-03-01,Sports/events,Pune,6805,1088800,67541.91,1021258.09,530790,62954.51,5025,1767,1579,20,0.7769,True,Simulated assumption; not Red Bull private data
+2025-03-01,Sports/events,Chennai,6212,993920,57054.55,936865.45,484536,110053.35,4637,1669,1362,20,0.7964,True,Simulated assumption; not Red Bull private data
+2025-04-01,Grocery,Mumbai,29185,3648125,147926.55,3500198.45,1984580,134178.75,21576,9139,3231,69,0.8153,True,Simulated assumption; not Red Bull private data
+2025-04-01,Grocery,Delhi NCR,26206,3275750,283181.97,2992568.03,1782008,123717.12,18786,7917,2607,62,0.7767,True,Simulated assumption; not Red Bull private data
+2025-04-01,Grocery,Bengaluru,31402,3925250,349104.58,3576145.42,2135336,184162.65,23701,9337,3881,67,0.8382,True,Simulated assumption; not Red Bull private data
+2025-04-01,Grocery,Hyderabad,24299,3037375,381307.79,2656067.21,1652332,122688.1,18041,7452,2710,56,0.749,True,Simulated assumption; not Red Bull private data
+2025-04-01,Grocery,Pune,22426,2803250,358941.04,2444308.96,1524968,128870.39,16179,6880,2318,43,0.8102,True,Simulated assumption; not Red Bull private data
+2025-04-01,Grocery,Chennai,21267,2658375,300336.76,2358038.24,1446156,115002.92,15751,6276,2241,47,0.8211,True,Simulated assumption; not Red Bull private data
+2025-04-01,Convenience,Mumbai,39564,5736780,406936.92,5329843.08,2848608,234486.56,29285,14223,3736,89,0.7453,True,Simulated assumption; not Red Bull private data
+2025-04-01,Convenience,Delhi NCR,40079,5811455,605661.2,5205793.8,2885688,192243.82,29094,14324,3488,90,0.7716,True,Simulated assumption; not Red Bull private data
+2025-04-01,Convenience,Bengaluru,44035,6385075,793586.49,5591488.51,3170520,252169.46,30196,14426,3832,93,0.8486,True,Simulated assumption; not Red Bull private data
+2025-04-01,Convenience,Hyderabad,34190,4957550,435339.81,4522210.19,2461680,159240.59,25677,12160,3290,85,0.7593,True,Simulated assumption; not Red Bull private data
+2025-04-01,Convenience,Pune,32190,4667550,559759.18,4107790.82,2317680,168180.69,22485,10444,2753,78,0.8016,True,Simulated assumption; not Red Bull private data
+2025-04-01,Convenience,Chennai,28725,4165125,284851.67,3880273.33,2068200,161220.52,20926,9880,2627,76,0.7979,True,Simulated assumption; not Red Bull private data
+2025-04-01,E-commerce,Mumbai,23731,3274878,660710.15,2614167.85,1661170,142336.05,17220,8098,3320,33,0.8187,True,Simulated assumption; not Red Bull private data
+2025-04-01,E-commerce,Delhi NCR,23362,3223956,487459.83,2736496.17,1635340,123836.15,17830,9012,3268,37,0.8289,True,Simulated assumption; not Red Bull private data
+2025-04-01,E-commerce,Bengaluru,23342,3221196,609236.28,2611959.72,1633940,151879.64,16294,8354,2957,29,0.7953,True,Simulated assumption; not Red Bull private data
+2025-04-01,E-commerce,Hyderabad,20024,2763312,366545.58,2396766.42,1401680,101900.09,14870,7533,2931,30,0.7894,True,Simulated assumption; not Red Bull private data
+2025-04-01,E-commerce,Pune,17733,2447154,466064.77,1981089.23,1241310,110841.53,13068,6040,2347,23,0.8025,True,Simulated assumption; not Red Bull private data
+2025-04-01,E-commerce,Chennai,18764,2589432,370435.31,2218996.69,1313480,91691.4,14410,7206,2494,26,0.7664,True,Simulated assumption; not Red Bull private data
+2025-04-01,Quick commerce,Mumbai,32157,4823550,1013685.58,3809864.42,2379618,212629.04,22972,10468,4685,46,0.8095,True,Simulated assumption; not Red Bull private data
+2025-04-01,Quick commerce,Delhi NCR,31828,4774200,948469.45,3825730.55,2355272,183239.24,24237,11359,5086,44,0.8607,True,Simulated assumption; not Red Bull private data
+2025-04-01,Quick commerce,Bengaluru,32787,4918050,883157.77,4034892.23,2426238,204621.4,25735,12205,5221,48,0.8064,True,Simulated assumption; not Red Bull private data
+2025-04-01,Quick commerce,Hyderabad,26651,3997650,747897.88,3249752.12,1972174,171204.05,19692,9045,4224,38,0.8015,True,Simulated assumption; not Red Bull private data
+2025-04-01,Quick commerce,Pune,26752,4012800,738253.28,3274546.72,1979648,175387.07,19933,9066,4554,35,0.7816,True,Simulated assumption; not Red Bull private data
+2025-04-01,Quick commerce,Chennai,23775,3566250,626784.66,2939465.34,1759350,157069.03,17084,7266,3630,32,0.7628,True,Simulated assumption; not Red Bull private data
+2025-04-01,Cafés,Mumbai,11747,2055725,158579.11,1897145.89,963254,84465.51,8228,4779,939,25,0.7771,True,Simulated assumption; not Red Bull private data
+2025-04-01,Cafés,Delhi NCR,12029,2105075,137120.65,1967954.35,986378,87527.25,9110,4879,1006,30,0.8202,True,Simulated assumption; not Red Bull private data
+2025-04-01,Cafés,Bengaluru,12901,2257675,103874.91,2153800.09,1057882,89415.98,8905,4952,972,30,0.826,True,Simulated assumption; not Red Bull private data
+2025-04-01,Cafés,Hyderabad,10262,1795850,36486.14,1759363.86,841484,112388.47,7187,4150,826,25,0.8449,True,Simulated assumption; not Red Bull private data
+2025-04-01,Cafés,Pune,9941,1739675,21793.98,1717881.02,815162,99495.16,6902,3836,717,24,0.8264,True,Simulated assumption; not Red Bull private data
+2025-04-01,Cafés,Chennai,8525,1491875,84750.93,1407124.07,699050,117862.76,6282,3457,597,22,0.8034,True,Simulated assumption; not Red Bull private data
+2025-04-01,Sports/events,Mumbai,9725,1556000,14818.0,1541182.0,758550,74162.13,7057,2572,2228,26,0.809,True,Simulated assumption; not Red Bull private data
+2025-04-01,Sports/events,Delhi NCR,9278,1484480,61694.46,1422785.54,723684,84761.59,7102,2491,2092,21,0.8125,True,Simulated assumption; not Red Bull private data
+2025-04-01,Sports/events,Bengaluru,7936,1269760,41841.88,1227918.12,619008,65719.2,6074,2220,1752,21,0.8078,True,Simulated assumption; not Red Bull private data
+2025-04-01,Sports/events,Hyderabad,8009,1281440,52464.5,1228975.5,624702,104844.05,5762,1897,1631,20,0.7912,True,Simulated assumption; not Red Bull private data
+2025-04-01,Sports/events,Pune,7304,1168640,58466.43,1110173.57,569712,85800.36,5386,1970,1601,20,0.7573,True,Simulated assumption; not Red Bull private data
+2025-04-01,Sports/events,Chennai,7238,1158080,21470.56,1136609.44,564564,59771.86,5453,1942,1641,20,0.791,True,Simulated assumption; not Red Bull private data
+2025-05-01,Grocery,Mumbai,33775,4221875,457050.4,3764824.6,2296700,155795.41,25666,10796,3839,84,0.8091,True,Simulated assumption; not Red Bull private data
+2025-05-01,Grocery,Delhi NCR,28803,3600375,377106.92,3223268.08,1958604,121958.4,20287,8391,3057,79,0.8014,True,Simulated assumption; not Red Bull private data
+2025-05-01,Grocery,Bengaluru,31853,3981625,331866.87,3649758.13,2166004,149203.17,20863,8454,3556,79,0.7844,True,Simulated assumption; not Red Bull private data
+2025-05-01,Grocery,Hyderabad,26149,3268625,323437.15,2945187.85,1778132,122442.96,20718,8819,3023,66,0.7945,True,Simulated assumption; not Red Bull private data
+2025-05-01,Grocery,Pune,22507,2813375,208658.35,2604716.65,1530476,153356.86,16014,6448,2439,48,0.7334,True,Simulated assumption; not Red Bull private data
+2025-05-01,Grocery,Chennai,23169,2896125,214030.03,2682094.97,1575492,125972.66,18138,7454,2840,55,0.8109,True,Simulated assumption; not Red Bull private data
+2025-05-01,Convenience,Mumbai,44902,6510790,384888.56,6125901.44,3232944,219318.75,32998,15708,4087,115,0.8227,True,Simulated assumption; not Red Bull private data
+2025-05-01,Convenience,Delhi NCR,43787,6349115,436809.15,5912305.85,3152664,187330.21,30852,14845,3886,96,0.7714,True,Simulated assumption; not Red Bull private data
+2025-05-01,Convenience,Bengaluru,48112,6976240,495555.93,6480684.07,3464064,223189.5,38659,19131,5353,121,0.8583,True,Simulated assumption; not Red Bull private data
+2025-05-01,Convenience,Hyderabad,31792,4609840,278088.37,4331751.63,2289024,186935.58,23723,11447,3126,83,0.8216,True,Simulated assumption; not Red Bull private data
+2025-05-01,Convenience,Pune,33566,4867070,486574.73,4380495.27,2416752,180988.81,26082,12563,3285,75,0.7958,True,Simulated assumption; not Red Bull private data
+2025-05-01,Convenience,Chennai,31402,4553290,283560.8,4269729.2,2260944,188479.12,22742,10689,3120,76,0.8186,True,Simulated assumption; not Red Bull private data
+2025-05-01,E-commerce,Mumbai,27184,3751392,568043.24,3183348.76,1902880,182594.45,20336,10134,3857,38,0.8318,True,Simulated assumption; not Red Bull private data
+2025-05-01,E-commerce,Delhi NCR,23758,3278604,517211.89,2761392.11,1663060,127133.63,17779,9068,3267,32,0.7918,True,Simulated assumption; not Red Bull private data
+2025-05-01,E-commerce,Bengaluru,29008,4003104,735743.32,3267360.68,2030560,186785.42,22032,10675,3850,46,0.8337,True,Simulated assumption; not Red Bull private data
+2025-05-01,E-commerce,Hyderabad,22835,3151230,507504.86,2643725.14,1598450,106694.12,14783,7156,2654,31,0.8182,True,Simulated assumption; not Red Bull private data
+2025-05-01,E-commerce,Pune,21122,2914836,577828.51,2337007.49,1478540,119235.05,15561,7691,2779,29,0.868,True,Simulated assumption; not Red Bull private data
+2025-05-01,E-commerce,Chennai,20086,2771868,315944.15,2455923.85,1406020,104341.91,14151,7298,2650,28,0.8052,True,Simulated assumption; not Red Bull private data
+2025-05-01,Quick commerce,Mumbai,34934,5240100,1033353.37,4206746.63,2585116,216807.98,25400,11787,5534,44,0.7857,True,Simulated assumption; not Red Bull private data
+2025-05-01,Quick commerce,Delhi NCR,35496,5324400,832134.77,4492265.23,2626704,203176.26,26529,11592,6068,48,0.8162,True,Simulated assumption; not Red Bull private data
+2025-05-01,Quick commerce,Bengaluru,34416,5162400,1142746.88,4019653.12,2546784,200861.96,25393,12848,5412,55,0.8421,True,Simulated assumption; not Red Bull private data
+2025-05-01,Quick commerce,Hyderabad,27291,4093650,856392.61,3237257.39,2019534,184589.43,18795,9130,3986,30,0.8035,True,Simulated assumption; not Red Bull private data
+2025-05-01,Quick commerce,Pune,27247,4087050,884227.94,3202822.06,2016278,174302.54,19282,8464,4034,39,0.8033,True,Simulated assumption; not Red Bull private data
+2025-05-01,Quick commerce,Chennai,25120,3768000,869210.83,2898789.17,1858880,132566.82,18452,8025,3619,35,0.8615,True,Simulated assumption; not Red Bull private data
+2025-05-01,Cafés,Mumbai,12698,2222150,143288.11,2078861.89,1041236,89500.78,9420,5163,1095,28,0.8208,True,Simulated assumption; not Red Bull private data
+2025-05-01,Cafés,Delhi NCR,13195,2309125,164304.26,2144820.74,1081990,110477.08,9519,5334,1046,33,0.8005,True,Simulated assumption; not Red Bull private data
+2025-05-01,Cafés,Bengaluru,16110,2819250,47335.55,2771914.45,1321020,142510.04,11346,6225,1252,37,0.8116,True,Simulated assumption; not Red Bull private data
+2025-05-01,Cafés,Hyderabad,11635,2036125,99782.23,1936342.77,954070,100376.6,9016,4933,1020,24,0.8002,True,Simulated assumption; not Red Bull private data
+2025-05-01,Cafés,Pune,11914,2084950,69203.88,2015746.12,976948,112283.2,8847,4755,951,27,0.8441,True,Simulated assumption; not Red Bull private data
+2025-05-01,Cafés,Chennai,9760,1708000,4703.29,1703296.71,800320,83210.72,6728,3595,680,21,0.7616,True,Simulated assumption; not Red Bull private data
+2025-05-01,Sports/events,Mumbai,10959,1753440,7978.65,1745461.35,854802,79233.17,8239,2861,2205,23,0.8109,True,Simulated assumption; not Red Bull private data
+2025-05-01,Sports/events,Delhi NCR,10405,1664800,86077.52,1578722.48,811590,69350.13,7535,2714,2150,24,0.8629,True,Simulated assumption; not Red Bull private data
+2025-05-01,Sports/events,Bengaluru,10510,1681600,0.0,1681600.0,819780,97271.63,7383,2597,2084,24,0.7721,True,Simulated assumption; not Red Bull private data
+2025-05-01,Sports/events,Hyderabad,8754,1400640,62863.74,1337776.26,682812,80513.96,6305,2276,1746,20,0.8658,True,Simulated assumption; not Red Bull private data
+2025-05-01,Sports/events,Pune,7550,1208000,39130.0,1168870.0,588900,101291.97,5329,1837,1464,20,0.8354,True,Simulated assumption; not Red Bull private data
+2025-05-01,Sports/events,Chennai,7932,1269120,56425.02,1212694.98,618696,71384.14,5791,2104,1626,20,0.823,True,Simulated assumption; not Red Bull private data
+2025-06-01,Grocery,Mumbai,31585,3948125,360387.55,3587737.45,2147780,171777.94,23149,10123,3569,66,0.7964,True,Simulated assumption; not Red Bull private data
+2025-06-01,Grocery,Delhi NCR,28668,3583500,283670.23,3299829.77,1949424,149563.68,21677,9504,3301,65,0.7719,True,Simulated assumption; not Red Bull private data
+2025-06-01,Grocery,Bengaluru,32357,4044625,411600.21,3633024.79,2200276,170041.12,25891,11346,4036,71,0.8112,True,Simulated assumption; not Red Bull private data
+2025-06-01,Grocery,Hyderabad,24533,3066625,299391.18,2767233.82,1668244,106654.08,18364,7419,2919,58,0.7808,True,Simulated assumption; not Red Bull private data
+2025-06-01,Grocery,Pune,24891,3111375,307143.83,2804231.17,1692588,120442.9,18121,7831,2743,53,0.7886,True,Simulated assumption; not Red Bull private data
+2025-06-01,Grocery,Chennai,24937,3117125,399191.49,2717933.51,1695716,115473.42,19504,8494,3025,55,0.8673,True,Simulated assumption; not Red Bull private data
+2025-06-01,Convenience,Mumbai,43543,6313735,589750.43,5723984.57,3135096,222515.37,32109,14510,4320,95,0.8333,True,Simulated assumption; not Red Bull private data
+2025-06-01,Convenience,Delhi NCR,42274,6129730,410443.6,5719286.4,3043728,241310.66,30657,15688,4261,103,0.8234,True,Simulated assumption; not Red Bull private data
+2025-06-01,Convenience,Bengaluru,48940,7096300,717471.62,6378828.38,3523680,236472.12,35611,16003,4889,135,0.826,True,Simulated assumption; not Red Bull private data
+2025-06-01,Convenience,Hyderabad,37767,5476215,147171.89,5329043.11,2719224,174578.7,26835,13163,3532,86,0.8078,True,Simulated assumption; not Red Bull private data
+2025-06-01,Convenience,Pune,34167,4954215,411922.67,4542292.33,2460024,212704.28,24607,11951,3170,72,0.8487,True,Simulated assumption; not Red Bull private data
+2025-06-01,Convenience,Chennai,32546,4719170,54410.68,4664759.32,2343312,188311.13,23897,11696,3281,73,0.8387,True,Simulated assumption; not Red Bull private data
+2025-06-01,E-commerce,Mumbai,24674,3405012,595521.14,2809490.86,1727180,166090.6,16911,8579,3103,36,0.8116,True,Simulated assumption; not Red Bull private data
+2025-06-01,E-commerce,Delhi NCR,24012,3313656,631852.29,2681803.71,1680840,158912.0,17069,8332,3138,37,0.8154,True,Simulated assumption; not Red Bull private data
+2025-06-01,E-commerce,Bengaluru,28289,3903882,739852.11,3164029.89,1980230,165558.99,20361,10073,3537,41,0.8299,True,Simulated assumption; not Red Bull private data
+2025-06-01,E-commerce,Hyderabad,20342,2807196,365591.68,2441604.32,1423940,156754.56,14311,7231,2676,26,0.7887,True,Simulated assumption; not Red Bull private data
+2025-06-01,E-commerce,Pune,21815,3010470,637800.56,2372669.44,1527050,104502.95,15272,7499,2585,33,0.8046,True,Simulated assumption; not Red Bull private data
+2025-06-01,E-commerce,Chennai,19979,2757102,544082.0,2213020.0,1398530,149881.87,14282,6485,2555,28,0.8446,True,Simulated assumption; not Red Bull private data
+2025-06-01,Quick commerce,Mumbai,37498,5624700,859692.52,4765007.48,2774852,183742.08,28846,13244,6364,47,0.8418,True,Simulated assumption; not Red Bull private data
+2025-06-01,Quick commerce,Delhi NCR,30900,4635000,837641.51,3797358.49,2286600,205022.27,22642,10114,4844,37,0.7708,True,Simulated assumption; not Red Bull private data
+2025-06-01,Quick commerce,Bengaluru,38320,5748000,1346812.07,4401187.93,2835680,217691.29,28069,13372,6018,55,0.8514,True,Simulated assumption; not Red Bull private data
+2025-06-01,Quick commerce,Hyderabad,29002,4350300,790589.54,3559710.46,2146148,169408.42,21015,9535,4429,41,0.7978,True,Simulated assumption; not Red Bull private data
+2025-06-01,Quick commerce,Pune,26206,3930900,864974.49,3065925.51,1939244,126733.09,18971,8836,3561,40,0.8071,True,Simulated assumption; not Red Bull private data
+2025-06-01,Quick commerce,Chennai,25739,3860850,889922.38,2970927.62,1904686,180464.12,20299,9246,4526,36,0.8344,True,Simulated assumption; not Red Bull private data
+2025-06-01,Cafés,Mumbai,14472,2532600,131059.43,2401540.57,1186704,100453.19,10019,5387,1107,33,0.8418,True,Simulated assumption; not Red Bull private data
+2025-06-01,Cafés,Delhi NCR,12618,2208150,182433.58,2025716.42,1034676,110827.8,8571,5049,957,31,0.7905,True,Simulated assumption; not Red Bull private data
+2025-06-01,Cafés,Bengaluru,14722,2576350,128742.14,2447607.86,1207204,109506.05,11066,6578,1159,32,0.8021,True,Simulated assumption; not Red Bull private data
+2025-06-01,Cafés,Hyderabad,12009,2101575,189467.45,1912107.55,984738,87782.46,8667,4630,995,27,0.8175,True,Simulated assumption; not Red Bull private data
+2025-06-01,Cafés,Pune,10752,1881600,122717.47,1758882.53,881664,119298.33,7752,4382,922,26,0.8441,True,Simulated assumption; not Red Bull private data
+2025-06-01,Cafés,Chennai,9966,1744050,78488.61,1665561.39,817212,89148.8,7231,3779,782,23,0.8112,True,Simulated assumption; not Red Bull private data
+2025-06-01,Sports/events,Mumbai,10461,1673760,112214.54,1561545.46,815958,98857.64,7888,2847,2180,24,0.8243,True,Simulated assumption; not Red Bull private data
+2025-06-01,Sports/events,Delhi NCR,9537,1525920,0.0,1525920.0,743886,90879.27,7234,2646,2036,23,0.8194,True,Simulated assumption; not Red Bull private data
+2025-06-01,Sports/events,Bengaluru,10275,1644000,0.0,1644000.0,801450,87412.26,7152,2584,2238,22,0.8241,True,Simulated assumption; not Red Bull private data
+2025-06-01,Sports/events,Hyderabad,9122,1459520,0.0,1459520.0,711516,86309.9,6820,2571,2043,20,0.8078,True,Simulated assumption; not Red Bull private data
+2025-06-01,Sports/events,Pune,7733,1237280,52427.62,1184852.38,603174,120479.01,5758,1965,1804,20,0.8014,True,Simulated assumption; not Red Bull private data
+2025-06-01,Sports/events,Chennai,6850,1096000,13737.47,1082262.53,534300,74117.93,5319,2064,1598,20,0.8132,True,Simulated assumption; not Red Bull private data
+2025-07-01,Grocery,Mumbai,33826,4228250,321717.41,3906532.59,2300168,150115.59,27076,11926,3707,76,0.8193,True,Simulated assumption; not Red Bull private data
+2025-07-01,Grocery,Delhi NCR,29201,3650125,357726.27,3292398.73,1985668,183518.55,21882,8843,3319,72,0.836,True,Simulated assumption; not Red Bull private data
+2025-07-01,Grocery,Bengaluru,29660,3707500,380962.36,3326537.64,2016880,145870.86,22337,9489,3446,78,0.8594,True,Simulated assumption; not Red Bull private data
+2025-07-01,Grocery,Hyderabad,23349,2918625,297064.56,2621560.44,1587732,102552.97,17080,7236,2500,51,0.8063,True,Simulated assumption; not Red Bull private data
+2025-07-01,Grocery,Pune,23564,2945500,172961.4,2772538.6,1602352,148278.63,16694,6914,2336,57,0.8545,True,Simulated assumption; not Red Bull private data
+2025-07-01,Grocery,Chennai,22240,2780000,239814.82,2540185.18,1512320,114187.56,15944,6513,2534,56,0.851,True,Simulated assumption; not Red Bull private data
+2025-07-01,Convenience,Mumbai,38768,5621360,579793.34,5041566.66,2791296,217906.85,28741,14283,3808,92,0.8291,True,Simulated assumption; not Red Bull private data
+2025-07-01,Convenience,Delhi NCR,41226,5977770,533089.22,5444680.78,2968272,238451.2,28182,13270,4038,93,0.83,True,Simulated assumption; not Red Bull private data
+2025-07-01,Convenience,Bengaluru,45885,6653325,385463.56,6267861.44,3303720,252918.22,33244,16431,4170,116,0.8566,True,Simulated assumption; not Red Bull private data
+2025-07-01,Convenience,Hyderabad,36007,5221015,555379.74,4665635.26,2592504,223818.16,26040,12960,3440,79,0.8336,True,Simulated assumption; not Red Bull private data
+2025-07-01,Convenience,Pune,37391,5421695,627063.35,4794631.65,2692152,218162.12,28149,12917,3748,80,0.7988,True,Simulated assumption; not Red Bull private data
+2025-07-01,Convenience,Chennai,33563,4866635,418428.25,4448206.75,2416536,161990.46,24985,12215,3088,79,0.7983,True,Simulated assumption; not Red Bull private data
+2025-07-01,E-commerce,Mumbai,27937,3855306,462311.99,3392994.01,1955590,150822.3,21026,10920,3667,41,0.8195,True,Simulated assumption; not Red Bull private data
+2025-07-01,E-commerce,Delhi NCR,26060,3596280,445410.17,3150869.83,1824200,126955.35,18619,9953,3095,38,0.8111,True,Simulated assumption; not Red Bull private data
+2025-07-01,E-commerce,Bengaluru,28259,3899742,751505.77,3148236.23,1978130,175295.57,19775,9622,3724,46,0.848,True,Simulated assumption; not Red Bull private data
+2025-07-01,E-commerce,Hyderabad,22461,3099618,457393.52,2642224.48,1572270,127673.51,16402,8620,2843,31,0.8515,True,Simulated assumption; not Red Bull private data
+2025-07-01,E-commerce,Pune,20202,2787876,501631.47,2286244.53,1414140,149684.43,15273,7954,2956,33,0.8394,True,Simulated assumption; not Red Bull private data
+2025-07-01,E-commerce,Chennai,21629,2984802,484194.64,2500607.36,1514030,107683.01,15112,7282,2787,30,0.8353,True,Simulated assumption; not Red Bull private data
+2025-07-01,Quick commerce,Mumbai,36468,5470200,1240714.3,4229485.7,2698632,212332.14,24652,11440,5356,45,0.8196,True,Simulated assumption; not Red Bull private data
+2025-07-01,Quick commerce,Delhi NCR,33797,5069550,907387.96,4162162.04,2500978,192468.27,26762,11959,5767,50,0.8457,True,Simulated assumption; not Red Bull private data
+2025-07-01,Quick commerce,Bengaluru,36863,5529450,1161043.45,4368406.55,2727862,170443.72,28196,12488,6156,56,0.8439,True,Simulated assumption; not Red Bull private data
+2025-07-01,Quick commerce,Hyderabad,29053,4357950,994857.27,3363092.73,2149922,145138.99,21387,9143,4473,39,0.8063,True,Simulated assumption; not Red Bull private data
+2025-07-01,Quick commerce,Pune,28268,4240200,1000053.11,3240146.89,2091832,141089.27,20241,9407,4461,37,0.8359,True,Simulated assumption; not Red Bull private data
+2025-07-01,Quick commerce,Chennai,23459,3518850,780134.89,2738715.11,1735966,172168.52,16890,7733,3457,33,0.8841,True,Simulated assumption; not Red Bull private data
+2025-07-01,Cafés,Mumbai,13710,2399250,100533.23,2298716.77,1124220,101253.43,9663,5652,1063,37,0.8548,True,Simulated assumption; not Red Bull private data
+2025-07-01,Cafés,Delhi NCR,12964,2268700,130853.42,2137846.58,1063048,93890.2,9371,5315,1030,30,0.8297,True,Simulated assumption; not Red Bull private data
+2025-07-01,Cafés,Bengaluru,14917,2610475,195294.63,2415180.37,1223194,98277.77,10463,5831,1238,38,0.8047,True,Simulated assumption; not Red Bull private data
+2025-07-01,Cafés,Hyderabad,10516,1840300,79865.52,1760434.48,862312,81147.72,8065,4214,815,23,0.8432,True,Simulated assumption; not Red Bull private data
+2025-07-01,Cafés,Pune,10857,1899975,124484.22,1775490.78,890274,86340.39,8007,4585,803,28,0.8282,True,Simulated assumption; not Red Bull private data
+2025-07-01,Cafés,Chennai,9383,1642025,112129.55,1529895.45,769406,115794.65,6826,3906,691,22,0.8089,True,Simulated assumption; not Red Bull private data
+2025-07-01,Sports/events,Mumbai,10433,1669280,71173.76,1598106.24,813774,106330.47,7619,2831,2359,21,0.8513,True,Simulated assumption; not Red Bull private data
+2025-07-01,Sports/events,Delhi NCR,9511,1521760,82118.4,1439641.6,741858,67892.77,7365,2540,2116,22,0.8539,True,Simulated assumption; not Red Bull private data
+2025-07-01,Sports/events,Bengaluru,9972,1595520,22870.52,1572649.48,777816,74807.87,7741,3009,2075,24,0.8088,True,Simulated assumption; not Red Bull private data
+2025-07-01,Sports/events,Hyderabad,7794,1247040,69173.66,1177866.34,607932,66884.18,5679,2038,1673,20,0.8359,True,Simulated assumption; not Red Bull private data
+2025-07-01,Sports/events,Pune,8176,1308160,0.0,1308160.0,637728,66034.55,6385,2241,1703,20,0.8684,True,Simulated assumption; not Red Bull private data
+2025-07-01,Sports/events,Chennai,7421,1187360,40398.21,1146961.79,578838,101642.18,5927,2056,1656,20,0.7896,True,Simulated assumption; not Red Bull private data
+2025-08-01,Grocery,Mumbai,30271,3783875,498959.79,3284915.21,2058428,173707.29,22838,9537,3243,71,0.8236,True,Simulated assumption; not Red Bull private data
+2025-08-01,Grocery,Delhi NCR,29474,3684250,413202.94,3271047.06,2004232,150491.13,22075,9571,3262,67,0.8598,True,Simulated assumption; not Red Bull private data
+2025-08-01,Grocery,Bengaluru,30761,3845125,347361.59,3497763.41,2091748,162370.22,21901,9402,3430,67,0.8648,True,Simulated assumption; not Red Bull private data
+2025-08-01,Grocery,Hyderabad,24062,3007750,260716.61,2747033.39,1636216,116754.64,18331,7913,3012,54,0.8234,True,Simulated assumption; not Red Bull private data
+2025-08-01,Grocery,Pune,22673,2834125,232247.88,2601877.12,1541764,137456.14,16594,6836,2586,55,0.833,True,Simulated assumption; not Red Bull private data
+2025-08-01,Grocery,Chennai,22823,2852875,327364.61,2525510.39,1551964,109965.92,16511,6394,2341,51,0.8499,True,Simulated assumption; not Red Bull private data
+2025-08-01,Convenience,Mumbai,40878,5927310,334095.39,5593214.61,2943216,212440.3,30042,14635,3984,97,0.8095,True,Simulated assumption; not Red Bull private data
+2025-08-01,Convenience,Delhi NCR,39655,5749975,370880.05,5379094.95,2855160,183498.2,29032,14630,3927,86,0.865,True,Simulated assumption; not Red Bull private data
+2025-08-01,Convenience,Bengaluru,41637,6037365,579632.68,5457732.32,2997864,231748.01,30197,13779,4014,100,0.8423,True,Simulated assumption; not Red Bull private data
+2025-08-01,Convenience,Hyderabad,33187,4812115,380463.49,4431651.51,2389464,193297.34,24181,11674,3199,71,0.8256,True,Simulated assumption; not Red Bull private data
+2025-08-01,Convenience,Pune,34078,4941310,122304.28,4819005.72,2453616,185343.98,25006,12158,3348,73,0.8464,True,Simulated assumption; not Red Bull private data
+2025-08-01,Convenience,Chennai,34524,5005980,609513.16,4396466.84,2485728,177893.15,25540,11827,3439,81,0.862,True,Simulated assumption; not Red Bull private data
+2025-08-01,E-commerce,Mumbai,25915,3576270,551385.42,3024884.58,1814050,174927.75,19032,9680,3326,33,0.8886,True,Simulated assumption; not Red Bull private data
+2025-08-01,E-commerce,Delhi NCR,25850,3567300,828438.91,2738861.09,1809500,171249.03,18218,9271,3499,33,0.8449,True,Simulated assumption; not Red Bull private data
+2025-08-01,E-commerce,Bengaluru,28387,3917406,685147.66,3232258.34,1987090,184343.58,19353,9886,3679,40,0.8581,True,Simulated assumption; not Red Bull private data
+2025-08-01,E-commerce,Hyderabad,20492,2827896,447197.02,2380698.98,1434440,104463.51,15134,7696,2928,26,0.8342,True,Simulated assumption; not Red Bull private data
+2025-08-01,E-commerce,Pune,19919,2748822,478153.01,2270668.99,1394330,100047.4,14377,6938,2596,28,0.8714,True,Simulated assumption; not Red Bull private data
+2025-08-01,E-commerce,Chennai,20121,2776698,499329.5,2277368.5,1408470,114176.17,14523,7079,2651,27,0.8902,True,Simulated assumption; not Red Bull private data
+2025-08-01,Quick commerce,Mumbai,35585,5337750,1246655.84,4091094.16,2633290,220133.57,25977,11421,5396,51,0.8537,True,Simulated assumption; not Red Bull private data
+2025-08-01,Quick commerce,Delhi NCR,34840,5226000,1106544.93,4119455.07,2578160,170419.14,24826,11999,5414,48,0.8453,True,Simulated assumption; not Red Bull private data
+2025-08-01,Quick commerce,Bengaluru,35678,5351700,1056597.64,4295102.36,2640172,167641.33,28788,13330,6245,44,0.8359,True,Simulated assumption; not Red Bull private data
+2025-08-01,Quick commerce,Hyderabad,28872,4330800,999203.8,3331596.2,2136528,183595.24,21976,9480,4770,47,0.7981,True,Simulated assumption; not Red Bull private data
+2025-08-01,Quick commerce,Pune,22900,3435000,817477.42,2617522.58,1694600,164326.25,16770,7079,3600,35,0.8571,True,Simulated assumption; not Red Bull private data
+2025-08-01,Quick commerce,Chennai,25207,3781050,811491.56,2969558.44,1865318,168600.74,18977,9264,4210,30,0.8101,True,Simulated assumption; not Red Bull private data
+2025-08-01,Cafés,Mumbai,11882,2079350,59990.92,2019359.08,974324,134672.76,8698,4544,993,29,0.8343,True,Simulated assumption; not Red Bull private data
+2025-08-01,Cafés,Delhi NCR,11211,1961925,89634.37,1872290.63,919302,124976.08,8082,4471,905,27,0.8414,True,Simulated assumption; not Red Bull private data
+2025-08-01,Cafés,Bengaluru,14231,2490425,142339.93,2348085.07,1166942,137817.18,10386,5675,1105,35,0.8341,True,Simulated assumption; not Red Bull private data
+2025-08-01,Cafés,Hyderabad,10714,1874950,111847.65,1763102.35,878548,106153.13,7620,4116,769,26,0.8538,True,Simulated assumption; not Red Bull private data
+2025-08-01,Cafés,Pune,9933,1738275,123837.76,1614437.24,814506,92184.17,7050,3758,736,20,0.8863,True,Simulated assumption; not Red Bull private data
+2025-08-01,Cafés,Chennai,10090,1765750,148811.56,1616938.44,827380,114829.99,7798,4236,846,26,0.8645,True,Simulated assumption; not Red Bull private data
+2025-08-01,Sports/events,Mumbai,9847,1575520,133962.65,1441557.35,768066,101044.36,7168,2413,2049,25,0.863,True,Simulated assumption; not Red Bull private data
+2025-08-01,Sports/events,Delhi NCR,8854,1416640,43218.43,1373421.57,690612,78399.86,6875,2512,2010,20,0.8697,True,Simulated assumption; not Red Bull private data
+2025-08-01,Sports/events,Bengaluru,10273,1643680,0.0,1643680.0,801294,130757.99,7203,2571,2088,23,0.8739,True,Simulated assumption; not Red Bull private data
+2025-08-01,Sports/events,Hyderabad,8046,1287360,53826.16,1233533.84,627588,93682.74,6008,2403,1755,20,0.8052,True,Simulated assumption; not Red Bull private data
+2025-08-01,Sports/events,Pune,8114,1298240,21308.98,1276931.02,632892,111363.94,5532,1993,1714,20,0.8396,True,Simulated assumption; not Red Bull private data
+2025-08-01,Sports/events,Chennai,7466,1194560,0.0,1194560.0,582348,65629.12,5174,1936,1557,20,0.8626,True,Simulated assumption; not Red Bull private data
+2025-09-01,Grocery,Mumbai,29520,3690000,429302.23,3260697.77,2007360,170833.31,20201,8038,2918,69,0.8697,True,Simulated assumption; not Red Bull private data
+2025-09-01,Grocery,Delhi NCR,29374,3671750,396978.75,3274771.25,1997432,182082.29,20921,8860,3005,68,0.868,True,Simulated assumption; not Red Bull private data
+2025-09-01,Grocery,Bengaluru,33665,4208125,62205.34,4145919.66,2289220,165189.45,24253,10873,3574,81,0.8478,True,Simulated assumption; not Red Bull private data
+2025-09-01,Grocery,Hyderabad,23437,2929625,413955.41,2515669.59,1593716,141635.87,18129,7770,2711,60,0.9235,True,Simulated assumption; not Red Bull private data
+2025-09-01,Grocery,Pune,22693,2836625,306171.86,2530453.14,1543124,114989.85,17625,7247,2606,47,0.8304,True,Simulated assumption; not Red Bull private data
+2025-09-01,Grocery,Chennai,21457,2682125,233492.39,2448632.61,1459076,142222.36,16174,6576,2337,56,0.8882,True,Simulated assumption; not Red Bull private data
+2025-09-01,Convenience,Mumbai,40404,5858580,472809.36,5385770.64,2909088,239366.9,28320,13780,4099,97,0.8406,True,Simulated assumption; not Red Bull private data
+2025-09-01,Convenience,Delhi NCR,38901,5640645,509120.2,5131524.8,2800872,223840.68,29191,14559,3735,89,0.836,True,Simulated assumption; not Red Bull private data
+2025-09-01,Convenience,Bengaluru,41565,6026925,459562.73,5567362.27,2992680,222425.15,32635,15920,4363,105,0.8793,True,Simulated assumption; not Red Bull private data
+2025-09-01,Convenience,Hyderabad,34527,5006415,348808.2,4657606.8,2485944,194467.06,25644,12456,3269,73,0.8637,True,Simulated assumption; not Red Bull private data
+2025-09-01,Convenience,Pune,29155,4227475,316609.4,3910865.6,2099160,153199.16,22102,11547,2817,66,0.8323,True,Simulated assumption; not Red Bull private data
+2025-09-01,Convenience,Chennai,31405,4553725,388050.45,4165674.55,2261160,144608.57,22762,10169,3096,70,0.8591,True,Simulated assumption; not Red Bull private data
+2025-09-01,E-commerce,Mumbai,25129,3467802,465839.08,3001962.92,1759030,157447.69,18267,9286,3524,38,0.8841,True,Simulated assumption; not Red Bull private data
+2025-09-01,E-commerce,Delhi NCR,25818,3562884,734497.81,2828386.19,1807260,140688.41,19534,10133,3630,32,0.839,True,Simulated assumption; not Red Bull private data
+2025-09-01,E-commerce,Bengaluru,28041,3869658,631252.08,3238405.92,1962870,148908.08,21320,11150,4067,43,0.8341,True,Simulated assumption; not Red Bull private data
+2025-09-01,E-commerce,Hyderabad,20612,2844456,517878.41,2326577.59,1442840,130403.51,14818,7752,2728,34,0.8644,True,Simulated assumption; not Red Bull private data
+2025-09-01,E-commerce,Pune,20597,2842386,657145.63,2185240.37,1441790,138010.25,14213,7382,2494,27,0.892,True,Simulated assumption; not Red Bull private data
+2025-09-01,E-commerce,Chennai,20683,2854254,567869.72,2286384.28,1447810,156144.18,15011,7489,2807,33,0.8692,True,Simulated assumption; not Red Bull private data
+2025-09-01,Quick commerce,Mumbai,36085,5412750,1349789.79,4062960.21,2670290,173334.37,27312,13313,6308,56,0.8606,True,Simulated assumption; not Red Bull private data
+2025-09-01,Quick commerce,Delhi NCR,34210,5131500,998500.96,4132999.04,2531540,170778.93,25497,11915,5368,47,0.8559,True,Simulated assumption; not Red Bull private data
+2025-09-01,Quick commerce,Bengaluru,38982,5847300,1189256.91,4658043.09,2884668,191909.86,28618,12765,6225,61,0.9006,True,Simulated assumption; not Red Bull private data
+2025-09-01,Quick commerce,Hyderabad,29139,4370850,896391.9,3474458.1,2156286,145521.89,21798,10137,4590,42,0.8713,True,Simulated assumption; not Red Bull private data
+2025-09-01,Quick commerce,Pune,26659,3998850,770363.21,3228486.79,1972766,149087.6,21647,9537,4259,35,0.8574,True,Simulated assumption; not Red Bull private data
+2025-09-01,Quick commerce,Chennai,26629,3994350,888321.52,3106028.48,1970546,127662.45,19921,8941,4132,37,0.8204,True,Simulated assumption; not Red Bull private data
+2025-09-01,Cafés,Mumbai,12006,2101050,44053.23,2056996.77,984492,90407.58,8737,4908,872,25,0.8766,True,Simulated assumption; not Red Bull private data
+2025-09-01,Cafés,Delhi NCR,13169,2304575,0.0,2304575.0,1079858,105275.09,9811,5228,1135,39,0.8032,True,Simulated assumption; not Red Bull private data
+2025-09-01,Cafés,Bengaluru,11934,2088450,140729.01,1947720.99,978588,113226.57,8529,4712,895,30,0.8238,True,Simulated assumption; not Red Bull private data
+2025-09-01,Cafés,Hyderabad,10274,1797950,145707.54,1652242.46,842468,133830.84,7877,4322,949,26,0.84,True,Simulated assumption; not Red Bull private data
+2025-09-01,Cafés,Pune,10120,1771000,84787.08,1686212.92,829840,131864.06,7421,4106,808,23,0.8926,True,Simulated assumption; not Red Bull private data
+2025-09-01,Cafés,Chennai,9388,1642900,82297.19,1560602.81,769816,90436.17,6616,3460,700,25,0.8548,True,Simulated assumption; not Red Bull private data
+2025-09-01,Sports/events,Mumbai,8292,1326720,63165.53,1263554.47,646776,77381.66,6148,2175,1799,20,0.8069,True,Simulated assumption; not Red Bull private data
+2025-09-01,Sports/events,Delhi NCR,9382,1501120,79643.72,1421476.28,731796,75083.28,6730,2298,1973,25,0.8651,True,Simulated assumption; not Red Bull private data
+2025-09-01,Sports/events,Bengaluru,10067,1610720,0.0,1610720.0,785226,115532.5,7772,2857,1917,25,0.8349,True,Simulated assumption; not Red Bull private data
+2025-09-01,Sports/events,Hyderabad,7804,1248640,0.0,1248640.0,608712,83679.61,5441,2007,1638,20,0.8383,True,Simulated assumption; not Red Bull private data
+2025-09-01,Sports/events,Pune,7969,1275040,7032.55,1268007.45,621582,79116.6,6200,2219,1789,20,0.8563,True,Simulated assumption; not Red Bull private data
+2025-09-01,Sports/events,Chennai,6671,1067360,48393.72,1018966.28,520338,79700.39,4996,1758,1510,20,0.8687,True,Simulated assumption; not Red Bull private data
+2025-10-01,Grocery,Mumbai,35035,4379375,615240.35,3764134.65,2382380,165613.44,25544,10489,3773,87,0.8518,True,Simulated assumption; not Red Bull private data
+2025-10-01,Grocery,Delhi NCR,34977,4372125,520001.29,3852123.71,2378436,154403.55,24425,9775,3806,82,0.8939,True,Simulated assumption; not Red Bull private data
+2025-10-01,Grocery,Bengaluru,35159,4394875,380856.1,4014018.9,2390812,164538.9,25187,10430,3551,97,0.8696,True,Simulated assumption; not Red Bull private data
+2025-10-01,Grocery,Hyderabad,25879,3234875,375610.56,2859264.44,1759772,152129.57,18920,8252,2764,57,0.8759,True,Simulated assumption; not Red Bull private data
+2025-10-01,Grocery,Pune,27812,3476500,391021.3,3085478.7,1891216,124384.38,21054,9065,2976,61,0.8449,True,Simulated assumption; not Red Bull private data
+2025-10-01,Grocery,Chennai,25413,3176625,211869.31,2964755.69,1728084,115525.56,18814,7184,3112,56,0.9233,True,Simulated assumption; not Red Bull private data
+2025-10-01,Convenience,Mumbai,44930,6514850,285148.23,6229701.77,3234960,222131.72,33270,15354,4093,95,0.8914,True,Simulated assumption; not Red Bull private data
+2025-10-01,Convenience,Delhi NCR,49871,7231295,707123.69,6524171.31,3590712,247217.93,36720,16830,4693,113,0.8836,True,Simulated assumption; not Red Bull private data
+2025-10-01,Convenience,Bengaluru,51366,7448070,785216.84,6662853.16,3698352,278785.44,38990,18686,4986,115,0.858,True,Simulated assumption; not Red Bull private data
+2025-10-01,Convenience,Hyderabad,39286,5696470,703843.56,4992626.44,2828592,231191.93,28375,14785,3929,88,0.8652,True,Simulated assumption; not Red Bull private data
+2025-10-01,Convenience,Pune,37249,5401105,403159.47,4997945.53,2681928,208793.84,27666,13954,3360,80,0.8599,True,Simulated assumption; not Red Bull private data
+2025-10-01,Convenience,Chennai,39150,5676750,392150.52,5284599.48,2818800,184276.05,29656,14103,3800,82,0.8915,True,Simulated assumption; not Red Bull private data
+2025-10-01,E-commerce,Mumbai,31818,4390884,800354.38,3590529.62,2227260,187703.65,23009,11572,4326,40,0.8904,True,Simulated assumption; not Red Bull private data
+2025-10-01,E-commerce,Delhi NCR,26986,3724068,631183.39,3092884.61,1889020,142412.19,19519,10254,3807,39,0.9211,True,Simulated assumption; not Red Bull private data
+2025-10-01,E-commerce,Bengaluru,32391,4469958,755094.24,3714863.76,2267370,192127.59,23072,11262,3725,51,0.856,True,Simulated assumption; not Red Bull private data
+2025-10-01,E-commerce,Hyderabad,22825,3149850,472364.2,2677485.8,1597750,151041.93,17770,9536,2932,31,0.8461,True,Simulated assumption; not Red Bull private data
+2025-10-01,E-commerce,Pune,23716,3272808,637243.35,2635564.65,1660120,153820.82,17298,8504,3364,35,0.8887,True,Simulated assumption; not Red Bull private data
+2025-10-01,E-commerce,Chennai,22205,3064290,316624.09,2747665.91,1554350,159869.06,17005,7952,3012,28,0.9148,True,Simulated assumption; not Red Bull private data
+2025-10-01,Quick commerce,Mumbai,37995,5699250,1174655.08,4524594.92,2811630,203852.74,24932,11033,5245,57,0.8235,True,Simulated assumption; not Red Bull private data
+2025-10-01,Quick commerce,Delhi NCR,40377,6056550,1153597.85,4902952.15,2987898,237006.29,29851,13763,6806,56,0.8677,True,Simulated assumption; not Red Bull private data
+2025-10-01,Quick commerce,Bengaluru,38089,5713350,1264787.11,4448562.89,2818586,202847.09,28498,13007,5848,53,0.8932,True,Simulated assumption; not Red Bull private data
+2025-10-01,Quick commerce,Hyderabad,31244,4686600,1002248.33,3684351.67,2312056,177703.54,24253,10831,5130,43,0.8704,True,Simulated assumption; not Red Bull private data
+2025-10-01,Quick commerce,Pune,33588,5038200,802250.52,4235949.48,2485512,182624.02,25616,11527,5211,52,0.8968,True,Simulated assumption; not Red Bull private data
+2025-10-01,Quick commerce,Chennai,30998,4649700,954195.85,3695504.15,2293852,163176.58,22701,10200,4982,41,0.9091,True,Simulated assumption; not Red Bull private data
+2025-10-01,Cafés,Mumbai,14519,2540825,106979.27,2433845.73,1190558,100699.01,10474,5700,1150,37,0.8554,True,Simulated assumption; not Red Bull private data
+2025-10-01,Cafés,Delhi NCR,13993,2448775,114710.6,2334064.4,1147426,107904.51,10044,5873,1096,32,0.8677,True,Simulated assumption; not Red Bull private data
+2025-10-01,Cafés,Bengaluru,14164,2478700,42346.02,2436353.98,1161448,97836.3,10672,5862,1145,37,0.9108,True,Simulated assumption; not Red Bull private data
+2025-10-01,Cafés,Hyderabad,11354,1986950,161707.05,1825242.95,931028,118021.51,8776,4867,952,28,0.8972,True,Simulated assumption; not Red Bull private data
+2025-10-01,Cafés,Pune,11533,2018275,72080.19,1946194.81,945706,105322.92,7926,4361,823,25,0.8579,True,Simulated assumption; not Red Bull private data
+2025-10-01,Cafés,Chennai,10684,1869700,115786.76,1753913.24,876088,77858.97,7716,4073,866,27,0.87,True,Simulated assumption; not Red Bull private data
+2025-10-01,Sports/events,Mumbai,11171,1787360,44565.63,1742794.37,871338,77181.61,8515,3398,2454,26,0.8906,True,Simulated assumption; not Red Bull private data
+2025-10-01,Sports/events,Delhi NCR,11121,1779360,126571.78,1652788.22,867438,102602.82,8486,3329,2537,24,0.879,True,Simulated assumption; not Red Bull private data
+2025-10-01,Sports/events,Bengaluru,12106,1936960,0.0,1936960.0,944268,117865.33,9061,3164,2555,32,0.8746,True,Simulated assumption; not Red Bull private data
+2025-10-01,Sports/events,Hyderabad,8425,1348000,21594.88,1326405.12,657150,89586.37,5972,2158,1816,20,0.9113,True,Simulated assumption; not Red Bull private data
+2025-10-01,Sports/events,Pune,8488,1358080,16381.83,1341698.17,662064,95247.02,6585,2544,1741,20,0.9036,True,Simulated assumption; not Red Bull private data
+2025-10-01,Sports/events,Chennai,8466,1354560,0.0,1354560.0,660348,66340.79,6337,2325,1999,23,0.8705,True,Simulated assumption; not Red Bull private data
+2025-11-01,Grocery,Mumbai,33353,4169125,361423.75,3807701.25,2268004,179515.9,23264,9684,3507,76,0.891,True,Simulated assumption; not Red Bull private data
+2025-11-01,Grocery,Delhi NCR,33649,4206125,690279.09,3515845.91,2288132,176302.67,25841,10944,4155,81,0.8778,True,Simulated assumption; not Red Bull private data
+2025-11-01,Grocery,Bengaluru,33144,4143000,229550.69,3913449.31,2253792,168540.36,24831,9931,3958,79,0.8779,True,Simulated assumption; not Red Bull private data
+2025-11-01,Grocery,Hyderabad,29845,3730625,294359.83,3436265.17,2029460,123428.36,21157,9255,3229,69,0.9,True,Simulated assumption; not Red Bull private data
+2025-11-01,Grocery,Pune,28184,3523000,353086.67,3169913.33,1916512,145881.24,22522,9267,3641,66,0.9042,True,Simulated assumption; not Red Bull private data
+2025-11-01,Grocery,Chennai,28010,3501250,414392.5,3086857.5,1904680,129231.6,21560,9640,3192,66,0.8709,True,Simulated assumption; not Red Bull private data
+2025-11-01,Convenience,Mumbai,55906,8106370,578301.09,7528068.91,4025232,277799.82,39269,19911,5264,155,0.8727,True,Simulated assumption; not Red Bull private data
+2025-11-01,Convenience,Delhi NCR,47481,6884745,572514.94,6312230.06,3418632,259177.38,32198,15825,4253,112,0.8742,True,Simulated assumption; not Red Bull private data
+2025-11-01,Convenience,Bengaluru,55039,7980655,459934.33,7520720.67,3962808,275093.39,40997,21107,5725,115,0.8706,True,Simulated assumption; not Red Bull private data
+2025-11-01,Convenience,Hyderabad,41809,6062305,548858.47,5513446.53,3010248,235820.61,30987,14868,4413,97,0.9132,True,Simulated assumption; not Red Bull private data
+2025-11-01,Convenience,Pune,37877,5492165,265396.74,5226768.26,2727144,192990.82,28845,13381,3754,80,0.8795,True,Simulated assumption; not Red Bull private data
+2025-11-01,Convenience,Chennai,37405,5423725,547378.98,4876346.02,2693160,206070.49,26069,12229,3686,89,0.8589,True,Simulated assumption; not Red Bull private data
+2025-11-01,E-commerce,Mumbai,29680,4095840,664061.41,3431778.59,2077600,169382.68,22759,11322,4483,42,0.8831,True,Simulated assumption; not Red Bull private data
+2025-11-01,E-commerce,Delhi NCR,26765,3693570,687086.59,3006483.41,1873550,153127.05,19427,10218,3665,34,0.9151,True,Simulated assumption; not Red Bull private data
+2025-11-01,E-commerce,Bengaluru,32025,4419450,722324.35,3697125.65,2241750,164190.46,23102,12172,4229,46,0.9065,True,Simulated assumption; not Red Bull private data
+2025-11-01,E-commerce,Hyderabad,27880,3847440,759183.75,3088256.25,1951600,137907.16,20770,10445,3970,39,0.8848,True,Simulated assumption; not Red Bull private data
+2025-11-01,E-commerce,Pune,27847,3842886,818686.22,3024199.78,1949290,131304.58,19884,10451,3722,40,0.876,True,Simulated assumption; not Red Bull private data
+2025-11-01,E-commerce,Chennai,24375,3363750,599731.11,2764018.89,1706250,139162.99,17818,8991,3147,37,0.9162,True,Simulated assumption; not Red Bull private data
+2025-11-01,Quick commerce,Mumbai,43113,6466950,1450197.0,5016753.0,3190362,193723.75,31683,13943,6877,62,0.9488,True,Simulated assumption; not Red Bull private data
+2025-11-01,Quick commerce,Delhi NCR,43866,6579900,1555697.41,5024202.59,3246084,217273.08,32346,14356,6202,58,0.8828,True,Simulated assumption; not Red Bull private data
+2025-11-01,Quick commerce,Bengaluru,43985,6597750,972254.46,5625495.54,3254890,196322.49,31945,14354,6593,71,0.9006,True,Simulated assumption; not Red Bull private data
+2025-11-01,Quick commerce,Hyderabad,35826,5373900,999504.99,4374395.01,2651124,187335.65,25439,11386,5612,49,0.8566,True,Simulated assumption; not Red Bull private data
+2025-11-01,Quick commerce,Pune,34621,5193150,1033029.14,4160120.86,2561954,213189.87,25322,12001,5437,58,0.9153,True,Simulated assumption; not Red Bull private data
+2025-11-01,Quick commerce,Chennai,37890,5683500,1342575.41,4340924.59,2803860,190257.3,27939,13289,5703,54,0.8678,True,Simulated assumption; not Red Bull private data
+2025-11-01,Cafés,Mumbai,15161,2653175,159056.82,2494118.18,1243202,122313.2,11107,6079,1104,31,0.8553,True,Simulated assumption; not Red Bull private data
+2025-11-01,Cafés,Delhi NCR,15509,2714075,75792.45,2638282.55,1271738,151124.1,11653,6578,1350,38,0.8892,True,Simulated assumption; not Red Bull private data
+2025-11-01,Cafés,Bengaluru,17111,2994425,232019.41,2762405.59,1403102,119715.2,12959,6542,1404,39,0.9128,True,Simulated assumption; not Red Bull private data
+2025-11-01,Cafés,Hyderabad,11887,2080225,185732.63,1894492.37,974734,86238.23,8165,4311,887,27,0.845,True,Simulated assumption; not Red Bull private data
+2025-11-01,Cafés,Pune,12817,2242975,148590.25,2094384.75,1050994,137878.42,9077,4985,996,34,0.8131,True,Simulated assumption; not Red Bull private data
+2025-11-01,Cafés,Chennai,11797,2064475,53834.06,2010640.94,967354,106315.8,8414,4607,895,28,0.8997,True,Simulated assumption; not Red Bull private data
+2025-11-01,Sports/events,Mumbai,11642,1862720,44879.14,1817840.86,908076,89862.45,8685,2936,2576,26,0.9155,True,Simulated assumption; not Red Bull private data
+2025-11-01,Sports/events,Delhi NCR,12254,1960640,87790.28,1872849.72,955812,138261.73,9008,3101,2520,32,0.9212,True,Simulated assumption; not Red Bull private data
+2025-11-01,Sports/events,Bengaluru,12054,1928640,2500.81,1926139.19,940212,73790.89,9206,3110,2455,29,0.8353,True,Simulated assumption; not Red Bull private data
+2025-11-01,Sports/events,Hyderabad,9895,1583200,29811.76,1553388.24,771810,82472.4,7342,2609,2219,24,0.8678,True,Simulated assumption; not Red Bull private data
+2025-11-01,Sports/events,Pune,9579,1532640,47424.59,1485215.41,747162,79556.98,7373,2767,2072,21,0.8781,True,Simulated assumption; not Red Bull private data
+2025-11-01,Sports/events,Chennai,8458,1353280,35741.05,1317538.95,659724,90085.33,6534,2327,1955,20,0.902,True,Simulated assumption; not Red Bull private data
+2025-12-01,Grocery,Mumbai,32264,4033000,267760.23,3765239.77,2193952,152916.58,24405,10024,3203,70,0.8945,True,Simulated assumption; not Red Bull private data
+2025-12-01,Grocery,Delhi NCR,34268,4283500,435191.2,3848308.8,2330224,138846.96,25372,10644,4015,77,0.8925,True,Simulated assumption; not Red Bull private data
+2025-12-01,Grocery,Bengaluru,36315,4539375,330323.72,4209051.28,2469420,187378.55,26042,10893,4005,84,0.8826,True,Simulated assumption; not Red Bull private data
+2025-12-01,Grocery,Hyderabad,27215,3401875,284543.57,3117331.43,1850620,138530.68,19720,7895,2969,63,0.888,True,Simulated assumption; not Red Bull private data
+2025-12-01,Grocery,Pune,26606,3325750,349101.54,2976648.46,1809208,137935.94,20069,8357,2925,58,0.8812,True,Simulated assumption; not Red Bull private data
+2025-12-01,Grocery,Chennai,23339,2917375,293170.67,2624204.33,1587052,141057.03,16559,6550,2585,53,0.8751,True,Simulated assumption; not Red Bull private data
+2025-12-01,Convenience,Mumbai,48599,7046855,371043.85,6675811.15,3499128,241532.15,34901,16626,4780,98,0.9452,True,Simulated assumption; not Red Bull private data
+2025-12-01,Convenience,Delhi NCR,38981,5652245,797545.94,4854699.06,2806632,187078.38,27635,13141,3517,98,0.8932,True,Simulated assumption; not Red Bull private data
+2025-12-01,Convenience,Bengaluru,48724,7064980,404309.87,6660670.13,3508128,250494.58,33881,15325,4843,110,0.8926,True,Simulated assumption; not Red Bull private data
+2025-12-01,Convenience,Hyderabad,40189,5827405,408239.53,5419165.47,2893608,235744.11,30015,13641,3631,92,0.8893,True,Simulated assumption; not Red Bull private data
+2025-12-01,Convenience,Pune,38998,5654710,208948.42,5445761.58,2807856,189512.09,30166,15402,3872,96,0.8652,True,Simulated assumption; not Red Bull private data
+2025-12-01,Convenience,Chennai,34644,5023380,480194.48,4543185.52,2494368,176823.17,24994,11801,3196,88,0.8764,True,Simulated assumption; not Red Bull private data
+2025-12-01,E-commerce,Mumbai,28262,3900156,832198.03,3067957.97,1978340,147370.1,19718,9858,3462,39,0.916,True,Simulated assumption; not Red Bull private data
+2025-12-01,E-commerce,Delhi NCR,31320,4322160,896829.48,3425330.52,2192400,177900.82,22946,11158,3925,40,0.8851,True,Simulated assumption; not Red Bull private data
+2025-12-01,E-commerce,Bengaluru,28252,3898776,687120.83,3211655.17,1977640,165934.71,21792,11323,3807,35,0.9075,True,Simulated assumption; not Red Bull private data
+2025-12-01,E-commerce,Hyderabad,26569,3666522,410886.2,3255635.8,1859830,120060.41,20738,9742,3904,37,0.8877,True,Simulated assumption; not Red Bull private data
+2025-12-01,E-commerce,Pune,24736,3413568,463405.21,2950162.79,1731520,165883.12,19274,9977,3366,32,0.8618,True,Simulated assumption; not Red Bull private data
+2025-12-01,E-commerce,Chennai,21884,3019992,624626.78,2395365.22,1531880,150316.15,16249,8218,2879,32,0.8956,True,Simulated assumption; not Red Bull private data
+2025-12-01,Quick commerce,Mumbai,42917,6437550,1228089.27,5209460.73,3175858,223086.58,30437,14294,6371,63,0.8847,True,Simulated assumption; not Red Bull private data
+2025-12-01,Quick commerce,Delhi NCR,43662,6549300,1111887.55,5437412.45,3230988,240244.14,33117,15027,6850,69,0.8872,True,Simulated assumption; not Red Bull private data
+2025-12-01,Quick commerce,Bengaluru,47219,7082850,1304562.51,5778287.49,3494206,224310.65,37039,16204,7979,78,0.8967,True,Simulated assumption; not Red Bull private data
+2025-12-01,Quick commerce,Hyderabad,31772,4765800,921705.18,3844094.82,2351128,193552.49,22559,10342,4444,51,0.9249,True,Simulated assumption; not Red Bull private data
+2025-12-01,Quick commerce,Pune,30415,4562250,908847.56,3653402.44,2250710,172827.24,21955,9708,4204,41,0.8596,True,Simulated assumption; not Red Bull private data
+2025-12-01,Quick commerce,Chennai,32270,4840500,892730.89,3947769.11,2387980,174916.72,23977,10750,5051,53,0.8873,True,Simulated assumption; not Red Bull private data
+2025-12-01,Cafés,Mumbai,13332,2333100,139077.81,2194022.19,1093224,100597.48,9425,5374,1030,33,0.9128,True,Simulated assumption; not Red Bull private data
+2025-12-01,Cafés,Delhi NCR,14912,2609600,100962.79,2508637.21,1222784,154085.8,11081,6011,1240,34,0.8972,True,Simulated assumption; not Red Bull private data
+2025-12-01,Cafés,Bengaluru,15315,2680125,61998.41,2618126.59,1255830,92909.73,10799,5928,1195,34,0.8928,True,Simulated assumption; not Red Bull private data
+2025-12-01,Cafés,Hyderabad,13529,2367575,58860.76,2308714.24,1109378,132498.07,9857,5643,976,25,0.886,True,Simulated assumption; not Red Bull private data
+2025-12-01,Cafés,Pune,11313,1979775,30757.58,1949017.42,927666,132645.79,8453,4463,948,26,0.9047,True,Simulated assumption; not Red Bull private data
+2025-12-01,Cafés,Chennai,11773,2060275,76241.92,1984033.08,965386,77528.12,9087,4859,1036,27,0.8878,True,Simulated assumption; not Red Bull private data
+2025-12-01,Sports/events,Mumbai,10958,1753280,80314.05,1672965.95,854724,133642.65,7175,2698,2208,30,0.8956,True,Simulated assumption; not Red Bull private data
+2025-12-01,Sports/events,Delhi NCR,10496,1679360,0.0,1679360.0,818688,67046.1,7517,2862,2424,25,0.8957,True,Simulated assumption; not Red Bull private data
+2025-12-01,Sports/events,Bengaluru,12521,2003360,0.0,2003360.0,976638,132740.47,9235,3380,2599,30,0.8599,True,Simulated assumption; not Red Bull private data
+2025-12-01,Sports/events,Hyderabad,9099,1455840,83240.83,1372599.17,709722,83238.28,6735,2413,1834,22,0.8741,True,Simulated assumption; not Red Bull private data
+2025-12-01,Sports/events,Pune,8754,1400640,24986.63,1375653.37,682812,85133.88,6087,2173,1835,20,0.8904,True,Simulated assumption; not Red Bull private data
+2025-12-01,Sports/events,Chennai,8298,1327680,45220.98,1282459.02,647244,62609.18,6183,2303,1698,20,0.8615,True,Simulated assumption; not Red Bull private data

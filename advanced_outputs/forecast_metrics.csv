@@ -1,0 +1,7 @@
+channel,model,holdout_months,MAE,RMSE,MAPE_pct
+Cafés,Prior-year seasonal naive fallback,6,9254.5,10098.137938913953,12.459900915864074
+Convenience,Prior-year seasonal naive fallback,6,33770.0,37492.287242400496,13.829714512046687
+E-commerce,Prior-year seasonal naive fallback,6,28872.833333333332,30024.295414991284,19.043343151104885
+Grocery,Prior-year seasonal naive fallback,6,22791.333333333332,23921.500308300063,13.357578954222596
+Quick commerce,Prior-year seasonal naive fallback,6,44280.5,44965.96835200298,21.52608724235121
+Sports/events,Prior-year seasonal naive fallback,6,8963.5,9373.43241116437,15.998645625685034

@@ -1,0 +1,865 @@
+month,channel,city,discounts_inr,marketing_spend_inr,promotion_type,promo_days,is_simulated
+2024-01-01,Grocery,Mumbai,268466.37,144847.94,trade visibility / display,3,True
+2024-01-01,Grocery,Delhi NCR,242153.59,111473.18,trade visibility / display,12,True
+2024-01-01,Grocery,Bengaluru,283518.27,145444.29,trade visibility / display,4,True
+2024-01-01,Grocery,Hyderabad,190314.32,109929.61,trade visibility / display,11,True
+2024-01-01,Grocery,Pune,173156.25,106371.13,trade visibility / display,13,True
+2024-01-01,Grocery,Chennai,242350.64,131608.3,trade visibility / display,5,True
+2024-01-01,Convenience,Mumbai,398321.75,181470.38,trade visibility / display,10,True
+2024-01-01,Convenience,Delhi NCR,312278.65,177536.9,trade visibility / display,6,True
+2024-01-01,Convenience,Bengaluru,432534.24,140436.1,trade visibility / display,8,True
+2024-01-01,Convenience,Hyderabad,196894.79,131996.27,trade visibility / display,9,True
+2024-01-01,Convenience,Pune,283250.15,105861.48,trade visibility / display,6,True
+2024-01-01,Convenience,Chennai,289363.28,134577.23,trade visibility / display,13,True
+2024-01-01,E-commerce,Mumbai,270033.65,134764.41,bundle / search placement,8,True
+2024-01-01,E-commerce,Delhi NCR,291745.46,82417.06,bundle / search placement,9,True
+2024-01-01,E-commerce,Bengaluru,308606.37,125442.36,bundle / search placement,13,True
+2024-01-01,E-commerce,Hyderabad,249948.69,72210.96,bundle / search placement,5,True
+2024-01-01,E-commerce,Pune,239604.71,102768.8,bundle / search placement,8,True
+2024-01-01,E-commerce,Chennai,291112.73,98655.84,bundle / search placement,15,True
+2024-01-01,Quick commerce,Mumbai,451275.43,117994.07,instant discount / app visibility,8,True
+2024-01-01,Quick commerce,Delhi NCR,381464.06,105291.07,instant discount / app visibility,4,True
+2024-01-01,Quick commerce,Bengaluru,429476.33,125817.88,instant discount / app visibility,6,True
+2024-01-01,Quick commerce,Hyderabad,438763.52,95133.73,instant discount / app visibility,15,True
+2024-01-01,Quick commerce,Pune,448460.55,139052.92,instant discount / app visibility,12,True
+2024-01-01,Quick commerce,Chennai,449224.6,123785.4,instant discount / app visibility,13,True
+2024-01-01,Cafés,Mumbai,70725.68,103404.48,trade visibility / display,6,True
+2024-01-01,Cafés,Delhi NCR,71591.29,79509.76,trade visibility / display,13,True
+2024-01-01,Cafés,Bengaluru,30561.01,116674.06,trade visibility / display,8,True
+2024-01-01,Cafés,Hyderabad,100787.57,121423.58,trade visibility / display,13,True
+2024-01-01,Cafés,Pune,28693.56,83844.5,trade visibility / display,14,True
+2024-01-01,Cafés,Chennai,42678.68,62752.27,trade visibility / display,5,True
+2024-01-01,Sports/events,Mumbai,15438.99,90544.85,sampling / event activation,15,True
+2024-01-01,Sports/events,Delhi NCR,82154.58,56981.56,sampling / event activation,11,True
+2024-01-01,Sports/events,Bengaluru,50722.66,69578.27,sampling / event activation,12,True
+2024-01-01,Sports/events,Hyderabad,13141.01,89754.44,sampling / event activation,12,True
+2024-01-01,Sports/events,Pune,28667.81,60362.83,sampling / event activation,5,True
+2024-01-01,Sports/events,Chennai,27236.39,50299.86,sampling / event activation,12,True
+2024-02-01,Grocery,Mumbai,272313.1,102700.3,trade visibility / display,5,True
+2024-02-01,Grocery,Delhi NCR,279526.15,102786.82,trade visibility / display,6,True
+2024-02-01,Grocery,Bengaluru,258816.03,141823.77,trade visibility / display,4,True
+2024-02-01,Grocery,Hyderabad,272920.6,130568.55,trade visibility / display,5,True
+2024-02-01,Grocery,Pune,157926.82,138104.84,trade visibility / display,15,True
+2024-02-01,Grocery,Chennai,123901.82,139334.26,trade visibility / display,7,True
+2024-02-01,Convenience,Mumbai,319889.04,132423.85,trade visibility / display,8,True
+2024-02-01,Convenience,Delhi NCR,342217.08,164020.85,trade visibility / display,9,True
+2024-02-01,Convenience,Bengaluru,410178.13,193100.72,trade visibility / display,12,True
+2024-02-01,Convenience,Hyderabad,201891.35,123252.76,trade visibility / display,10,True
+2024-02-01,Convenience,Pune,195418.0,156808.0,trade visibility / display,9,True
+2024-02-01,Convenience,Chennai,336814.64,158390.31,trade visibility / display,13,True
+2024-02-01,E-commerce,Mumbai,263746.87,106986.17,bundle / search placement,9,True
+2024-02-01,E-commerce,Delhi NCR,236642.92,97596.44,bundle / search placement,12,True
+2024-02-01,E-commerce,Bengaluru,397690.46,89977.32,bundle / search placement,14,True
+2024-02-01,E-commerce,Hyderabad,312780.12,112490.22,bundle / search placement,11,True
+2024-02-01,E-commerce,Pune,281998.32,114873.94,bundle / search placement,3,True
+2024-02-01,E-commerce,Chennai,232976.21,76155.32,bundle / search placement,6,True
+2024-02-01,Quick commerce,Mumbai,483151.54,153782.57,instant discount / app visibility,11,True
+2024-02-01,Quick commerce,Delhi NCR,490519.42,134895.17,instant discount / app visibility,9,True
+2024-02-01,Quick commerce,Bengaluru,623768.23,156221.2,instant discount / app visibility,6,True
+2024-02-01,Quick commerce,Hyderabad,452419.94,102201.84,instant discount / app visibility,7,True
+2024-02-01,Quick commerce,Pune,301907.33,94029.55,instant discount / app visibility,4,True
+2024-02-01,Quick commerce,Chennai,414088.08,117837.93,instant discount / app visibility,6,True
+2024-02-01,Cafés,Mumbai,94141.19,106026.07,trade visibility / display,13,True
+2024-02-01,Cafés,Delhi NCR,49462.24,120397.28,trade visibility / display,3,True
+2024-02-01,Cafés,Bengaluru,75623.46,118631.84,trade visibility / display,13,True
+2024-02-01,Cafés,Hyderabad,39613.68,80007.13,trade visibility / display,7,True
+2024-02-01,Cafés,Pune,13931.61,98523.6,trade visibility / display,13,True
+2024-02-01,Cafés,Chennai,97227.14,95415.63,trade visibility / display,6,True
+2024-02-01,Sports/events,Mumbai,67321.34,79068.45,sampling / event activation,13,True
+2024-02-01,Sports/events,Delhi NCR,0.0,81986.84,sampling / event activation,10,True
+2024-02-01,Sports/events,Bengaluru,37372.94,94705.6,sampling / event activation,14,True
+2024-02-01,Sports/events,Hyderabad,33780.33,96563.75,sampling / event activation,3,True
+2024-02-01,Sports/events,Pune,0.0,69717.91,sampling / event activation,13,True
+2024-02-01,Sports/events,Chennai,18934.4,72505.58,sampling / event activation,6,True
+2024-03-01,Grocery,Mumbai,288994.45,136128.71,trade visibility / display,7,True
+2024-03-01,Grocery,Delhi NCR,252150.43,102154.93,trade visibility / display,3,True
+2024-03-01,Grocery,Bengaluru,218651.22,153067.82,trade visibility / display,15,True
+2024-03-01,Grocery,Hyderabad,235730.24,108809.84,trade visibility / display,11,True
+2024-03-01,Grocery,Pune,287502.15,111264.99,trade visibility / display,15,True
+2024-03-01,Grocery,Chennai,166905.1,130524.96,trade visibility / display,10,True
+2024-03-01,Convenience,Mumbai,391642.5,142552.77,trade visibility / display,5,True
+2024-03-01,Convenience,Delhi NCR,618270.35,176524.89,trade visibility / display,7,True
+2024-03-01,Convenience,Bengaluru,470749.54,199348.59,trade visibility / display,8,True
+2024-03-01,Convenience,Hyderabad,331443.28,139585.08,trade visibility / display,4,True
+2024-03-01,Convenience,Pune,353915.11,150278.4,trade visibility / display,15,True
+2024-03-01,Convenience,Chennai,197615.45,170894.04,trade visibility / display,15,True
+2024-03-01,E-commerce,Mumbai,466046.95,107471.85,bundle / search placement,10,True
+2024-03-01,E-commerce,Delhi NCR,415731.36,112877.04,bundle / search placement,10,True
+2024-03-01,E-commerce,Bengaluru,515149.38,137034.78,bundle / search placement,12,True
+2024-03-01,E-commerce,Hyderabad,284244.32,89936.98,bundle / search placement,11,True
+2024-03-01,E-commerce,Pune,273556.35,77705.79,bundle / search placement,3,True
+2024-03-01,E-commerce,Chennai,320007.77,129534.15,bundle / search placement,9,True
+2024-03-01,Quick commerce,Mumbai,546801.73,115217.22,instant discount / app visibility,13,True
+2024-03-01,Quick commerce,Delhi NCR,630511.93,106017.64,instant discount / app visibility,13,True
+2024-03-01,Quick commerce,Bengaluru,655070.21,118179.21,instant discount / app visibility,10,True
+2024-03-01,Quick commerce,Hyderabad,389841.83,82682.11,instant discount / app visibility,14,True
+2024-03-01,Quick commerce,Pune,468940.29,114475.61,instant discount / app visibility,10,True
+2024-03-01,Quick commerce,Chennai,502761.46,98482.52,instant discount / app visibility,7,True
+2024-03-01,Cafés,Mumbai,91222.23,116663.45,trade visibility / display,8,True
+2024-03-01,Cafés,Delhi NCR,88599.5,114815.59,trade visibility / display,11,True
+2024-03-01,Cafés,Bengaluru,186362.94,83567.89,trade visibility / display,14,True
+2024-03-01,Cafés,Hyderabad,43316.04,79089.72,trade visibility / display,5,True
+2024-03-01,Cafés,Pune,107598.76,101051.17,trade visibility / display,6,True
+2024-03-01,Cafés,Chennai,58932.86,84298.22,trade visibility / display,11,True
+2024-03-01,Sports/events,Mumbai,16204.03,79161.4,sampling / event activation,12,True
+2024-03-01,Sports/events,Delhi NCR,899.93,96418.14,sampling / event activation,8,True
+2024-03-01,Sports/events,Bengaluru,49997.42,63558.14,sampling / event activation,11,True
+2024-03-01,Sports/events,Hyderabad,68207.56,111606.4,sampling / event activation,3,True
+2024-03-01,Sports/events,Pune,100310.78,75120.87,sampling / event activation,6,True
+2024-03-01,Sports/events,Chennai,30914.07,56763.79,sampling / event activation,15,True
+2024-04-01,Grocery,Mumbai,314846.72,125018.09,trade visibility / display,10,True
+2024-04-01,Grocery,Delhi NCR,309883.37,161717.11,trade visibility / display,14,True
+2024-04-01,Grocery,Bengaluru,320396.28,167943.29,trade visibility / display,5,True
+2024-04-01,Grocery,Hyderabad,334430.96,96875.56,trade visibility / display,6,True
+2024-04-01,Grocery,Pune,243712.89,130703.55,trade visibility / display,15,True
+2024-04-01,Grocery,Chennai,249814.28,152699.8,trade visibility / display,15,True
+2024-04-01,Convenience,Mumbai,311330.97,183852.23,trade visibility / display,14,True
+2024-04-01,Convenience,Delhi NCR,490962.75,146017.1,trade visibility / display,7,True
+2024-04-01,Convenience,Bengaluru,399461.01,188005.17,trade visibility / display,13,True
+2024-04-01,Convenience,Hyderabad,370399.16,146606.4,trade visibility / display,8,True
+2024-04-01,Convenience,Pune,384700.61,157867.23,trade visibility / display,13,True
+2024-04-01,Convenience,Chennai,141234.97,181726.03,trade visibility / display,14,True
+2024-04-01,E-commerce,Mumbai,451524.4,107025.88,bundle / search placement,8,True
+2024-04-01,E-commerce,Delhi NCR,393207.64,116552.74,bundle / search placement,6,True
+2024-04-01,E-commerce,Bengaluru,367902.1,120211.54,bundle / search placement,15,True
+2024-04-01,E-commerce,Hyderabad,390282.8,137013.62,bundle / search placement,8,True
+2024-04-01,E-commerce,Pune,423361.74,105397.03,bundle / search placement,8,True
+2024-04-01,E-commerce,Chennai,352976.2,119377.73,bundle / search placement,11,True
+2024-04-01,Quick commerce,Mumbai,695611.3,149999.36,instant discount / app visibility,15,True
+2024-04-01,Quick commerce,Delhi NCR,518544.15,109995.88,instant discount / app visibility,4,True
+2024-04-01,Quick commerce,Bengaluru,737710.15,160259.01,instant discount / app visibility,15,True
+2024-04-01,Quick commerce,Hyderabad,625126.64,138818.56,instant discount / app visibility,8,True
+2024-04-01,Quick commerce,Pune,587911.13,114058.29,instant discount / app visibility,3,True
+2024-04-01,Quick commerce,Chennai,472170.07,144728.38,instant discount / app visibility,7,True
+2024-04-01,Cafés,Mumbai,32301.36,119093.04,trade visibility / display,9,True
+2024-04-01,Cafés,Delhi NCR,75876.02,85714.25,trade visibility / display,11,True
+2024-04-01,Cafés,Bengaluru,84124.3,97717.59,trade visibility / display,10,True
+2024-04-01,Cafés,Hyderabad,60117.84,72587.22,trade visibility / display,4,True
+2024-04-01,Cafés,Pune,20768.6,71165.54,trade visibility / display,9,True
+2024-04-01,Cafés,Chennai,51636.05,70064.83,trade visibility / display,6,True
+2024-04-01,Sports/events,Mumbai,55072.58,79055.02,sampling / event activation,6,True
+2024-04-01,Sports/events,Delhi NCR,75999.62,85793.02,sampling / event activation,12,True
+2024-04-01,Sports/events,Bengaluru,45257.33,57983.57,sampling / event activation,13,True
+2024-04-01,Sports/events,Hyderabad,72274.9,59404.98,sampling / event activation,5,True
+2024-04-01,Sports/events,Pune,25930.38,67022.2,sampling / event activation,10,True
+2024-04-01,Sports/events,Chennai,0.0,95510.9,sampling / event activation,8,True
+2024-05-01,Grocery,Mumbai,387496.06,128987.55,trade visibility / display,7,True
+2024-05-01,Grocery,Delhi NCR,121141.8,118599.08,trade visibility / display,12,True
+2024-05-01,Grocery,Bengaluru,646549.59,129664.89,trade visibility / display,6,True
+2024-05-01,Grocery,Hyderabad,257971.65,129066.09,trade visibility / display,12,True
+2024-05-01,Grocery,Pune,228824.86,98229.47,trade visibility / display,8,True
+2024-05-01,Grocery,Chennai,385132.82,157419.27,trade visibility / display,4,True
+2024-05-01,Convenience,Mumbai,609802.5,172215.17,trade visibility / display,13,True
+2024-05-01,Convenience,Delhi NCR,315495.99,177521.49,trade visibility / display,14,True
+2024-05-01,Convenience,Bengaluru,72535.9,165481.15,trade visibility / display,10,True
+2024-05-01,Convenience,Hyderabad,427591.79,149210.53,trade visibility / display,12,True
+2024-05-01,Convenience,Pune,270038.84,161369.95,trade visibility / display,4,True
+2024-05-01,Convenience,Chennai,429553.61,196661.71,trade visibility / display,7,True
+2024-05-01,E-commerce,Mumbai,418304.88,117776.42,bundle / search placement,7,True
+2024-05-01,E-commerce,Delhi NCR,411205.13,117091.33,bundle / search placement,12,True
+2024-05-01,E-commerce,Bengaluru,557966.1,149438.72,bundle / search placement,7,True
+2024-05-01,E-commerce,Hyderabad,537658.0,116456.81,bundle / search placement,12,True
+2024-05-01,E-commerce,Pune,404358.17,131279.32,bundle / search placement,6,True
+2024-05-01,E-commerce,Chennai,298120.66,105267.47,bundle / search placement,10,True
+2024-05-01,Quick commerce,Mumbai,798617.05,186561.01,instant discount / app visibility,5,True
+2024-05-01,Quick commerce,Delhi NCR,799479.67,156463.0,instant discount / app visibility,10,True
+2024-05-01,Quick commerce,Bengaluru,681650.4,182149.1,instant discount / app visibility,4,True
+2024-05-01,Quick commerce,Hyderabad,526928.71,118765.95,instant discount / app visibility,12,True
+2024-05-01,Quick commerce,Pune,549541.63,101849.56,instant discount / app visibility,3,True
+2024-05-01,Quick commerce,Chennai,642664.11,108342.87,instant discount / app visibility,15,True
+2024-05-01,Cafés,Mumbai,125976.94,142222.46,trade visibility / display,13,True
+2024-05-01,Cafés,Delhi NCR,92381.08,133094.76,trade visibility / display,10,True
+2024-05-01,Cafés,Bengaluru,86350.33,108989.44,trade visibility / display,14,True
+2024-05-01,Cafés,Hyderabad,40932.81,128639.63,trade visibility / display,13,True
+2024-05-01,Cafés,Pune,84224.2,103795.56,trade visibility / display,4,True
+2024-05-01,Cafés,Chennai,66515.86,88603.67,trade visibility / display,12,True
+2024-05-01,Sports/events,Mumbai,18956.25,63363.24,sampling / event activation,7,True
+2024-05-01,Sports/events,Delhi NCR,52428.34,70334.26,sampling / event activation,14,True
+2024-05-01,Sports/events,Bengaluru,51853.58,101757.8,sampling / event activation,14,True
+2024-05-01,Sports/events,Hyderabad,66745.05,66194.86,sampling / event activation,15,True
+2024-05-01,Sports/events,Pune,44681.19,95934.1,sampling / event activation,8,True
+2024-05-01,Sports/events,Chennai,21948.39,55800.94,sampling / event activation,5,True
+2024-06-01,Grocery,Mumbai,252833.89,146184.16,trade visibility / display,4,True
+2024-06-01,Grocery,Delhi NCR,571771.42,176229.53,trade visibility / display,5,True
+2024-06-01,Grocery,Bengaluru,486818.32,172237.98,trade visibility / display,15,True
+2024-06-01,Grocery,Hyderabad,229252.8,152315.02,trade visibility / display,10,True
+2024-06-01,Grocery,Pune,296640.63,139827.74,trade visibility / display,7,True
+2024-06-01,Grocery,Chennai,256171.66,116664.1,trade visibility / display,8,True
+2024-06-01,Convenience,Mumbai,514565.35,164071.22,trade visibility / display,5,True
+2024-06-01,Convenience,Delhi NCR,351869.43,202105.81,trade visibility / display,10,True
+2024-06-01,Convenience,Bengaluru,651290.79,203247.61,trade visibility / display,8,True
+2024-06-01,Convenience,Hyderabad,377419.46,162880.19,trade visibility / display,13,True
+2024-06-01,Convenience,Pune,276443.82,187817.43,trade visibility / display,3,True
+2024-06-01,Convenience,Chennai,446035.2,160167.49,trade visibility / display,15,True
+2024-06-01,E-commerce,Mumbai,603883.79,146484.58,bundle / search placement,3,True
+2024-06-01,E-commerce,Delhi NCR,488269.0,135672.11,bundle / search placement,8,True
+2024-06-01,E-commerce,Bengaluru,376635.23,160719.78,bundle / search placement,7,True
+2024-06-01,E-commerce,Hyderabad,448742.6,144837.54,bundle / search placement,12,True
+2024-06-01,E-commerce,Pune,323387.24,111959.65,bundle / search placement,11,True
+2024-06-01,E-commerce,Chennai,270054.45,77228.53,bundle / search placement,5,True
+2024-06-01,Quick commerce,Mumbai,761983.36,141728.11,instant discount / app visibility,9,True
+2024-06-01,Quick commerce,Delhi NCR,545345.7,151502.77,instant discount / app visibility,9,True
+2024-06-01,Quick commerce,Bengaluru,865590.8,165824.04,instant discount / app visibility,9,True
+2024-06-01,Quick commerce,Hyderabad,654824.31,162632.68,instant discount / app visibility,3,True
+2024-06-01,Quick commerce,Pune,548924.98,116547.27,instant discount / app visibility,5,True
+2024-06-01,Quick commerce,Chennai,648563.44,160165.31,instant discount / app visibility,9,True
+2024-06-01,Cafés,Mumbai,39028.15,124789.61,trade visibility / display,6,True
+2024-06-01,Cafés,Delhi NCR,100382.72,124221.92,trade visibility / display,10,True
+2024-06-01,Cafés,Bengaluru,108692.06,109379.04,trade visibility / display,5,True
+2024-06-01,Cafés,Hyderabad,69401.34,116630.14,trade visibility / display,12,True
+2024-06-01,Cafés,Pune,85880.63,135110.85,trade visibility / display,5,True
+2024-06-01,Cafés,Chennai,68520.55,118861.96,trade visibility / display,11,True
+2024-06-01,Sports/events,Mumbai,15359.01,71861.48,sampling / event activation,13,True
+2024-06-01,Sports/events,Delhi NCR,21285.04,83136.88,sampling / event activation,7,True
+2024-06-01,Sports/events,Bengaluru,0.0,110508.55,sampling / event activation,4,True
+2024-06-01,Sports/events,Hyderabad,31625.31,83409.97,sampling / event activation,3,True
+2024-06-01,Sports/events,Pune,14005.16,85366.07,sampling / event activation,7,True
+2024-06-01,Sports/events,Chennai,41306.27,54065.87,sampling / event activation,4,True
+2024-07-01,Grocery,Mumbai,250293.31,158979.38,trade visibility / display,14,True
+2024-07-01,Grocery,Delhi NCR,297283.15,142804.73,trade visibility / display,15,True
+2024-07-01,Grocery,Bengaluru,364920.57,152778.47,trade visibility / display,15,True
+2024-07-01,Grocery,Hyderabad,215654.24,112583.52,trade visibility / display,14,True
+2024-07-01,Grocery,Pune,197345.97,138003.36,trade visibility / display,10,True
+2024-07-01,Grocery,Chennai,184035.8,121176.61,trade visibility / display,7,True
+2024-07-01,Convenience,Mumbai,585866.84,196245.17,trade visibility / display,8,True
+2024-07-01,Convenience,Delhi NCR,92954.08,179672.86,trade visibility / display,6,True
+2024-07-01,Convenience,Bengaluru,212995.78,193078.73,trade visibility / display,13,True
+2024-07-01,Convenience,Hyderabad,281982.0,174852.85,trade visibility / display,8,True
+2024-07-01,Convenience,Pune,385548.62,181614.2,trade visibility / display,8,True
+2024-07-01,Convenience,Chennai,328744.33,189442.1,trade visibility / display,11,True
+2024-07-01,E-commerce,Mumbai,592437.95,154754.61,bundle / search placement,7,True
+2024-07-01,E-commerce,Delhi NCR,520735.73,116620.29,bundle / search placement,7,True
+2024-07-01,E-commerce,Bengaluru,581254.39,118310.64,bundle / search placement,5,True
+2024-07-01,E-commerce,Hyderabad,375703.26,82872.09,bundle / search placement,3,True
+2024-07-01,E-commerce,Pune,392199.97,81747.08,bundle / search placement,3,True
+2024-07-01,E-commerce,Chennai,464068.99,140861.88,bundle / search placement,8,True
+2024-07-01,Quick commerce,Mumbai,791620.52,163111.49,instant discount / app visibility,15,True
+2024-07-01,Quick commerce,Delhi NCR,762002.5,110169.53,instant discount / app visibility,6,True
+2024-07-01,Quick commerce,Bengaluru,668733.54,176721.07,instant discount / app visibility,11,True
+2024-07-01,Quick commerce,Hyderabad,566185.53,129609.93,instant discount / app visibility,7,True
+2024-07-01,Quick commerce,Pune,617927.45,158477.84,instant discount / app visibility,6,True
+2024-07-01,Quick commerce,Chennai,512526.05,102958.97,instant discount / app visibility,5,True
+2024-07-01,Cafés,Mumbai,79147.47,77586.69,trade visibility / display,10,True
+2024-07-01,Cafés,Delhi NCR,65986.99,96134.19,trade visibility / display,11,True
+2024-07-01,Cafés,Bengaluru,37474.91,107598.97,trade visibility / display,7,True
+2024-07-01,Cafés,Hyderabad,28553.13,72037.01,trade visibility / display,9,True
+2024-07-01,Cafés,Pune,83778.21,88205.08,trade visibility / display,9,True
+2024-07-01,Cafés,Chennai,63628.3,120202.55,trade visibility / display,6,True
+2024-07-01,Sports/events,Mumbai,46247.06,86226.3,sampling / event activation,11,True
+2024-07-01,Sports/events,Delhi NCR,0.0,64535.35,sampling / event activation,10,True
+2024-07-01,Sports/events,Bengaluru,40624.56,96941.0,sampling / event activation,3,True
+2024-07-01,Sports/events,Hyderabad,43484.06,54157.79,sampling / event activation,9,True
+2024-07-01,Sports/events,Pune,19055.52,56407.89,sampling / event activation,8,True
+2024-07-01,Sports/events,Chennai,25159.29,102751.8,sampling / event activation,13,True
+2024-08-01,Grocery,Mumbai,457699.16,141977.34,trade visibility / display,6,True
+2024-08-01,Grocery,Delhi NCR,321992.56,160891.47,trade visibility / display,15,True
+2024-08-01,Grocery,Bengaluru,434115.04,128697.1,trade visibility / display,10,True
+2024-08-01,Grocery,Hyderabad,203676.97,117340.15,trade visibility / display,4,True
+2024-08-01,Grocery,Pune,305346.37,150832.98,trade visibility / display,8,True
+2024-08-01,Grocery,Chennai,274322.29,150419.11,trade visibility / display,14,True
+2024-08-01,Convenience,Mumbai,457551.81,194596.99,trade visibility / display,6,True
+2024-08-01,Convenience,Delhi NCR,328133.0,157895.23,trade visibility / display,12,True
+2024-08-01,Convenience,Bengaluru,132520.82,158973.31,trade visibility / display,13,True
+2024-08-01,Convenience,Hyderabad,320665.75,151066.83,trade visibility / display,12,True
+2024-08-01,Convenience,Pune,348493.76,153307.69,trade visibility / display,4,True
+2024-08-01,Convenience,Chennai,250860.27,177926.91,trade visibility / display,7,True
+2024-08-01,E-commerce,Mumbai,513531.15,127456.85,bundle / search placement,7,True
+2024-08-01,E-commerce,Delhi NCR,490261.71,118087.44,bundle / search placement,7,True
+2024-08-01,E-commerce,Bengaluru,629808.75,123134.33,bundle / search placement,14,True
+2024-08-01,E-commerce,Hyderabad,336069.28,116816.28,bundle / search placement,3,True
+2024-08-01,E-commerce,Pune,530390.8,128568.02,bundle / search placement,10,True
+2024-08-01,E-commerce,Chennai,365370.11,88451.53,bundle / search placement,15,True
+2024-08-01,Quick commerce,Mumbai,752728.42,123715.9,instant discount / app visibility,14,True
+2024-08-01,Quick commerce,Delhi NCR,854375.0,166063.75,instant discount / app visibility,10,True
+2024-08-01,Quick commerce,Bengaluru,783004.3,166903.42,instant discount / app visibility,15,True
+2024-08-01,Quick commerce,Hyderabad,430853.57,145848.15,instant discount / app visibility,8,True
+2024-08-01,Quick commerce,Pune,588357.18,117793.36,instant discount / app visibility,10,True
+2024-08-01,Quick commerce,Chennai,504458.33,126112.21,instant discount / app visibility,10,True
+2024-08-01,Cafés,Mumbai,78066.39,80058.17,trade visibility / display,3,True
+2024-08-01,Cafés,Delhi NCR,54013.15,121983.45,trade visibility / display,3,True
+2024-08-01,Cafés,Bengaluru,102022.03,131230.63,trade visibility / display,14,True
+2024-08-01,Cafés,Hyderabad,94816.74,85932.9,trade visibility / display,5,True
+2024-08-01,Cafés,Pune,41864.58,126708.63,trade visibility / display,7,True
+2024-08-01,Cafés,Chennai,14839.86,60974.95,trade visibility / display,11,True
+2024-08-01,Sports/events,Mumbai,65512.48,88766.5,sampling / event activation,10,True
+2024-08-01,Sports/events,Delhi NCR,40044.45,78165.39,sampling / event activation,9,True
+2024-08-01,Sports/events,Bengaluru,49363.88,82176.61,sampling / event activation,15,True
+2024-08-01,Sports/events,Hyderabad,14998.26,85821.9,sampling / event activation,13,True
+2024-08-01,Sports/events,Pune,52621.15,90074.31,sampling / event activation,15,True
+2024-08-01,Sports/events,Chennai,58470.89,106253.32,sampling / event activation,11,True
+2024-09-01,Grocery,Mumbai,96120.78,131247.39,trade visibility / display,15,True
+2024-09-01,Grocery,Delhi NCR,376097.79,136144.85,trade visibility / display,10,True
+2024-09-01,Grocery,Bengaluru,506271.13,138552.02,trade visibility / display,10,True
+2024-09-01,Grocery,Hyderabad,125816.4,105420.76,trade visibility / display,13,True
+2024-09-01,Grocery,Pune,220418.95,153519.64,trade visibility / display,14,True
+2024-09-01,Grocery,Chennai,114908.9,123712.69,trade visibility / display,3,True
+2024-09-01,Convenience,Mumbai,506074.62,208700.36,trade visibility / display,14,True
+2024-09-01,Convenience,Delhi NCR,586885.24,206030.57,trade visibility / display,11,True
+2024-09-01,Convenience,Bengaluru,556259.53,161621.31,trade visibility / display,14,True
+2024-09-01,Convenience,Hyderabad,257112.93,121755.37,trade visibility / display,12,True
+2024-09-01,Convenience,Pune,161690.23,168690.7,trade visibility / display,15,True
+2024-09-01,Convenience,Chennai,122661.26,138237.83,trade visibility / display,6,True
+2024-09-01,E-commerce,Mumbai,438384.09,140964.17,bundle / search placement,5,True
+2024-09-01,E-commerce,Delhi NCR,462449.11,148718.24,bundle / search placement,5,True
+2024-09-01,E-commerce,Bengaluru,607298.2,142084.61,bundle / search placement,6,True
+2024-09-01,E-commerce,Hyderabad,461778.17,90842.94,bundle / search placement,5,True
+2024-09-01,E-commerce,Pune,302223.23,136912.13,bundle / search placement,8,True
+2024-09-01,E-commerce,Chennai,400433.86,135078.3,bundle / search placement,5,True
+2024-09-01,Quick commerce,Mumbai,672170.3,177186.22,instant discount / app visibility,5,True
+2024-09-01,Quick commerce,Delhi NCR,665178.75,144948.48,instant discount / app visibility,9,True
+2024-09-01,Quick commerce,Bengaluru,686873.63,150364.71,instant discount / app visibility,13,True
+2024-09-01,Quick commerce,Hyderabad,546764.07,158759.04,instant discount / app visibility,4,True
+2024-09-01,Quick commerce,Pune,613065.68,158673.87,instant discount / app visibility,9,True
+2024-09-01,Quick commerce,Chennai,575594.32,119753.2,instant discount / app visibility,11,True
+2024-09-01,Cafés,Mumbai,168168.6,122481.91,trade visibility / display,12,True
+2024-09-01,Cafés,Delhi NCR,144502.58,114241.88,trade visibility / display,4,True
+2024-09-01,Cafés,Bengaluru,76868.08,123212.48,trade visibility / display,12,True
+2024-09-01,Cafés,Hyderabad,92239.38,107101.41,trade visibility / display,3,True
+2024-09-01,Cafés,Pune,72066.93,84672.94,trade visibility / display,6,True
+2024-09-01,Cafés,Chennai,70223.81,123433.91,trade visibility / display,7,True
+2024-09-01,Sports/events,Mumbai,28445.24,106581.5,sampling / event activation,14,True
+2024-09-01,Sports/events,Delhi NCR,0.0,107967.86,sampling / event activation,5,True
+2024-09-01,Sports/events,Bengaluru,91540.11,119084.07,sampling / event activation,13,True
+2024-09-01,Sports/events,Hyderabad,36547.07,73669.81,sampling / event activation,15,True
+2024-09-01,Sports/events,Pune,28020.81,77979.12,sampling / event activation,15,True
+2024-09-01,Sports/events,Chennai,26361.24,105012.15,sampling / event activation,6,True
+2024-10-01,Grocery,Mumbai,318949.83,155335.06,trade visibility / display,4,True
+2024-10-01,Grocery,Delhi NCR,191456.35,133012.33,trade visibility / display,5,True
+2024-10-01,Grocery,Bengaluru,277372.29,123838.82,trade visibility / display,12,True
+2024-10-01,Grocery,Hyderabad,152575.01,129994.16,trade visibility / display,5,True
+2024-10-01,Grocery,Pune,396249.85,136476.33,trade visibility / display,11,True
+2024-10-01,Grocery,Chennai,261194.86,115321.53,trade visibility / display,7,True
+2024-10-01,Convenience,Mumbai,539632.48,202845.69,trade visibility / display,12,True
+2024-10-01,Convenience,Delhi NCR,654441.29,205760.15,trade visibility / display,10,True
+2024-10-01,Convenience,Bengaluru,459810.51,173734.75,trade visibility / display,10,True
+2024-10-01,Convenience,Hyderabad,311535.39,187554.2,trade visibility / display,13,True
+2024-10-01,Convenience,Pune,475976.66,168147.78,trade visibility / display,15,True
+2024-10-01,Convenience,Chennai,158238.82,148679.8,trade visibility / display,7,True
+2024-10-01,E-commerce,Mumbai,392965.11,119754.59,bundle / search placement,9,True
+2024-10-01,E-commerce,Delhi NCR,657022.63,150809.68,bundle / search placement,11,True
+2024-10-01,E-commerce,Bengaluru,665136.78,143262.37,bundle / search placement,13,True
+2024-10-01,E-commerce,Hyderabad,454762.55,143256.32,bundle / search placement,9,True
+2024-10-01,E-commerce,Pune,457290.78,126225.1,bundle / search placement,7,True
+2024-10-01,E-commerce,Chennai,345854.73,139672.87,bundle / search placement,14,True
+2024-10-01,Quick commerce,Mumbai,813594.14,173651.82,instant discount / app visibility,15,True
+2024-10-01,Quick commerce,Delhi NCR,650754.36,139576.43,instant discount / app visibility,10,True
+2024-10-01,Quick commerce,Bengaluru,887180.43,169395.21,instant discount / app visibility,4,True
+2024-10-01,Quick commerce,Hyderabad,785905.5,178789.05,instant discount / app visibility,6,True
+2024-10-01,Quick commerce,Pune,555360.2,146763.89,instant discount / app visibility,9,True
+2024-10-01,Quick commerce,Chennai,678452.37,119852.23,instant discount / app visibility,12,True
+2024-10-01,Cafés,Mumbai,145586.62,88520.21,trade visibility / display,11,True
+2024-10-01,Cafés,Delhi NCR,183393.99,140051.61,trade visibility / display,13,True
+2024-10-01,Cafés,Bengaluru,141372.49,107997.65,trade visibility / display,3,True
+2024-10-01,Cafés,Hyderabad,150563.69,67739.22,trade visibility / display,9,True
+2024-10-01,Cafés,Pune,84162.19,73705.62,trade visibility / display,12,True
+2024-10-01,Cafés,Chennai,104102.27,72945.59,trade visibility / display,15,True
+2024-10-01,Sports/events,Mumbai,10608.41,75616.3,sampling / event activation,4,True
+2024-10-01,Sports/events,Delhi NCR,82012.32,102042.53,sampling / event activation,14,True
+2024-10-01,Sports/events,Bengaluru,22357.35,104349.6,sampling / event activation,3,True
+2024-10-01,Sports/events,Hyderabad,11930.07,57153.75,sampling / event activation,5,True
+2024-10-01,Sports/events,Pune,13516.14,102897.58,sampling / event activation,14,True
+2024-10-01,Sports/events,Chennai,0.0,56102.6,sampling / event activation,13,True
+2024-11-01,Grocery,Mumbai,315445.5,154017.87,trade visibility / display,15,True
+2024-11-01,Grocery,Delhi NCR,427141.66,181633.14,trade visibility / display,10,True
+2024-11-01,Grocery,Bengaluru,314374.82,159904.72,trade visibility / display,11,True
+2024-11-01,Grocery,Hyderabad,389976.37,147154.8,trade visibility / display,9,True
+2024-11-01,Grocery,Pune,297007.38,168434.96,trade visibility / display,9,True
+2024-11-01,Grocery,Chennai,228686.84,139102.59,trade visibility / display,9,True
+2024-11-01,Convenience,Mumbai,636707.95,219024.24,trade visibility / display,6,True
+2024-11-01,Convenience,Delhi NCR,313877.13,204322.83,trade visibility / display,14,True
+2024-11-01,Convenience,Bengaluru,515071.02,246241.36,trade visibility / display,7,True
+2024-11-01,Convenience,Hyderabad,272295.13,176607.03,trade visibility / display,10,True
+2024-11-01,Convenience,Pune,412293.83,208223.93,trade visibility / display,11,True
+2024-11-01,Convenience,Chennai,202704.82,199326.16,trade visibility / display,9,True
+2024-11-01,E-commerce,Mumbai,540952.62,143573.51,bundle / search placement,10,True
+2024-11-01,E-commerce,Delhi NCR,688278.86,160217.1,bundle / search placement,3,True
+2024-11-01,E-commerce,Bengaluru,758643.15,135746.4,bundle / search placement,7,True
+2024-11-01,E-commerce,Hyderabad,677703.28,101638.99,bundle / search placement,8,True
+2024-11-01,E-commerce,Pune,383784.08,126840.0,bundle / search placement,8,True
+2024-11-01,E-commerce,Chennai,472995.86,108573.61,bundle / search placement,14,True
+2024-11-01,Quick commerce,Mumbai,1118200.45,150007.29,instant discount / app visibility,14,True
+2024-11-01,Quick commerce,Delhi NCR,913520.46,181886.11,instant discount / app visibility,12,True
+2024-11-01,Quick commerce,Bengaluru,899350.12,184225.17,instant discount / app visibility,7,True
+2024-11-01,Quick commerce,Hyderabad,740579.46,146174.54,instant discount / app visibility,3,True
+2024-11-01,Quick commerce,Pune,699124.97,176726.54,instant discount / app visibility,12,True
+2024-11-01,Quick commerce,Chennai,804345.25,129065.96,instant discount / app visibility,14,True
+2024-11-01,Cafés,Mumbai,72098.19,129655.28,trade visibility / display,9,True
+2024-11-01,Cafés,Delhi NCR,14696.47,86700.23,trade visibility / display,13,True
+2024-11-01,Cafés,Bengaluru,158351.88,146694.69,trade visibility / display,15,True
+2024-11-01,Cafés,Hyderabad,65529.41,118749.93,trade visibility / display,10,True
+2024-11-01,Cafés,Pune,72203.43,98192.76,trade visibility / display,5,True
+2024-11-01,Cafés,Chennai,53765.6,76011.61,trade visibility / display,3,True
+2024-11-01,Sports/events,Mumbai,38529.47,107652.95,sampling / event activation,12,True
+2024-11-01,Sports/events,Delhi NCR,65149.4,122617.4,sampling / event activation,10,True
+2024-11-01,Sports/events,Bengaluru,22350.39,70186.21,sampling / event activation,4,True
+2024-11-01,Sports/events,Hyderabad,132335.67,75343.61,sampling / event activation,3,True
+2024-11-01,Sports/events,Pune,44245.21,100147.17,sampling / event activation,15,True
+2024-11-01,Sports/events,Chennai,24907.76,62501.14,sampling / event activation,7,True
+2024-12-01,Grocery,Mumbai,372640.38,172909.68,trade visibility / display,7,True
+2024-12-01,Grocery,Delhi NCR,366340.45,181200.7,trade visibility / display,11,True
+2024-12-01,Grocery,Bengaluru,224582.2,153262.24,trade visibility / display,7,True
+2024-12-01,Grocery,Hyderabad,180163.68,106953.29,trade visibility / display,14,True
+2024-12-01,Grocery,Pune,284006.81,147530.7,trade visibility / display,11,True
+2024-12-01,Grocery,Chennai,253932.3,114077.39,trade visibility / display,7,True
+2024-12-01,Convenience,Mumbai,334616.84,204497.32,trade visibility / display,6,True
+2024-12-01,Convenience,Delhi NCR,419427.76,186803.27,trade visibility / display,14,True
+2024-12-01,Convenience,Bengaluru,257175.74,213343.31,trade visibility / display,10,True
+2024-12-01,Convenience,Hyderabad,495321.08,201855.09,trade visibility / display,14,True
+2024-12-01,Convenience,Pune,386144.15,176120.49,trade visibility / display,7,True
+2024-12-01,Convenience,Chennai,446013.87,136594.48,trade visibility / display,3,True
+2024-12-01,E-commerce,Mumbai,470716.87,131934.08,bundle / search placement,14,True
+2024-12-01,E-commerce,Delhi NCR,494979.49,160411.1,bundle / search placement,6,True
+2024-12-01,E-commerce,Bengaluru,376863.99,144014.98,bundle / search placement,13,True
+2024-12-01,E-commerce,Hyderabad,480742.24,108539.82,bundle / search placement,12,True
+2024-12-01,E-commerce,Pune,453001.7,143800.49,bundle / search placement,6,True
+2024-12-01,E-commerce,Chennai,566154.65,108796.99,bundle / search placement,12,True
+2024-12-01,Quick commerce,Mumbai,798604.04,161948.69,instant discount / app visibility,4,True
+2024-12-01,Quick commerce,Delhi NCR,816406.78,144167.39,instant discount / app visibility,8,True
+2024-12-01,Quick commerce,Bengaluru,962786.62,200942.34,instant discount / app visibility,7,True
+2024-12-01,Quick commerce,Hyderabad,681004.93,150082.36,instant discount / app visibility,11,True
+2024-12-01,Quick commerce,Pune,818119.12,176206.01,instant discount / app visibility,9,True
+2024-12-01,Quick commerce,Chennai,579589.03,169111.42,instant discount / app visibility,10,True
+2024-12-01,Cafés,Mumbai,77035.69,98829.79,trade visibility / display,9,True
+2024-12-01,Cafés,Delhi NCR,38365.75,100666.28,trade visibility / display,12,True
+2024-12-01,Cafés,Bengaluru,81086.63,85251.29,trade visibility / display,5,True
+2024-12-01,Cafés,Hyderabad,116533.39,127373.93,trade visibility / display,12,True
+2024-12-01,Cafés,Pune,60890.11,129257.97,trade visibility / display,3,True
+2024-12-01,Cafés,Chennai,64789.09,121877.58,trade visibility / display,4,True
+2024-12-01,Sports/events,Mumbai,0.0,111112.41,sampling / event activation,12,True
+2024-12-01,Sports/events,Delhi NCR,0.0,113003.21,sampling / event activation,5,True
+2024-12-01,Sports/events,Bengaluru,90530.54,104909.69,sampling / event activation,13,True
+2024-12-01,Sports/events,Hyderabad,56245.03,104053.92,sampling / event activation,4,True
+2024-12-01,Sports/events,Pune,47049.36,102404.9,sampling / event activation,4,True
+2024-12-01,Sports/events,Chennai,23659.37,63822.82,sampling / event activation,15,True
+2025-01-01,Grocery,Mumbai,388066.3,161473.09,trade visibility / display,5,True
+2025-01-01,Grocery,Delhi NCR,344926.5,113928.19,trade visibility / display,14,True
+2025-01-01,Grocery,Bengaluru,175126.36,145621.14,trade visibility / display,7,True
+2025-01-01,Grocery,Hyderabad,249109.75,113944.97,trade visibility / display,13,True
+2025-01-01,Grocery,Pune,325936.87,119515.23,trade visibility / display,15,True
+2025-01-01,Grocery,Chennai,167562.53,106419.71,trade visibility / display,4,True
+2025-01-01,Convenience,Mumbai,452578.0,194250.24,trade visibility / display,7,True
+2025-01-01,Convenience,Delhi NCR,437971.11,169373.69,trade visibility / display,10,True
+2025-01-01,Convenience,Bengaluru,371431.43,164502.76,trade visibility / display,14,True
+2025-01-01,Convenience,Hyderabad,152192.0,135254.28,trade visibility / display,5,True
+2025-01-01,Convenience,Pune,306772.5,139450.02,trade visibility / display,5,True
+2025-01-01,Convenience,Chennai,218412.6,154716.35,trade visibility / display,7,True
+2025-01-01,E-commerce,Mumbai,509353.87,118509.3,bundle / search placement,5,True
+2025-01-01,E-commerce,Delhi NCR,422623.5,93318.23,bundle / search placement,6,True
+2025-01-01,E-commerce,Bengaluru,500413.03,158423.31,bundle / search placement,4,True
+2025-01-01,E-commerce,Hyderabad,430412.78,110301.59,bundle / search placement,13,True
+2025-01-01,E-commerce,Pune,362732.17,102880.28,bundle / search placement,13,True
+2025-01-01,E-commerce,Chennai,296694.25,100311.24,bundle / search placement,4,True
+2025-01-01,Quick commerce,Mumbai,794196.83,142938.27,instant discount / app visibility,9,True
+2025-01-01,Quick commerce,Delhi NCR,630837.79,147881.17,instant discount / app visibility,11,True
+2025-01-01,Quick commerce,Bengaluru,785808.32,120890.08,instant discount / app visibility,11,True
+2025-01-01,Quick commerce,Hyderabad,619071.43,144380.9,instant discount / app visibility,15,True
+2025-01-01,Quick commerce,Pune,549703.78,149048.15,instant discount / app visibility,11,True
+2025-01-01,Quick commerce,Chennai,499745.29,118448.83,instant discount / app visibility,11,True
+2025-01-01,Cafés,Mumbai,84342.25,128816.77,trade visibility / display,3,True
+2025-01-01,Cafés,Delhi NCR,153583.02,99536.46,trade visibility / display,4,True
+2025-01-01,Cafés,Bengaluru,51857.64,129877.14,trade visibility / display,11,True
+2025-01-01,Cafés,Hyderabad,71020.09,83274.61,trade visibility / display,14,True
+2025-01-01,Cafés,Pune,25487.04,81292.37,trade visibility / display,8,True
+2025-01-01,Cafés,Chennai,71580.6,121563.28,trade visibility / display,11,True
+2025-01-01,Sports/events,Mumbai,57212.81,117819.24,sampling / event activation,5,True
+2025-01-01,Sports/events,Delhi NCR,3717.03,60293.08,sampling / event activation,8,True
+2025-01-01,Sports/events,Bengaluru,32742.9,99805.02,sampling / event activation,12,True
+2025-01-01,Sports/events,Hyderabad,9806.18,60125.92,sampling / event activation,11,True
+2025-01-01,Sports/events,Pune,52788.43,59094.43,sampling / event activation,4,True
+2025-01-01,Sports/events,Chennai,10835.55,103105.34,sampling / event activation,14,True
+2025-02-01,Grocery,Mumbai,249360.82,123027.41,trade visibility / display,15,True
+2025-02-01,Grocery,Delhi NCR,181715.81,132917.88,trade visibility / display,9,True
+2025-02-01,Grocery,Bengaluru,292481.0,144015.83,trade visibility / display,7,True
+2025-02-01,Grocery,Hyderabad,305879.74,114892.02,trade visibility / display,9,True
+2025-02-01,Grocery,Pune,280289.83,116188.72,trade visibility / display,13,True
+2025-02-01,Grocery,Chennai,256402.45,124361.38,trade visibility / display,8,True
+2025-02-01,Convenience,Mumbai,244138.76,150175.42,trade visibility / display,3,True
+2025-02-01,Convenience,Delhi NCR,435411.46,202210.55,trade visibility / display,3,True
+2025-02-01,Convenience,Bengaluru,358474.71,185643.72,trade visibility / display,13,True
+2025-02-01,Convenience,Hyderabad,326265.57,141903.47,trade visibility / display,13,True
+2025-02-01,Convenience,Pune,311977.01,180000.54,trade visibility / display,13,True
+2025-02-01,Convenience,Chennai,266007.53,155062.1,trade visibility / display,4,True
+2025-02-01,E-commerce,Mumbai,448591.05,131031.08,bundle / search placement,5,True
+2025-02-01,E-commerce,Delhi NCR,367829.1,97175.81,bundle / search placement,8,True
+2025-02-01,E-commerce,Bengaluru,536755.27,108849.01,bundle / search placement,6,True
+2025-02-01,E-commerce,Hyderabad,328614.47,104010.81,bundle / search placement,8,True
+2025-02-01,E-commerce,Pune,265670.44,140278.07,bundle / search placement,10,True
+2025-02-01,E-commerce,Chennai,312516.09,81801.25,bundle / search placement,6,True
+2025-02-01,Quick commerce,Mumbai,780632.44,136566.71,instant discount / app visibility,4,True
+2025-02-01,Quick commerce,Delhi NCR,691042.45,154318.92,instant discount / app visibility,8,True
+2025-02-01,Quick commerce,Bengaluru,727856.81,201481.55,instant discount / app visibility,12,True
+2025-02-01,Quick commerce,Hyderabad,573713.39,139510.3,instant discount / app visibility,11,True
+2025-02-01,Quick commerce,Pune,528851.38,129287.49,instant discount / app visibility,7,True
+2025-02-01,Quick commerce,Chennai,591677.58,134431.14,instant discount / app visibility,7,True
+2025-02-01,Cafés,Mumbai,25690.91,91119.42,trade visibility / display,10,True
+2025-02-01,Cafés,Delhi NCR,149955.34,106151.73,trade visibility / display,5,True
+2025-02-01,Cafés,Bengaluru,158388.88,128466.36,trade visibility / display,13,True
+2025-02-01,Cafés,Hyderabad,73563.24,80881.81,trade visibility / display,14,True
+2025-02-01,Cafés,Pune,46733.0,120551.53,trade visibility / display,3,True
+2025-02-01,Cafés,Chennai,32797.42,97721.33,trade visibility / display,15,True
+2025-02-01,Sports/events,Mumbai,47456.31,99195.16,sampling / event activation,3,True
+2025-02-01,Sports/events,Delhi NCR,0.0,83031.07,sampling / event activation,8,True
+2025-02-01,Sports/events,Bengaluru,5267.97,96914.4,sampling / event activation,11,True
+2025-02-01,Sports/events,Hyderabad,0.0,71980.47,sampling / event activation,7,True
+2025-02-01,Sports/events,Pune,39024.15,68584.65,sampling / event activation,5,True
+2025-02-01,Sports/events,Chennai,27530.51,104380.26,sampling / event activation,3,True
+2025-03-01,Grocery,Mumbai,197492.08,138343.5,trade visibility / display,12,True
+2025-03-01,Grocery,Delhi NCR,297575.89,142307.22,trade visibility / display,3,True
+2025-03-01,Grocery,Bengaluru,336505.64,116509.28,trade visibility / display,9,True
+2025-03-01,Grocery,Hyderabad,235977.91,120267.5,trade visibility / display,8,True
+2025-03-01,Grocery,Pune,304291.02,127227.47,trade visibility / display,15,True
+2025-03-01,Grocery,Chennai,215771.37,108732.99,trade visibility / display,15,True
+2025-03-01,Convenience,Mumbai,416504.39,194813.98,trade visibility / display,13,True
+2025-03-01,Convenience,Delhi NCR,380058.19,233270.85,trade visibility / display,12,True
+2025-03-01,Convenience,Bengaluru,207081.42,218812.33,trade visibility / display,10,True
+2025-03-01,Convenience,Hyderabad,167763.73,197676.71,trade visibility / display,7,True
+2025-03-01,Convenience,Pune,537423.84,186816.22,trade visibility / display,5,True
+2025-03-01,Convenience,Chennai,375535.33,140597.75,trade visibility / display,15,True
+2025-03-01,E-commerce,Mumbai,459897.4,107594.06,bundle / search placement,8,True
+2025-03-01,E-commerce,Delhi NCR,486546.33,158731.78,bundle / search placement,8,True
+2025-03-01,E-commerce,Bengaluru,542337.42,165332.72,bundle / search placement,4,True
+2025-03-01,E-commerce,Hyderabad,446834.73,127524.19,bundle / search placement,6,True
+2025-03-01,E-commerce,Pune,520323.13,111596.83,bundle / search placement,11,True
+2025-03-01,E-commerce,Chennai,396426.42,143233.73,bundle / search placement,8,True
+2025-03-01,Quick commerce,Mumbai,749455.82,162847.1,instant discount / app visibility,10,True
+2025-03-01,Quick commerce,Delhi NCR,797507.34,160546.42,instant discount / app visibility,5,True
+2025-03-01,Quick commerce,Bengaluru,1156486.33,196039.99,instant discount / app visibility,4,True
+2025-03-01,Quick commerce,Hyderabad,807405.75,123233.95,instant discount / app visibility,14,True
+2025-03-01,Quick commerce,Pune,674436.65,138580.3,instant discount / app visibility,8,True
+2025-03-01,Quick commerce,Chennai,764298.3,173793.1,instant discount / app visibility,7,True
+2025-03-01,Cafés,Mumbai,187851.08,133113.87,trade visibility / display,6,True
+2025-03-01,Cafés,Delhi NCR,39041.98,109523.65,trade visibility / display,11,True
+2025-03-01,Cafés,Bengaluru,138266.67,107990.98,trade visibility / display,10,True
+2025-03-01,Cafés,Hyderabad,113235.22,76849.74,trade visibility / display,8,True
+2025-03-01,Cafés,Pune,81745.69,121208.33,trade visibility / display,15,True
+2025-03-01,Cafés,Chennai,6111.96,82847.25,trade visibility / display,14,True
+2025-03-01,Sports/events,Mumbai,77967.71,90138.14,sampling / event activation,5,True
+2025-03-01,Sports/events,Delhi NCR,31435.61,94615.34,sampling / event activation,11,True
+2025-03-01,Sports/events,Bengaluru,33609.86,74929.83,sampling / event activation,15,True
+2025-03-01,Sports/events,Hyderabad,78751.96,65882.27,sampling / event activation,9,True
+2025-03-01,Sports/events,Pune,67541.91,62954.51,sampling / event activation,3,True
+2025-03-01,Sports/events,Chennai,57054.55,110053.35,sampling / event activation,4,True
+2025-04-01,Grocery,Mumbai,147926.55,134178.75,trade visibility / display,11,True
+2025-04-01,Grocery,Delhi NCR,283181.97,123717.12,trade visibility / display,14,True
+2025-04-01,Grocery,Bengaluru,349104.58,184162.65,trade visibility / display,4,True
+2025-04-01,Grocery,Hyderabad,381307.79,122688.1,trade visibility / display,10,True
+2025-04-01,Grocery,Pune,358941.04,128870.39,trade visibility / display,9,True
+2025-04-01,Grocery,Chennai,300336.76,115002.92,trade visibility / display,6,True
+2025-04-01,Convenience,Mumbai,406936.92,234486.56,trade visibility / display,11,True
+2025-04-01,Convenience,Delhi NCR,605661.2,192243.82,trade visibility / display,14,True
+2025-04-01,Convenience,Bengaluru,793586.49,252169.46,trade visibility / display,6,True
+2025-04-01,Convenience,Hyderabad,435339.81,159240.59,trade visibility / display,3,True
+2025-04-01,Convenience,Pune,559759.18,168180.69,trade visibility / display,7,True
+2025-04-01,Convenience,Chennai,284851.67,161220.52,trade visibility / display,7,True
+2025-04-01,E-commerce,Mumbai,660710.15,142336.05,bundle / search placement,12,True
+2025-04-01,E-commerce,Delhi NCR,487459.83,123836.15,bundle / search placement,9,True
+2025-04-01,E-commerce,Bengaluru,609236.28,151879.64,bundle / search placement,3,True
+2025-04-01,E-commerce,Hyderabad,366545.58,101900.09,bundle / search placement,7,True
+2025-04-01,E-commerce,Pune,466064.77,110841.53,bundle / search placement,12,True
+2025-04-01,E-commerce,Chennai,370435.31,91691.4,bundle / search placement,9,True
+2025-04-01,Quick commerce,Mumbai,1013685.58,212629.04,instant discount / app visibility,10,True
+2025-04-01,Quick commerce,Delhi NCR,948469.45,183239.24,instant discount / app visibility,6,True
+2025-04-01,Quick commerce,Bengaluru,883157.77,204621.4,instant discount / app visibility,7,True
+2025-04-01,Quick commerce,Hyderabad,747897.88,171204.05,instant discount / app visibility,4,True
+2025-04-01,Quick commerce,Pune,738253.28,175387.07,instant discount / app visibility,4,True
+2025-04-01,Quick commerce,Chennai,626784.66,157069.03,instant discount / app visibility,3,True
+2025-04-01,Cafés,Mumbai,158579.11,84465.51,trade visibility / display,11,True
+2025-04-01,Cafés,Delhi NCR,137120.65,87527.25,trade visibility / display,5,True
+2025-04-01,Cafés,Bengaluru,103874.91,89415.98,trade visibility / display,10,True
+2025-04-01,Cafés,Hyderabad,36486.14,112388.47,trade visibility / display,15,True
+2025-04-01,Cafés,Pune,21793.98,99495.16,trade visibility / display,12,True
+2025-04-01,Cafés,Chennai,84750.93,117862.76,trade visibility / display,10,True
+2025-04-01,Sports/events,Mumbai,14818.0,74162.13,sampling / event activation,4,True
+2025-04-01,Sports/events,Delhi NCR,61694.46,84761.59,sampling / event activation,9,True
+2025-04-01,Sports/events,Bengaluru,41841.88,65719.2,sampling / event activation,14,True
+2025-04-01,Sports/events,Hyderabad,52464.5,104844.05,sampling / event activation,7,True
+2025-04-01,Sports/events,Pune,58466.43,85800.36,sampling / event activation,13,True
+2025-04-01,Sports/events,Chennai,21470.56,59771.86,sampling / event activation,12,True
+2025-05-01,Grocery,Mumbai,457050.4,155795.41,trade visibility / display,6,True
+2025-05-01,Grocery,Delhi NCR,377106.92,121958.4,trade visibility / display,4,True
+2025-05-01,Grocery,Bengaluru,331866.87,149203.17,trade visibility / display,3,True
+2025-05-01,Grocery,Hyderabad,323437.15,122442.96,trade visibility / display,6,True
+2025-05-01,Grocery,Pune,208658.35,153356.86,trade visibility / display,7,True
+2025-05-01,Grocery,Chennai,214030.03,125972.66,trade visibility / display,11,True
+2025-05-01,Convenience,Mumbai,384888.56,219318.75,trade visibility / display,10,True
+2025-05-01,Convenience,Delhi NCR,436809.15,187330.21,trade visibility / display,9,True
+2025-05-01,Convenience,Bengaluru,495555.93,223189.5,trade visibility / display,12,True
+2025-05-01,Convenience,Hyderabad,278088.37,186935.58,trade visibility / display,13,True
+2025-05-01,Convenience,Pune,486574.73,180988.81,trade visibility / display,12,True
+2025-05-01,Convenience,Chennai,283560.8,188479.12,trade visibility / display,14,True
+2025-05-01,E-commerce,Mumbai,568043.24,182594.45,bundle / search placement,7,True
+2025-05-01,E-commerce,Delhi NCR,517211.89,127133.63,bundle / search placement,13,True
+2025-05-01,E-commerce,Bengaluru,735743.32,186785.42,bundle / search placement,8,True
+2025-05-01,E-commerce,Hyderabad,507504.86,106694.12,bundle / search placement,5,True
+2025-05-01,E-commerce,Pune,577828.51,119235.05,bundle / search placement,4,True
+2025-05-01,E-commerce,Chennai,315944.15,104341.91,bundle / search placement,4,True
+2025-05-01,Quick commerce,Mumbai,1033353.37,216807.98,instant discount / app visibility,15,True
+2025-05-01,Quick commerce,Delhi NCR,832134.77,203176.26,instant discount / app visibility,5,True
+2025-05-01,Quick commerce,Bengaluru,1142746.88,200861.96,instant discount / app visibility,13,True
+2025-05-01,Quick commerce,Hyderabad,856392.61,184589.43,instant discount / app visibility,13,True
+2025-05-01,Quick commerce,Pune,884227.94,174302.54,instant discount / app visibility,8,True
+2025-05-01,Quick commerce,Chennai,869210.83,132566.82,instant discount / app visibility,14,True
+2025-05-01,Cafés,Mumbai,143288.11,89500.78,trade visibility / display,14,True
+2025-05-01,Cafés,Delhi NCR,164304.26,110477.08,trade visibility / display,15,True
+2025-05-01,Cafés,Bengaluru,47335.55,142510.04,trade visibility / display,9,True
+2025-05-01,Cafés,Hyderabad,99782.23,100376.6,trade visibility / display,6,True
+2025-05-01,Cafés,Pune,69203.88,112283.2,trade visibility / display,3,True
+2025-05-01,Cafés,Chennai,4703.29,83210.72,trade visibility / display,13,True
+2025-05-01,Sports/events,Mumbai,7978.65,79233.17,sampling / event activation,14,True
+2025-05-01,Sports/events,Delhi NCR,86077.52,69350.13,sampling / event activation,9,True
+2025-05-01,Sports/events,Bengaluru,0.0,97271.63,sampling / event activation,3,True
+2025-05-01,Sports/events,Hyderabad,62863.74,80513.96,sampling / event activation,13,True
+2025-05-01,Sports/events,Pune,39130.0,101291.97,sampling / event activation,6,True
+2025-05-01,Sports/events,Chennai,56425.02,71384.14,sampling / event activation,10,True
+2025-06-01,Grocery,Mumbai,360387.55,171777.94,trade visibility / display,11,True
+2025-06-01,Grocery,Delhi NCR,283670.23,149563.68,trade visibility / display,4,True
+2025-06-01,Grocery,Bengaluru,411600.21,170041.12,trade visibility / display,3,True
+2025-06-01,Grocery,Hyderabad,299391.18,106654.08,trade visibility / display,4,True
+2025-06-01,Grocery,Pune,307143.83,120442.9,trade visibility / display,15,True
+2025-06-01,Grocery,Chennai,399191.49,115473.42,trade visibility / display,15,True
+2025-06-01,Convenience,Mumbai,589750.43,222515.37,trade visibility / display,8,True
+2025-06-01,Convenience,Delhi NCR,410443.6,241310.66,trade visibility / display,8,True
+2025-06-01,Convenience,Bengaluru,717471.62,236472.12,trade visibility / display,8,True
+2025-06-01,Convenience,Hyderabad,147171.89,174578.7,trade visibility / display,7,True
+2025-06-01,Convenience,Pune,411922.67,212704.28,trade visibility / display,10,True
+2025-06-01,Convenience,Chennai,54410.68,188311.13,trade visibility / display,7,True
+2025-06-01,E-commerce,Mumbai,595521.14,166090.6,bundle / search placement,11,True
+2025-06-01,E-commerce,Delhi NCR,631852.29,158912.0,bundle / search placement,7,True
+2025-06-01,E-commerce,Bengaluru,739852.11,165558.99,bundle / search placement,11,True
+2025-06-01,E-commerce,Hyderabad,365591.68,156754.56,bundle / search placement,15,True
+2025-06-01,E-commerce,Pune,637800.56,104502.95,bundle / search placement,5,True
+2025-06-01,E-commerce,Chennai,544082.0,149881.87,bundle / search placement,3,True
+2025-06-01,Quick commerce,Mumbai,859692.52,183742.08,instant discount / app visibility,9,True
+2025-06-01,Quick commerce,Delhi NCR,837641.51,205022.27,instant discount / app visibility,4,True
+2025-06-01,Quick commerce,Bengaluru,1346812.07,217691.29,instant discount / app visibility,6,True
+2025-06-01,Quick commerce,Hyderabad,790589.54,169408.42,instant discount / app visibility,13,True
+2025-06-01,Quick commerce,Pune,864974.49,126733.09,instant discount / app visibility,8,True
+2025-06-01,Quick commerce,Chennai,889922.38,180464.12,instant discount / app visibility,10,True
+2025-06-01,Cafés,Mumbai,131059.43,100453.19,trade visibility / display,13,True
+2025-06-01,Cafés,Delhi NCR,182433.58,110827.8,trade visibility / display,4,True
+2025-06-01,Cafés,Bengaluru,128742.14,109506.05,trade visibility / display,9,True
+2025-06-01,Cafés,Hyderabad,189467.45,87782.46,trade visibility / display,3,True
+2025-06-01,Cafés,Pune,122717.47,119298.33,trade visibility / display,9,True
+2025-06-01,Cafés,Chennai,78488.61,89148.8,trade visibility / display,5,True
+2025-06-01,Sports/events,Mumbai,112214.54,98857.64,sampling / event activation,14,True
+2025-06-01,Sports/events,Delhi NCR,0.0,90879.27,sampling / event activation,6,True
+2025-06-01,Sports/events,Bengaluru,0.0,87412.26,sampling / event activation,5,True
+2025-06-01,Sports/events,Hyderabad,0.0,86309.9,sampling / event activation,3,True
+2025-06-01,Sports/events,Pune,52427.62,120479.01,sampling / event activation,4,True
+2025-06-01,Sports/events,Chennai,13737.47,74117.93,sampling / event activation,5,True
+2025-07-01,Grocery,Mumbai,321717.41,150115.59,trade visibility / display,5,True
+2025-07-01,Grocery,Delhi NCR,357726.27,183518.55,trade visibility / display,12,True
+2025-07-01,Grocery,Bengaluru,380962.36,145870.86,trade visibility / display,14,True
+2025-07-01,Grocery,Hyderabad,297064.56,102552.97,trade visibility / display,14,True
+2025-07-01,Grocery,Pune,172961.4,148278.63,trade visibility / display,15,True
+2025-07-01,Grocery,Chennai,239814.82,114187.56,trade visibility / display,14,True
+2025-07-01,Convenience,Mumbai,579793.34,217906.85,trade visibility / display,8,True
+2025-07-01,Convenience,Delhi NCR,533089.22,238451.2,trade visibility / display,8,True
+2025-07-01,Convenience,Bengaluru,385463.56,252918.22,trade visibility / display,11,True
+2025-07-01,Convenience,Hyderabad,555379.74,223818.16,trade visibility / display,7,True
+2025-07-01,Convenience,Pune,627063.35,218162.12,trade visibility / display,10,True
+2025-07-01,Convenience,Chennai,418428.25,161990.46,trade visibility / display,15,True
+2025-07-01,E-commerce,Mumbai,462311.99,150822.3,bundle / search placement,5,True
+2025-07-01,E-commerce,Delhi NCR,445410.17,126955.35,bundle / search placement,13,True
+2025-07-01,E-commerce,Bengaluru,751505.77,175295.57,bundle / search placement,15,True
+2025-07-01,E-commerce,Hyderabad,457393.52,127673.51,bundle / search placement,9,True
+2025-07-01,E-commerce,Pune,501631.47,149684.43,bundle / search placement,7,True
+2025-07-01,E-commerce,Chennai,484194.64,107683.01,bundle / search placement,6,True
+2025-07-01,Quick commerce,Mumbai,1240714.3,212332.14,instant discount / app visibility,5,True
+2025-07-01,Quick commerce,Delhi NCR,907387.96,192468.27,instant discount / app visibility,7,True
+2025-07-01,Quick commerce,Bengaluru,1161043.45,170443.72,instant discount / app visibility,12,True
+2025-07-01,Quick commerce,Hyderabad,994857.27,145138.99,instant discount / app visibility,9,True
+2025-07-01,Quick commerce,Pune,1000053.11,141089.27,instant discount / app visibility,5,True
+2025-07-01,Quick commerce,Chennai,780134.89,172168.52,instant discount / app visibility,10,True
+2025-07-01,Cafés,Mumbai,100533.23,101253.43,trade visibility / display,13,True
+2025-07-01,Cafés,Delhi NCR,130853.42,93890.2,trade visibility / display,3,True
+2025-07-01,Cafés,Bengaluru,195294.63,98277.77,trade visibility / display,3,True
+2025-07-01,Cafés,Hyderabad,79865.52,81147.72,trade visibility / display,15,True
+2025-07-01,Cafés,Pune,124484.22,86340.39,trade visibility / display,12,True
+2025-07-01,Cafés,Chennai,112129.55,115794.65,trade visibility / display,10,True
+2025-07-01,Sports/events,Mumbai,71173.76,106330.47,sampling / event activation,14,True
+2025-07-01,Sports/events,Delhi NCR,82118.4,67892.77,sampling / event activation,10,True
+2025-07-01,Sports/events,Bengaluru,22870.52,74807.87,sampling / event activation,9,True
+2025-07-01,Sports/events,Hyderabad,69173.66,66884.18,sampling / event activation,5,True
+2025-07-01,Sports/events,Pune,0.0,66034.55,sampling / event activation,13,True
+2025-07-01,Sports/events,Chennai,40398.21,101642.18,sampling / event activation,12,True
+2025-08-01,Grocery,Mumbai,498959.79,173707.29,trade visibility / display,6,True
+2025-08-01,Grocery,Delhi NCR,413202.94,150491.13,trade visibility / display,12,True
+2025-08-01,Grocery,Bengaluru,347361.59,162370.22,trade visibility / display,12,True
+2025-08-01,Grocery,Hyderabad,260716.61,116754.64,trade visibility / display,4,True
+2025-08-01,Grocery,Pune,232247.88,137456.14,trade visibility / display,5,True
+2025-08-01,Grocery,Chennai,327364.61,109965.92,trade visibility / display,10,True
+2025-08-01,Convenience,Mumbai,334095.39,212440.3,trade visibility / display,11,True
+2025-08-01,Convenience,Delhi NCR,370880.05,183498.2,trade visibility / display,11,True
+2025-08-01,Convenience,Bengaluru,579632.68,231748.01,trade visibility / display,7,True
+2025-08-01,Convenience,Hyderabad,380463.49,193297.34,trade visibility / display,13,True
+2025-08-01,Convenience,Pune,122304.28,185343.98,trade visibility / display,8,True
+2025-08-01,Convenience,Chennai,609513.16,177893.15,trade visibility / display,5,True
+2025-08-01,E-commerce,Mumbai,551385.42,174927.75,bundle / search placement,4,True
+2025-08-01,E-commerce,Delhi NCR,828438.91,171249.03,bundle / search placement,14,True
+2025-08-01,E-commerce,Bengaluru,685147.66,184343.58,bundle / search placement,12,True
+2025-08-01,E-commerce,Hyderabad,447197.02,104463.51,bundle / search placement,8,True
+2025-08-01,E-commerce,Pune,478153.01,100047.4,bundle / search placement,5,True
+2025-08-01,E-commerce,Chennai,499329.5,114176.17,bundle / search placement,4,True
+2025-08-01,Quick commerce,Mumbai,1246655.84,220133.57,instant discount / app visibility,4,True
+2025-08-01,Quick commerce,Delhi NCR,1106544.93,170419.14,instant discount / app visibility,4,True
+2025-08-01,Quick commerce,Bengaluru,1056597.64,167641.33,instant discount / app visibility,9,True
+2025-08-01,Quick commerce,Hyderabad,999203.8,183595.24,instant discount / app visibility,5,True
+2025-08-01,Quick commerce,Pune,817477.42,164326.25,instant discount / app visibility,4,True
+2025-08-01,Quick commerce,Chennai,811491.56,168600.74,instant discount / app visibility,6,True
+2025-08-01,Cafés,Mumbai,59990.92,134672.76,trade visibility / display,12,True
+2025-08-01,Cafés,Delhi NCR,89634.37,124976.08,trade visibility / display,9,True
+2025-08-01,Cafés,Bengaluru,142339.93,137817.18,trade visibility / display,4,True
+2025-08-01,Cafés,Hyderabad,111847.65,106153.13,trade visibility / display,12,True
+2025-08-01,Cafés,Pune,123837.76,92184.17,trade visibility / display,9,True
+2025-08-01,Cafés,Chennai,148811.56,114829.99,trade visibility / display,5,True
+2025-08-01,Sports/events,Mumbai,133962.65,101044.36,sampling / event activation,11,True
+2025-08-01,Sports/events,Delhi NCR,43218.43,78399.86,sampling / event activation,15,True
+2025-08-01,Sports/events,Bengaluru,0.0,130757.99,sampling / event activation,10,True
+2025-08-01,Sports/events,Hyderabad,53826.16,93682.74,sampling / event activation,5,True
+2025-08-01,Sports/events,Pune,21308.98,111363.94,sampling / event activation,7,True
+2025-08-01,Sports/events,Chennai,0.0,65629.12,sampling / event activation,10,True
+2025-09-01,Grocery,Mumbai,429302.23,170833.31,trade visibility / display,15,True
+2025-09-01,Grocery,Delhi NCR,396978.75,182082.29,trade visibility / display,15,True
+2025-09-01,Grocery,Bengaluru,62205.34,165189.45,trade visibility / display,15,True
+2025-09-01,Grocery,Hyderabad,413955.41,141635.87,trade visibility / display,13,True
+2025-09-01,Grocery,Pune,306171.86,114989.85,trade visibility / display,10,True
+2025-09-01,Grocery,Chennai,233492.39,142222.36,trade visibility / display,11,True
+2025-09-01,Convenience,Mumbai,472809.36,239366.9,trade visibility / display,12,True
+2025-09-01,Convenience,Delhi NCR,509120.2,223840.68,trade visibility / display,12,True
+2025-09-01,Convenience,Bengaluru,459562.73,222425.15,trade visibility / display,11,True
+2025-09-01,Convenience,Hyderabad,348808.2,194467.06,trade visibility / display,4,True
+2025-09-01,Convenience,Pune,316609.4,153199.16,trade visibility / display,14,True
+2025-09-01,Convenience,Chennai,388050.45,144608.57,trade visibility / display,3,True
+2025-09-01,E-commerce,Mumbai,465839.08,157447.69,bundle / search placement,8,True
+2025-09-01,E-commerce,Delhi NCR,734497.81,140688.41,bundle / search placement,8,True
+2025-09-01,E-commerce,Bengaluru,631252.08,148908.08,bundle / search placement,15,True
+2025-09-01,E-commerce,Hyderabad,517878.41,130403.51,bundle / search placement,4,True
+2025-09-01,E-commerce,Pune,657145.63,138010.25,bundle / search placement,9,True
+2025-09-01,E-commerce,Chennai,567869.72,156144.18,bundle / search placement,7,True
+2025-09-01,Quick commerce,Mumbai,1349789.79,173334.37,instant discount / app visibility,4,True
+2025-09-01,Quick commerce,Delhi NCR,998500.96,170778.93,instant discount / app visibility,5,True
+2025-09-01,Quick commerce,Bengaluru,1189256.91,191909.86,instant discount / app visibility,8,True
+2025-09-01,Quick commerce,Hyderabad,896391.9,145521.89,instant discount / app visibility,14,True
+2025-09-01,Quick commerce,Pune,770363.21,149087.6,instant discount / app visibility,8,True
+2025-09-01,Quick commerce,Chennai,888321.52,127662.45,instant discount / app visibility,14,True
+2025-09-01,Cafés,Mumbai,44053.23,90407.58,trade visibility / display,12,True
+2025-09-01,Cafés,Delhi NCR,0.0,105275.09,trade visibility / display,13,True
+2025-09-01,Cafés,Bengaluru,140729.01,113226.57,trade visibility / display,14,True
+2025-09-01,Cafés,Hyderabad,145707.54,133830.84,trade visibility / display,12,True
+2025-09-01,Cafés,Pune,84787.08,131864.06,trade visibility / display,12,True
+2025-09-01,Cafés,Chennai,82297.19,90436.17,trade visibility / display,5,True
+2025-09-01,Sports/events,Mumbai,63165.53,77381.66,sampling / event activation,12,True
+2025-09-01,Sports/events,Delhi NCR,79643.72,75083.28,sampling / event activation,3,True
+2025-09-01,Sports/events,Bengaluru,0.0,115532.5,sampling / event activation,12,True
+2025-09-01,Sports/events,Hyderabad,0.0,83679.61,sampling / event activation,11,True
+2025-09-01,Sports/events,Pune,7032.55,79116.6,sampling / event activation,12,True
+2025-09-01,Sports/events,Chennai,48393.72,79700.39,sampling / event activation,11,True
+2025-10-01,Grocery,Mumbai,615240.35,165613.44,trade visibility / display,7,True
+2025-10-01,Grocery,Delhi NCR,520001.29,154403.55,trade visibility / display,7,True
+2025-10-01,Grocery,Bengaluru,380856.1,164538.9,trade visibility / display,10,True
+2025-10-01,Grocery,Hyderabad,375610.56,152129.57,trade visibility / display,9,True
+2025-10-01,Grocery,Pune,391021.3,124384.38,trade visibility / display,7,True
+2025-10-01,Grocery,Chennai,211869.31,115525.56,trade visibility / display,9,True
+2025-10-01,Convenience,Mumbai,285148.23,222131.72,trade visibility / display,9,True
+2025-10-01,Convenience,Delhi NCR,707123.69,247217.93,trade visibility / display,6,True
+2025-10-01,Convenience,Bengaluru,785216.84,278785.44,trade visibility / display,11,True
+2025-10-01,Convenience,Hyderabad,703843.56,231191.93,trade visibility / display,7,True
+2025-10-01,Convenience,Pune,403159.47,208793.84,trade visibility / display,6,True
+2025-10-01,Convenience,Chennai,392150.52,184276.05,trade visibility / display,8,True
+2025-10-01,E-commerce,Mumbai,800354.38,187703.65,bundle / search placement,4,True
+2025-10-01,E-commerce,Delhi NCR,631183.39,142412.19,bundle / search placement,10,True
+2025-10-01,E-commerce,Bengaluru,755094.24,192127.59,bundle / search placement,12,True
+2025-10-01,E-commerce,Hyderabad,472364.2,151041.93,bundle / search placement,15,True
+2025-10-01,E-commerce,Pune,637243.35,153820.82,bundle / search placement,6,True
+2025-10-01,E-commerce,Chennai,316624.09,159869.06,bundle / search placement,10,True
+2025-10-01,Quick commerce,Mumbai,1174655.08,203852.74,instant discount / app visibility,9,True
+2025-10-01,Quick commerce,Delhi NCR,1153597.85,237006.29,instant discount / app visibility,12,True
+2025-10-01,Quick commerce,Bengaluru,1264787.11,202847.09,instant discount / app visibility,11,True
+2025-10-01,Quick commerce,Hyderabad,1002248.33,177703.54,instant discount / app visibility,13,True
+2025-10-01,Quick commerce,Pune,802250.52,182624.02,instant discount / app visibility,14,True
+2025-10-01,Quick commerce,Chennai,954195.85,163176.58,instant discount / app visibility,4,True
+2025-10-01,Cafés,Mumbai,106979.27,100699.01,trade visibility / display,7,True
+2025-10-01,Cafés,Delhi NCR,114710.6,107904.51,trade visibility / display,11,True
+2025-10-01,Cafés,Bengaluru,42346.02,97836.3,trade visibility / display,10,True
+2025-10-01,Cafés,Hyderabad,161707.05,118021.51,trade visibility / display,9,True
+2025-10-01,Cafés,Pune,72080.19,105322.92,trade visibility / display,5,True
+2025-10-01,Cafés,Chennai,115786.76,77858.97,trade visibility / display,10,True
+2025-10-01,Sports/events,Mumbai,44565.63,77181.61,sampling / event activation,12,True
+2025-10-01,Sports/events,Delhi NCR,126571.78,102602.82,sampling / event activation,3,True
+2025-10-01,Sports/events,Bengaluru,0.0,117865.33,sampling / event activation,10,True
+2025-10-01,Sports/events,Hyderabad,21594.88,89586.37,sampling / event activation,14,True
+2025-10-01,Sports/events,Pune,16381.83,95247.02,sampling / event activation,10,True
+2025-10-01,Sports/events,Chennai,0.0,66340.79,sampling / event activation,15,True
+2025-11-01,Grocery,Mumbai,361423.75,179515.9,trade visibility / display,7,True
+2025-11-01,Grocery,Delhi NCR,690279.09,176302.67,trade visibility / display,3,True
+2025-11-01,Grocery,Bengaluru,229550.69,168540.36,trade visibility / display,11,True
+2025-11-01,Grocery,Hyderabad,294359.83,123428.36,trade visibility / display,5,True
+2025-11-01,Grocery,Pune,353086.67,145881.24,trade visibility / display,3,True
+2025-11-01,Grocery,Chennai,414392.5,129231.6,trade visibility / display,5,True
+2025-11-01,Convenience,Mumbai,578301.09,277799.82,trade visibility / display,15,True
+2025-11-01,Convenience,Delhi NCR,572514.94,259177.38,trade visibility / display,13,True
+2025-11-01,Convenience,Bengaluru,459934.33,275093.39,trade visibility / display,6,True
+2025-11-01,Convenience,Hyderabad,548858.47,235820.61,trade visibility / display,10,True
+2025-11-01,Convenience,Pune,265396.74,192990.82,trade visibility / display,7,True
+2025-11-01,Convenience,Chennai,547378.98,206070.49,trade visibility / display,5,True
+2025-11-01,E-commerce,Mumbai,664061.41,169382.68,bundle / search placement,15,True
+2025-11-01,E-commerce,Delhi NCR,687086.59,153127.05,bundle / search placement,13,True
+2025-11-01,E-commerce,Bengaluru,722324.35,164190.46,bundle / search placement,7,True
+2025-11-01,E-commerce,Hyderabad,759183.75,137907.16,bundle / search placement,7,True
+2025-11-01,E-commerce,Pune,818686.22,131304.58,bundle / search placement,13,True
+2025-11-01,E-commerce,Chennai,599731.11,139162.99,bundle / search placement,8,True
+2025-11-01,Quick commerce,Mumbai,1450197.0,193723.75,instant discount / app visibility,7,True
+2025-11-01,Quick commerce,Delhi NCR,1555697.41,217273.08,instant discount / app visibility,8,True
+2025-11-01,Quick commerce,Bengaluru,972254.46,196322.49,instant discount / app visibility,8,True
+2025-11-01,Quick commerce,Hyderabad,999504.99,187335.65,instant discount / app visibility,9,True
+2025-11-01,Quick commerce,Pune,1033029.14,213189.87,instant discount / app visibility,3,True
+2025-11-01,Quick commerce,Chennai,1342575.41,190257.3,instant discount / app visibility,9,True
+2025-11-01,Cafés,Mumbai,159056.82,122313.2,trade visibility / display,8,True
+2025-11-01,Cafés,Delhi NCR,75792.45,151124.1,trade visibility / display,6,True
+2025-11-01,Cafés,Bengaluru,232019.41,119715.2,trade visibility / display,7,True
+2025-11-01,Cafés,Hyderabad,185732.63,86238.23,trade visibility / display,8,True
+2025-11-01,Cafés,Pune,148590.25,137878.42,trade visibility / display,7,True
+2025-11-01,Cafés,Chennai,53834.06,106315.8,trade visibility / display,14,True
+2025-11-01,Sports/events,Mumbai,44879.14,89862.45,sampling / event activation,9,True
+2025-11-01,Sports/events,Delhi NCR,87790.28,138261.73,sampling / event activation,9,True
+2025-11-01,Sports/events,Bengaluru,2500.81,73790.89,sampling / event activation,6,True
+2025-11-01,Sports/events,Hyderabad,29811.76,82472.4,sampling / event activation,14,True
+2025-11-01,Sports/events,Pune,47424.59,79556.98,sampling / event activation,3,True
+2025-11-01,Sports/events,Chennai,35741.05,90085.33,sampling / event activation,10,True
+2025-12-01,Grocery,Mumbai,267760.23,152916.58,trade visibility / display,5,True
+2025-12-01,Grocery,Delhi NCR,435191.2,138846.96,trade visibility / display,12,True
+2025-12-01,Grocery,Bengaluru,330323.72,187378.55,trade visibility / display,7,True
+2025-12-01,Grocery,Hyderabad,284543.57,138530.68,trade visibility / display,6,True
+2025-12-01,Grocery,Pune,349101.54,137935.94,trade visibility / display,3,True
+2025-12-01,Grocery,Chennai,293170.67,141057.03,trade visibility / display,13,True
+2025-12-01,Convenience,Mumbai,371043.85,241532.15,trade visibility / display,8,True
+2025-12-01,Convenience,Delhi NCR,797545.94,187078.38,trade visibility / display,6,True
+2025-12-01,Convenience,Bengaluru,404309.87,250494.58,trade visibility / display,13,True
+2025-12-01,Convenience,Hyderabad,408239.53,235744.11,trade visibility / display,3,True
+2025-12-01,Convenience,Pune,208948.42,189512.09,trade visibility / display,9,True
+2025-12-01,Convenience,Chennai,480194.48,176823.17,trade visibility / display,5,True
+2025-12-01,E-commerce,Mumbai,832198.03,147370.1,bundle / search placement,4,True
+2025-12-01,E-commerce,Delhi NCR,896829.48,177900.82,bundle / search placement,3,True
+2025-12-01,E-commerce,Bengaluru,687120.83,165934.71,bundle / search placement,5,True
+2025-12-01,E-commerce,Hyderabad,410886.2,120060.41,bundle / search placement,15,True
+2025-12-01,E-commerce,Pune,463405.21,165883.12,bundle / search placement,8,True
+2025-12-01,E-commerce,Chennai,624626.78,150316.15,bundle / search placement,15,True
+2025-12-01,Quick commerce,Mumbai,1228089.27,223086.58,instant discount / app visibility,6,True
+2025-12-01,Quick commerce,Delhi NCR,1111887.55,240244.14,instant discount / app visibility,12,True
+2025-12-01,Quick commerce,Bengaluru,1304562.51,224310.65,instant discount / app visibility,4,True
+2025-12-01,Quick commerce,Hyderabad,921705.18,193552.49,instant discount / app visibility,4,True
+2025-12-01,Quick commerce,Pune,908847.56,172827.24,instant discount / app visibility,3,True
+2025-12-01,Quick commerce,Chennai,892730.89,174916.72,instant discount / app visibility,14,True
+2025-12-01,Cafés,Mumbai,139077.81,100597.48,trade visibility / display,11,True
+2025-12-01,Cafés,Delhi NCR,100962.79,154085.8,trade visibility / display,12,True
+2025-12-01,Cafés,Bengaluru,61998.41,92909.73,trade visibility / display,15,True
+2025-12-01,Cafés,Hyderabad,58860.76,132498.07,trade visibility / display,7,True
+2025-12-01,Cafés,Pune,30757.58,132645.79,trade visibility / display,12,True
+2025-12-01,Cafés,Chennai,76241.92,77528.12,trade visibility / display,9,True
+2025-12-01,Sports/events,Mumbai,80314.05,133642.65,sampling / event activation,10,True
+2025-12-01,Sports/events,Delhi NCR,0.0,67046.1,sampling / event activation,11,True
+2025-12-01,Sports/events,Bengaluru,0.0,132740.47,sampling / event activation,9,True
+2025-12-01,Sports/events,Hyderabad,83240.83,83238.28,sampling / event activation,3,True
+2025-12-01,Sports/events,Pune,24986.63,85133.88,sampling / event activation,3,True
+2025-12-01,Sports/events,Chennai,45220.98,62609.18,sampling / event activation,9,True
