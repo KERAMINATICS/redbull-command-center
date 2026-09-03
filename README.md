@@ -1,4 +1,4 @@
-# Red Bull India Channel & Activation Analytics Portfolio Project
+# Red Bull India Channel & Activation Analytics 
 
 > **Independent portfolio case study.** Public information is used only for brand/company
 > context. All channel, financial, consumer, forecast, and activation figures are simulated
