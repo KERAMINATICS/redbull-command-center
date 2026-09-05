@@ -86,6 +86,50 @@ export const dashboardAuditLogs = mysqlTable("dashboard_audit_logs", {
   createdAt: timestamp("createdAt").defaultNow().notNull(),
 });
 
+export const decisionRegister = mysqlTable("decision_register", {
+  id: int("id").autoincrement().primaryKey(),
+  assetKey: varchar("assetKey", { length: 128 }).notNull(),
+  owner: varchar("owner", { length: 128 }).notNull(),
+  status: mysqlEnum("status", ["open", "in_review", "approved", "blocked", "closed"]).default("open").notNull(),
+  deadline: timestamp("deadline").notNull(),
+  approvalOutcome: mysqlEnum("approvalOutcome", ["pending", "renew", "renegotiate", "test", "exit"]).default("pending").notNull(),
+  evidenceStatus: mysqlEnum("evidenceStatus", ["missing", "partial", "ready"]).default("missing").notNull(),
+  rationale: text("rationale").notNull(),
+  nextAction: text("nextAction").notNull(),
+  createdBy: int("createdBy").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export const sponsorshipEvidence = mysqlTable("sponsorship_evidence", {
+  id: int("id").autoincrement().primaryKey(),
+  sourceType: mysqlEnum("sourceType", ["exposure", "crm", "qr", "retail"]).notNull(),
+  externalId: varchar("externalId", { length: 128 }).notNull(),
+  assetKey: varchar("assetKey", { length: 128 }).notNull(),
+  market: varchar("market", { length: 96 }),
+  eventDate: timestamp("eventDate").notNull(),
+  metric: varchar("metric", { length: 96 }).notNull(),
+  metricValue: decimal("metricValue", { precision: 14, scale: 4 }).notNull(),
+  consented: mysqlEnum("consented", ["yes", "no", "not_applicable"]).default("not_applicable").notNull(),
+  createdBy: int("createdBy").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export const marketObservations = mysqlTable("market_observations", {
+  id: int("id").autoincrement().primaryKey(),
+  market: varchar("market", { length: 96 }).notNull(),
+  periodKey: varchar("periodKey", { length: 32 }).notNull(),
+  periodStage: mysqlEnum("periodStage", ["pre", "post"]).notNull(),
+  groupType: mysqlEnum("groupType", ["treatment", "control"]).notNull(),
+  outcomeValue: decimal("outcomeValue", { precision: 14, scale: 4 }).notNull(),
+  sampleSize: int("sampleSize").notNull().default(1),
+  createdBy: int("createdBy").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
 export type DashboardAssumption = typeof dashboardAssumptions.$inferSelect;
 export type DashboardAuditLog = typeof dashboardAuditLogs.$inferSelect;
 export type RefreshRun = typeof refreshRuns.$inferSelect;
+export type DecisionRegisterItem = typeof decisionRegister.$inferSelect;
+export type SponsorshipEvidence = typeof sponsorshipEvidence.$inferSelect;
+export type MarketObservation = typeof marketObservations.$inferSelect;

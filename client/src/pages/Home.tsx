@@ -2,17 +2,21 @@ import { useMemo, useState } from "react";
 import { ArrowUpRight, BarChart3, Check, ChevronRight, CircleAlert, Database, Gauge, Layers3, Menu, Radar, RefreshCw, ShieldCheck, SlidersHorizontal, Sparkles, Target, TrendingUp, X } from "lucide-react";
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, ComposedChart, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { sponsorshipData } from "@/data/sponsorshipData";
+import DecisionWorkspace from "@/pages/DecisionWorkspace";
+import EvidenceWorkspace from "@/pages/EvidenceWorkspace";
 
 // Legacy reference asset retained for the inherited branding QA contract; the visible mark is original and IPL-specific.
 const legacyBrandAsset = "/manus-storage/redbull-logo_bf5849d9.png";
 
-type Tab = "Overview" | "Assets" | "Attribution" | "Negotiation" | "Measurement";
+type Tab = "Overview" | "Assets" | "Attribution" | "Negotiation" | "Measurement" | "Decisions" | "Evidence";
 const tabs: { label: Tab; caption: string }[] = [
   { label: "Overview", caption: "Decision room" },
   { label: "Assets", caption: "Inventory & quality" },
   { label: "Attribution", caption: "Value & uncertainty" },
   { label: "Negotiation", caption: "Rights-fee simulator" },
   { label: "Measurement", caption: "Next-season plan" },
+  { label: "Decisions", caption: "Owner & approval" },
+  { label: "Evidence", caption: "Live data & lift" },
 ];
 const navy = "#12243f";
 const red = "#dc2434";
@@ -64,6 +68,8 @@ export default function Home() {
         {tab === "Attribution" && <Attribution caseName={caseName} setCaseName={setCaseName} scenarioRows={scenarioRows} />}
         {tab === "Negotiation" && <Negotiation rightsDelta={rightsDelta} setRightsDelta={setRightsDelta} liftDelta={liftDelta} setLiftDelta={setLiftDelta} adjustedPortfolioRoi={adjustedPortfolioRoi} decision={decision} />}
         {tab === "Measurement" && <Measurement />}
+        {tab === "Decisions" && <DecisionWorkspace />}
+        {tab === "Evidence" && <EvidenceWorkspace />}
         <footer className="engine-footer"><span>IPL SPONSORSHIP COMMERCIAL VALUE ENGINE / V1.0</span><span>PUBLIC SOURCES + SIMULATED MODEL / BUILT FOR DECISION DISCUSSION</span></footer>
       </div>
     </main>
