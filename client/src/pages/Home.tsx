@@ -47,7 +47,7 @@ export default function Home() {
 
   return <div className="engine-shell">
     <aside className="engine-sidebar">
-      <div className="mark-lockup"><div className="wing-mark"><span /><span /><span /></div><div><strong>SPONSORSHIP</strong><small>COMMERCIAL VALUE ENGINE</small></div></div>
+      <div className="mark-lockup"><div className="wing-mark"><span /><span /><span /></div><div><strong>TATA IPL</strong><small>COMMERCIAL VALUE ENGINE</small></div></div>
       <div className="sidebar-divider" />
       <p className="sidebar-caption">IPL / 2025 evidence base</p>
       <nav className="engine-nav">{tabs.map((item, index) => <button key={item.label} className={tab === item.label ? "selected" : ""} onClick={() => setTab(item.label)}><span className="nav-no">0{index + 1}</span><span>{item.label}<small>{item.caption}</small></span><ChevronRight size={15} /></button>)}</nav>
