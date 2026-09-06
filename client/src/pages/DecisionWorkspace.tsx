@@ -32,7 +32,7 @@ export default function DecisionWorkspace() {
   const [showForm, setShowForm] = useState(false);
   const [assetKey, setAssetKey] = useState<string>(sponsorshipData.assets[0].asset);
   const [owner, setOwner] = useState("Commercial lead");
-  const [deadline, setDeadline] = useState("2025-10-20");
+  const [deadline, setDeadline] = useState("2026-10-20");
   const [nextAction, setNextAction] = useState("Define the evidence required for the next rights meeting");
   const [rationale, setRationale] = useState("Decision requires measured incremental value before budget is released.");
   const live = Boolean(query.data && query.data.length > 0);

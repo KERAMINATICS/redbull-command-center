@@ -1,64 +1,111 @@
-# Red Bull India Channel & Activation Analytics 
+# TATA IPL Commercial Value Engine
 
-> **Independent portfolio case study.** Public information is used only for brand/company
-> context. All channel, financial, consumer, forecast, and activation figures are simulated
-> assumptions used to demonstrate business-analyst methods. No private or confidential Red
-> Bull data was used, and Red Bull did not supply, validate, or endorse this project.
+> **Independent portfolio case study and decision-support dashboard.** Public IPL and media facts are used only as context. Sponsor-level commercial, channel, consumer, forecast, and activation values are simulated unless uploaded through the protected evidence workflow. This project is not affiliated with, endorsed by, or supplied by the IPL, BCCI, Red Bull, JioStar, or any rights holder.
 
-## Business question
+## What this project does
 
-Which route-to-market channel should receive the next increment of growth investment in
-India, and what evidence would justify that decision?
+The application turns sponsorship inventory into a practical commercial operating system. It includes an IPL-themed executive overview, asset inventory, attribution and uncertainty analysis, renewal negotiation simulator, next-season measurement plan, decision register, and evidence ingestion workspace.
 
-## Start here
+The final workflow is intentionally split into two layers:
 
-1. [`docs/case_study.md`](docs/case_study.md) — the full write-up: business question, findings,
-   recommendation, methodology, and an interview-ready summary.
-2. [`docs/project_brief.md`](docs/project_brief.md) — the original scoping document (business
-   question, channels in scope, planned KPIs).
-3. [`docs/model_card_and_validation.md`](docs/model_card_and_validation.md) — what each model
-   does, how it was validated, and its limitations.
-4. [`docs/powerbi_dashboard_spec.md`](docs/powerbi_dashboard_spec.md) — star schema, DAX
-   measures, and page design for the Power BI build.
-5. [`docs/repo_audit.md`](docs/repo_audit.md) — how the public JPMorgan Chase Python-training
-   repo was used as an educational reference (not a data source).
-6. [`DEFENSE_GUIDE.md`](DEFENSE_GUIDE.md) — plain-language explanation of every method used,
-   written so I can defend each choice in an interview without notes.
+1. **Modeled portfolio layer:** a transparent, deterministic demonstration of asset quality, value, cost, ROI, uncertainty, and negotiation thresholds.
+2. **Evidence layer:** protected database workflows for decision ownership, exposure/CRM/QR/retail evidence, and treatment-control market observations. Uploaded market observations produce a difference-in-differences estimate with a bootstrap confidence interval.
 
-## Reproduce it
+## Run the web application
 
 ```bash
-python3 -m venv venv && source venv/bin/activate
+pnpm install
+pnpm dev
+```
+
+The production commands are:
+
+```bash
+pnpm check
+pnpm test
+pnpm build
+pnpm start
+```
+
+The web application uses React, Vite, TypeScript, Tailwind, Recharts, tRPC, Express, Drizzle, MySQL/TiDB, and Manus OAuth. Environment variables are supplied by the WebDev runtime; do not commit `.env` files or credentials.
+
+## Database
+
+The schema lives in `drizzle/schema.ts`. The checked-in migration history is under `drizzle/`, including the decision register, sponsorship evidence, and market observation tables. In a configured environment, use:
+
+```bash
+pnpm db:push
+```
+
+Evidence and decision mutations require an authenticated user. The dashboard remains reviewable without persisted rows by showing clearly labelled demo decisions and an empty real-observation state.
+
+## CSV data contracts
+
+Evidence ingestion accepts:
+
+```text
+sourceType,externalId,assetKey,market,eventDate,metric,metricValue,consented
+```
+
+Allowed `sourceType` values are `exposure`, `crm`, `qr`, and `retail`. Upload de-identified identifiers only and include consent flags where customer-level joins are used.
+
+Treatment-control market ingestion accepts:
+
+```text
+market,periodKey,periodStage,groupType,outcomeValue,sampleSize
+```
+
+The causal workflow requires pre and post observations for both treatment and control. It returns a difference-in-differences estimate and a 2,000-resample bootstrap interval. With only one observation per cell, the interval will be mechanically narrow; use repeated market-period observations for decision-grade inference.
+
+## Reproducible analytics layer
+
+The original Python portfolio analysis remains in place for reproducibility:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
-
-python3 scripts/create_redbull_portfolio_data.py    # generates data/*.csv (fixed random seed)
-python3 scripts/analyze_redbull_portfolio.py        # channel summary, investment scenario
-python3 scripts/create_redbull_charts.py            # figures/*.png
-python3 scripts/redbull_advanced_analytics.py       # advanced_outputs/*.csv (forecast, clustering, DiD, bootstrap)
+python3 scripts/create_redbull_portfolio_data.py
+python3 scripts/analyze_redbull_portfolio.py
+python3 scripts/create_redbull_charts.py
+python3 scripts/redbull_advanced_analytics.py
 ```
 
-`scripts/redbull_ai_insight_pipeline.py` drafts and critiques a narrative using an LLM API and
-requires an API key — it's included for completeness but isn't required to reproduce the
-quantitative results above. All paths are relative, so this runs from a fresh clone with no
-edits.
+The Python pipeline uses fixed seeds where synthetic data is generated. The LLM insight script requires a separately configured API key and is not required for the dashboard.
 
-## Folder structure
+## Repository map
 
+```text
+client/src/pages/Home.tsx                 Main dashboard shell and page views
+client/src/pages/DecisionWorkspace.tsx   Decision register UI
+client/src/pages/EvidenceWorkspace.tsx    CSV ingestion and causal analysis UI
+client/src/index.css                      IPL-themed product and responsive styles
+client/src/data/sponsorshipData.ts        Deterministic model output used by the UI
+server/db.ts                              Database queries and estimators
+server/routers.ts                         Typed tRPC procedures
+drizzle/schema.ts                         MySQL/TiDB schema
+drizzle/*.sql                             Generated migrations
+data/                                     Reproducible synthetic analytics data
+advanced_outputs/                         Forecast, segmentation, bootstrap, and DiD outputs
+docs/                                     Case study, measurement, QA, and model documentation
+model/                                    Sponsorship model and report
+scripts/                                  Python generation and analysis scripts
 ```
-redbull-channel-analytics/
-├── README.md
-├── DEFENSE_GUIDE.md
-├── requirements.txt
-├── docs/                  # case study, brief, model card, Power BI spec, source audit
-├── scripts/                # the 5 reproducible Python scripts, in run order
-├── data/                   # generated CSVs + data dictionary
-├── advanced_outputs/        # forecast, segmentation, DiD, bootstrap outputs
-└── figures/                 # generated charts
-```
 
-## Data boundary
+## Validation status
 
-Revenue, margin, CAC, LTV, forecast, activation, and channel figures are simulated for
-demonstration only. Public Red Bull material (company profile, India careers page, support hub)
-is cited in `docs/case_study.md` only to establish realistic business context, not as evidence
-for the modeled figures.
+The final refactor was validated with:
+
+- 15 Vitest tests passing across 7 test files.
+- TypeScript check passing.
+- Vite and server production build passing.
+- Browser preview inspected for Overview, Decisions, and Evidence workflows.
+- Responsive shell rules added for desktop, tablet, and mobile layouts.
+
+## Limitations and next steps
+
+No external CRM, retail, QR, or media API credentials were supplied, so live source synchronization is not enabled. The protected ingestion layer is ready for those connectors. For production use, add source-specific authentication, scheduled refresh jobs, data-quality checks, role-based approval permissions, audit history, and stronger statistical diagnostics such as pre-trend tests, clustered standard errors, and placebo checks.
+
+## License and attribution
+
+This repository is an independent educational and portfolio artifact. Review the source notes in `research/`, `docs/`, and `brand_playbook.md` before reusing public facts or brand assets.
