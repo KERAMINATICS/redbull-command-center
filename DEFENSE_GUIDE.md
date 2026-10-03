@@ -170,9 +170,10 @@ draft-then-review governance is itself a reasonable thing to describe as your pr
 
 ## Things you should NOT claim in an interview
 
-- Don't say "I built a full production analytics platform" — the accompanying dashboard app is
-  generic scaffolding (auth, S3, audit logs) that came from an app template and isn't part of
-  the analytical deliverable. Lead with the analysis, not the app shell.
+- Don't say "I built a full production analytics platform" — the accompanying dashboard is a
+  static Chart.js prototype for communicating the analytical outputs, not a production data
+  platform with live ingestion, authentication, or operational monitoring. Lead with the
+  analysis and decision framework.
 - Don't say the forecast, clustering, or DiD results are "validated" in the sense of matching
   reality — they're validated *internally* (holdout accuracy, bootstrap distributions), which is
   a different and more limited claim.

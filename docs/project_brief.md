@@ -99,9 +99,9 @@ The build will target Power BI Desktop using CSV or Excel inputs. If Power BI De
 
 References will be added after the public-source research phase and will support only contextual claims, not the simulated performance outputs.
 
-## Author
+## Project owner
 
-Manus AI
+KERAMINATICS
 
 ## Date
 

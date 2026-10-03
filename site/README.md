@@ -1,45 +1,39 @@
-# Dashboard site
+# Red Bull India Commercial Command Center
 
-A single static `index.html` (Chart.js from a CDN, no build step, no backend). This is what
-you deploy to Vercel — not the repository root.
+This folder contains the **static dashboard prototype** for the Red Bull India Channel & Activation Analytics portfolio case study. It is the browser-facing presentation layer for the simulated analytical outputs in the repository root.
 
-## Why the original deploy failed
+## What the dashboard shows
 
-Vercel saw `requirements.txt` at the repo root and assumed this was a Python **web service**,
-then looked for a server entrypoint (`app.py`, `main.py`, etc.) that doesn't exist — this
-project only ever produced static outputs (CSVs, charts, docs), never a running server. This
-`site/` folder sidesteps that entirely: it's pure HTML/CSS/JS, so Vercel has nothing Python to
-misdetect.
+The single-page dashboard uses Chart.js from a CDN and presents:
 
-## Deploy this folder specifically
+- An executive overview of the modeled channel decision.
+- Channel economics across grocery, convenience, e-commerce, quick commerce, cafés, and sports/events.
+- The ₹1.0 million incremental-investment scenario and channel ranking.
+- A Random Forest versus seasonal-naive forecast benchmark.
+- City-channel commercial profiles created with K-means clustering.
+- Sports-activation direct-attribution ROI and the resulting measurement warning.
+- Methodology, evidence boundaries, and the distinction between simulated assumptions and real-world validation.
 
-**Option A — one repo, set the root directory (recommended):**
-1. Push the whole `redbull-channel-analytics/` repo to GitHub as-is.
-2. In Vercel: **Add New → Project → Import** your repo.
-3. Before deploying, expand **Root Directory** and set it to `site`.
-4. Framework preset: **Other**. Leave build command and output directory blank.
-5. Deploy. Vercel will only ever see this folder — the root `requirements.txt` is invisible to it.
+The page is intentionally static: there is no backend, authentication, database, build system, or live Red Bull data connection in this folder. It reads the values embedded in `index.html`, which were produced by the reproducible Python pipeline in [`../scripts/`](../scripts/).
 
-**Option B — separate repo:**
-Copy just this `site/` folder into its own GitHub repo and import that repo directly with the
-same "Other" framework preset. Simplest if you don't want the two concerns (analysis vs. site)
-in one place.
+## Relationship to the rest of the repository
 
-## Before you deploy
+- [`../README.md`](../README.md) — project overview and reproducibility instructions.
+- [`../docs/case_study.md`](../docs/case_study.md) — detailed business narrative and recommendation.
+- [`../docs/model_card_and_validation.md`](../docs/model_card_and_validation.md) — model definitions and limitations.
+- [`../data/`](../data/) — simulated inputs and summaries.
+- [`../advanced_outputs/`](../advanced_outputs/) — forecast, profiling, incrementality, bootstrap, and AI-insight outputs.
 
-Open `index.html`, search for `YOUR-USERNAME`, and replace the three `repo` link targets near
-the bottom of the `<script>` block with your actual GitHub repo URL, e.g.:
+## Run it locally
 
-```js
-const repo = "https://github.com/kartikbhise/redbull-channel-analytics";
-```
-
-## Local preview
-
-No install needed — just open `index.html` in a browser, or serve it:
+No frontend installation is required. From the repository root, run:
 
 ```bash
-cd site
-python3 -m http.server 8000
-# visit http://localhost:8000
+python3 -m http.server 8000 --directory site
 ```
+
+Then open [http://localhost:8000](http://localhost:8000). The page loads Chart.js and web fonts from public CDNs, so an internet connection is needed for the charts and typography to render as designed.
+
+## Transparency note
+
+All business, financial, consumer, forecast, and activation values shown in the dashboard are **simulated assumptions** created for an independent portfolio case study. They do not represent actual Red Bull India performance. Public Red Bull sources are used only for context, and Red Bull did not supply, validate, or endorse the project.
