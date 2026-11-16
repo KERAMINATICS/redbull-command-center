@@ -23,15 +23,14 @@ assets['media_value_m'] = assets.quality_contacts_m * assets.cpm_inr / 1000
 assets['direct_value_m'] = assets.conversions * 1000 * 0.082 / 1_000_000
 assets['assisted_value_m'] = assets.direct_value_m * 1.42 + assets.retail_lift_m * 0.31
 assets['control_lift_m'] = (assets.direct_value_m * 1.18 + assets.retail_lift_m * 0.46) * 0.58
-assets['base_value_m'] = assets.control_lift_m + assets.media_value_m * 0.18
-assets['roi_pct'] = (assets.base_value_m - assets.rights_fee_m) / assets.rights_fee_m * 100
+# Keep media-equivalent exposure value separate from commercial contribution.
+# The primary decision case uses the modeled control-lift contribution proxy only.
+assets['commercial_value_m'] = assets.control_lift_m
+assets['roi_pct'] = (assets.commercial_value_m - assets.rights_fee_m) / assets.rights_fee_m * 100
 assets['cpqc_inr'] = assets.rights_fee_m * 1_000_000 / (assets.quality_contacts_m * 1_000_000)
-assets['confidence'] = np.select([assets.quality_score >= .72, assets.quality_score >= .62], ['High','Medium'], default='Low')
-assets['recommendation'] = np.select([
-    (assets.roi_pct >= 35) & (assets.confidence == 'High'),
-    (assets.roi_pct >= 15),
-    (assets.roi_pct >= 0)
-], ['RENEW / SCALE','RENEGOTIATE','TEST'], default='EXIT / REPLACE')
+assets['quality_band'] = np.select([assets.quality_score >= .72, assets.quality_score >= .62], ['High quality','Medium quality'], default='Low quality')
+# Synthetic scores can prioritize measurement, but cannot authorize renewal or exit.
+assets['recommendation'] = np.where(assets.quality_score >= .62, 'TEST / MEASURE', 'RENEGOTIATE / HOLD')
 assets['measurement_gap'] = np.select([
     assets.asset.isin(['Retail take-over','Digital match hub']),
     assets.asset.isin(['Jersey front','Boundary LED','Strategic timeout']),
@@ -51,11 +50,11 @@ for i, m in enumerate(months):
 # Bootstrap-style uncertainty around portfolio ROI using deterministic perturbation of modeled lift.
 rng = np.random.default_rng(20260903)
 portfolio_fee = assets.rights_fee_m.sum()
-base = assets.base_value_m.sum()
+base = assets.commercial_value_m.sum()
 samples = []
 for _ in range(4000):
     lift = rng.normal(1.0, 0.16, len(assets)).clip(0.55, 1.55)
-    samples.append(((assets.base_value_m.to_numpy() * lift).sum() - portfolio_fee) / portfolio_fee * 100)
+    samples.append(((assets.commercial_value_m.to_numpy() * lift).sum() - portfolio_fee) / portfolio_fee * 100)
 samples = np.array(samples)
 uncertainty = {'p10':round(float(np.percentile(samples,10)),1),'p50':round(float(np.percentile(samples,50)),1),'p90':round(float(np.percentile(samples,90)),1),'min':round(float(samples.min()),1),'max':round(float(samples.max()),1)}
 
@@ -66,8 +65,8 @@ payload = {
     'scenarios': scenarios,
     'season': season,
     'uncertainty': uncertainty,
-    'portfolio': {'rights_fee_m':round(float(portfolio_fee),1),'media_value_m':round(float(assets.media_value_m.sum()),1),'base_value_m':round(float(base),1),'roi_pct':round(float((base-portfolio_fee)/portfolio_fee*100),1),'renewal_value_m':round(float((assets[assets.recommendation.isin(['RENEW / SCALE','RENEGOTIATE'])].base_value_m.sum())),1)},
-    'method': {'quality_formula':'26% visibility + 24% placement + 24% audience + 16% engagement + 10% conversion quality','cases':['Direct','Assisted + retail','Control-market lift'],'uncertainty':'4,000 deterministic-seed perturbation draws around modeled lift; not a real-world confidence interval'}
+    'portfolio': {'rights_fee_m':round(float(portfolio_fee),1),'media_value_m':round(float(assets.media_value_m.sum()),1),'commercial_value_m':round(float(base),2),'commercial_roi_pct':round(float((base-portfolio_fee)/portfolio_fee*100),1),'fee_coverage_pct':round(float(base/portfolio_fee*100),1),'quality_contacts_m':round(float(assets.quality_contacts_m.sum()),2),'test_priority_value_m':round(float(assets.loc[assets.recommendation.eq('TEST / MEASURE'),'commercial_value_m'].sum()),2)},
+    'method': {'quality_formula':'26% visibility + 24% placement + 24% audience + 16% engagement + 10% conversion quality','cases':['Direct','Assisted + retail','Control-market lift'],'uncertainty':'4,000 deterministic-seed perturbation draws around simulated control-lift contribution; not a real-world confidence interval'}
 }
 
 (OUT / 'sponsorshipData.ts').write_text('export const sponsorshipData = ' + json.dumps(payload, indent=2) + ' as const;\n', encoding='utf-8')

@@ -1,24 +1,36 @@
-# TATA IPL Commercial Value Engine
+# Business Analytics Portfolio: Red Bull India + IPL Sponsorship
 
-> **Independent portfolio case study and decision-support dashboard.** Public IPL and media facts are used only as context. Sponsor-level commercial, channel, consumer, forecast, and activation values are simulated unless uploaded through the protected evidence workflow. This project is not affiliated with, endorsed by, or supplied by the IPL, BCCI, Red Bull, JioStar, or any rights holder.
+> Two independent portfolio case studies demonstrating decision framing, analytical modeling, measurement design, and clear communication. All company-specific performance data in the demonstrations is simulated; neither Red Bull nor any IPL sponsor or rights holder supplied, validated, or endorsed these analyses.
 
-## What this project does
+## Portfolio overview
 
-The application turns sponsorship inventory into a practical commercial operating system. It includes an IPL-themed executive overview, asset inventory, attribution and uncertainty analysis, renewal negotiation simulator, next-season measurement plan, decision register, and evidence ingestion workspace.
+| Project | Business question | What it demonstrates | Evidence boundary |
+|---|---|---|---|
+| **Red Bull India Channel & Activation Analytics** | Which route-to-market channel should receive the next increment of growth investment in India, and what evidence would justify that decision? | Channel economics, consumer-growth KPIs, ₹1M investment scenario, forecast benchmark, city-channel commercial profiles, sports-activation measurement, and a static dashboard. | Public company sources establish context only. Channel, financial, consumer, forecast, and activation figures are simulated. The modeled recommendation—convenience as the scale/profit foundation and quick commerce as the incremental-growth candidate—is conditional on those assumptions, not a claim about actual Red Bull performance. |
+| **IPL Sponsorship Commercial Value Engine** | Does league-level reach establish that an individual sponsor asset caused incremental contribution? | An interactive sponsorship decision dashboard with asset economics, contribution-only ROI, a separate media-equivalent exposure metric, scenario analysis, negotiation simulator, protected evidence workflows, and a treatment/control measurement plan. | JioStar’s public IPL reach is contextual. Sponsor-level assets, fees, and outcome fields in the demo are synthetic until real observations are uploaded. Media-equivalent value is not treated as profit or added to commercial ROI. |
 
-The final workflow is intentionally split into two layers:
+This repository contains both workstreams, but their data and brand claims are separate. The Red Bull analysis does **not** feed the IPL web app. Present each project as an independent portfolio case and never imply company access or endorsement.
 
-1. **Modeled portfolio layer:** a transparent, deterministic demonstration of asset quality, value, cost, ROI, uncertainty, and negotiation thresholds.
-2. **Evidence layer:** protected database workflows for decision ownership, exposure/CRM/QR/retail evidence, and treatment-control market observations. Uploaded market observations produce a difference-in-differences estimate with a bootstrap confidence interval.
+## Video strategy applied
 
-## Run the web application
+The attached video’s method is translated into a reusable BA workflow: (1) begin with a primary public source, (2) choose one narrow decision problem, (3) build a small decision-support prototype, and (4) credit the source and share a concise walkthrough. Its closing advice is to make one company/project high quality rather than rush out shallow clones. See [`docs/ba-project-playbook.md`](docs/ba-project-playbook.md) for the video analysis, this project’s application, interview summary, and outreach template.
+
+## Start here
+
+- **For the Red Bull channel case:** [`docs/case_study.md`](docs/case_study.md), [`site/index.html`](site/index.html), [`docs/model_card_and_validation.md`](docs/model_card_and_validation.md), and [`DEFENSE_GUIDE.md`](DEFENSE_GUIDE.md).
+- **For the IPL sponsorship case:** [`docs/ba-project-playbook.md`](docs/ba-project-playbook.md), [`docs/executive-memo.md`](docs/executive-memo.md), [`docs/measurement-plan.md`](docs/measurement-plan.md), and [`research/ipl-sponsorship-evidence.md`](research/ipl-sponsorship-evidence.md).
+- **For project scope and ownership:** [`docs/project_brief.md`](docs/project_brief.md) (owner: **KERAMINATICS**).
+
+## Run the IPL web application
+
+The interactive application uses React, Vite, TypeScript, Tailwind, Recharts, tRPC, Express, Drizzle, MySQL/TiDB, and Manus OAuth. Runtime environment variables are supplied by WebDev; do not commit `.env` files or credentials.
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-The production commands are:
+For production checks:
 
 ```bash
 pnpm check
@@ -27,39 +39,25 @@ pnpm build
 pnpm start
 ```
 
-The web application uses React, Vite, TypeScript, Tailwind, Recharts, tRPC, Express, Drizzle, MySQL/TiDB, and Manus OAuth. Environment variables are supplied by the WebDev runtime; do not commit `.env` files or credentials.
+The app includes the overview, asset inventory, attribution, negotiation, measurement, decision register, and evidence ingestion workflows. Uploaded market observations require pre/post observations for treatment and control; the demo’s bootstrap interval is mechanically narrow with one observation per cell, so use repeated market-period observations and stronger diagnostics for decision-grade inference.
 
-## Database
-
-The schema lives in `drizzle/schema.ts`. The checked-in migration history is under `drizzle/`, including the decision register, sponsorship evidence, and market observation tables. In a configured environment, use:
-
-```bash
-pnpm db:push
-```
-
-Evidence and decision mutations require an authenticated user. The dashboard remains reviewable without persisted rows by showing clearly labelled demo decisions and an empty real-observation state.
-
-## CSV data contracts
-
-Evidence ingestion accepts:
+Evidence CSV format:
 
 ```text
 sourceType,externalId,assetKey,market,eventDate,metric,metricValue,consented
 ```
 
-Allowed `sourceType` values are `exposure`, `crm`, `qr`, and `retail`. Upload de-identified identifiers only and include consent flags where customer-level joins are used.
-
-Treatment-control market ingestion accepts:
+Treatment/control CSV format:
 
 ```text
 market,periodKey,periodStage,groupType,outcomeValue,sampleSize
 ```
 
-The causal workflow requires pre and post observations for both treatment and control. It returns a difference-in-differences estimate and a 2,000-resample bootstrap interval. With only one observation per cell, the interval will be mechanically narrow; use repeated market-period observations for decision-grade inference.
+Allowed evidence `sourceType` values are `exposure`, `crm`, `qr`, and `retail`. Upload de-identified identifiers only and include consent flags where customer-level joins are used. No live CRM, retail, QR, or media connectors are configured in this portfolio demo.
 
-## Reproducible analytics layer
+## Reproduce the Red Bull analysis
 
-The original Python portfolio analysis remains in place for reproducibility:
+From the repository root:
 
 ```bash
 python3 -m venv venv
@@ -71,41 +69,39 @@ python3 scripts/create_redbull_charts.py
 python3 scripts/redbull_advanced_analytics.py
 ```
 
-The Python pipeline uses fixed seeds where synthetic data is generated. The LLM insight script requires a separately configured API key and is not required for the dashboard.
+The scripts use relative paths and fixed seeds for synthetic data. The first script regenerates CSV inputs; the following scripts produce summaries, figures, and advanced outputs. `scripts/redbull_ai_insight_pipeline.py` is optional, needs a separately configured API key, and is not required to reproduce the quantitative results.
+
+The Red Bull static dashboard is a single-page Chart.js prototype with no backend, database, authentication, build system, or live company data connection. Preview it locally with:
+
+```bash
+python3 -m http.server 8000 --directory site
+# open http://localhost:8000
+```
+
+See [`site/README.md`](site/README.md) for its data boundary and local preview details.
+
+## Validation status
+
+The latest IPL app update passed the TypeScript check, **17 Vitest tests across 7 files**, and the Vite/server production build. Desktop and 390px mobile previews were reviewed for the public-problem narrative, model separation, and dual-scale chart. The build completes; Vite still reports a non-blocking JavaScript bundle-size warning.
 
 ## Repository map
 
 ```text
-client/src/pages/Home.tsx                 Main dashboard shell and page views
-client/src/pages/DecisionWorkspace.tsx   Decision register UI
-client/src/pages/EvidenceWorkspace.tsx    CSV ingestion and causal analysis UI
-client/src/index.css                      IPL-themed product and responsive styles
-client/src/data/sponsorshipData.ts        Deterministic model output used by the UI
-server/db.ts                              Database queries and estimators
-server/routers.ts                         Typed tRPC procedures
-drizzle/schema.ts                         MySQL/TiDB schema
-drizzle/*.sql                             Generated migrations
-data/                                     Reproducible synthetic analytics data
-advanced_outputs/                         Forecast, segmentation, bootstrap, and DiD outputs
-docs/                                     Case study, measurement, QA, and model documentation
-model/                                    Sponsorship model and report
-scripts/                                  Python generation and analysis scripts
+client/src/pages/                    IPL application pages
+client/src/data/sponsorshipData.ts   IPL synthetic scenario data
+server/                              API, validation, model tests
+model/                               IPL sponsorship model and report
+scripts/                             Red Bull Python generation and analysis
+site/                                Red Bull static Chart.js dashboard
+ data/                               Red Bull synthetic data and summaries
+advanced_outputs/                    Forecast, segmentation, DiD and bootstrap outputs
+figures/                             Red Bull case charts
+docs/                                Case studies, strategy playbook, QA and measurement plans
+research/                            IPL public-source evidence ledger
 ```
 
-## Validation status
+## Limitations and attribution
 
-The final refactor was validated with:
+The Red Bull channel and activation values are synthetic assumptions, not observed company results. The IPL sponsor-level inputs are also synthetic, and public reach does not establish sponsor-level incrementality. Treat both as analytical prototypes that demonstrate method, not as production systems or actual company recommendations. For real use, replace assumptions with authorized data, define a measurement protocol, validate assumptions, and re-estimate uncertainty.
 
-- 15 Vitest tests passing across 7 test files.
-- TypeScript check passing.
-- Vite and server production build passing.
-- Browser preview inspected for Overview, Decisions, and Evidence workflows.
-- Responsive shell rules added for desktop, tablet, and mobile layouts.
-
-## Limitations and next steps
-
-No external CRM, retail, QR, or media API credentials were supplied, so live source synchronization is not enabled. The protected ingestion layer is ready for those connectors. For production use, add source-specific authentication, scheduled refresh jobs, data-quality checks, role-based approval permissions, audit history, and stronger statistical diagnostics such as pre-trend tests, clustered standard errors, and placebo checks.
-
-## License and attribution
-
-This repository is an independent educational and portfolio artifact. Review the source notes in `research/`, `docs/`, and `brand_playbook.md` before reusing public facts or brand assets.
+The work is an independent educational portfolio project by **KERAMINATICS**. Public facts and brand assets remain subject to their original owners; review the linked source notes before reuse.

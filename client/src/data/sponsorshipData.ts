@@ -33,11 +33,11 @@ export const sponsorshipData = {
       "direct_value_m": 0.05,
       "assisted_value_m": 1.06,
       "control_lift_m": 0.89,
-      "base_value_m": 54.21,
-      "roi_pct": 194.61,
+      "commercial_value_m": 0.89,
+      "roi_pct": -95.17,
       "cpqc_inr": 0.01,
-      "confidence": "High",
-      "recommendation": "RENEW / SCALE",
+      "quality_band": "High quality",
+      "recommendation": "TEST / MEASURE",
       "measurement_gap": "Need placement log, unique reach, and matched control"
     },
     {
@@ -60,11 +60,11 @@ export const sponsorshipData = {
       "direct_value_m": 0.03,
       "assisted_value_m": 0.76,
       "control_lift_m": 0.64,
-      "base_value_m": 21.45,
-      "roi_pct": 44.92,
+      "commercial_value_m": 0.64,
+      "roi_pct": -95.71,
       "cpqc_inr": 0.01,
-      "confidence": "Medium",
-      "recommendation": "RENEGOTIATE",
+      "quality_band": "Medium quality",
+      "recommendation": "TEST / MEASURE",
       "measurement_gap": "Need placement log, unique reach, and matched control"
     },
     {
@@ -87,11 +87,11 @@ export const sponsorshipData = {
       "direct_value_m": 0.03,
       "assisted_value_m": 0.57,
       "control_lift_m": 0.47,
-      "base_value_m": 10.24,
-      "roi_pct": 6.62,
+      "commercial_value_m": 0.47,
+      "roi_pct": -95.08,
       "cpqc_inr": 0.01,
-      "confidence": "Medium",
-      "recommendation": "TEST",
+      "quality_band": "Medium quality",
+      "recommendation": "TEST / MEASURE",
       "measurement_gap": "Need placement log, unique reach, and matched control"
     },
     {
@@ -114,11 +114,11 @@ export const sponsorshipData = {
       "direct_value_m": 0.04,
       "assisted_value_m": 0.45,
       "control_lift_m": 0.36,
-      "base_value_m": 13.23,
-      "roi_pct": 59.39,
+      "commercial_value_m": 0.36,
+      "roi_pct": -95.63,
       "cpqc_inr": 0.0,
-      "confidence": "Medium",
-      "recommendation": "RENEGOTIATE",
+      "quality_band": "Medium quality",
+      "recommendation": "TEST / MEASURE",
       "measurement_gap": "Need geo-level sell-out and consented redemption link"
     },
     {
@@ -141,11 +141,11 @@ export const sponsorshipData = {
       "direct_value_m": 0.04,
       "assisted_value_m": 0.64,
       "control_lift_m": 0.53,
-      "base_value_m": 8.37,
-      "roi_pct": 21.28,
+      "commercial_value_m": 0.53,
+      "roi_pct": -92.27,
       "cpqc_inr": 0.0,
-      "confidence": "Medium",
-      "recommendation": "RENEGOTIATE",
+      "quality_band": "Medium quality",
+      "recommendation": "TEST / MEASURE",
       "measurement_gap": "Need clean-room match and holdout design"
     },
     {
@@ -168,11 +168,11 @@ export const sponsorshipData = {
       "direct_value_m": 0.04,
       "assisted_value_m": 0.39,
       "control_lift_m": 0.32,
-      "base_value_m": 8.02,
-      "roi_pct": 40.76,
+      "commercial_value_m": 0.32,
+      "roi_pct": -94.4,
       "cpqc_inr": 0.0,
-      "confidence": "Low",
-      "recommendation": "RENEGOTIATE",
+      "quality_band": "Low quality",
+      "recommendation": "RENEGOTIATE / HOLD",
       "measurement_gap": "Need clean-room match and holdout design"
     },
     {
@@ -195,11 +195,11 @@ export const sponsorshipData = {
       "direct_value_m": 0.02,
       "assisted_value_m": 0.33,
       "control_lift_m": 0.27,
-      "base_value_m": 2.72,
-      "roi_pct": -38.1,
+      "commercial_value_m": 0.27,
+      "roi_pct": -93.87,
       "cpqc_inr": 0.0,
-      "confidence": "Low",
-      "recommendation": "EXIT / REPLACE",
+      "quality_band": "Low quality",
+      "recommendation": "RENEGOTIATE / HOLD",
       "measurement_gap": "Need geo-level sell-out and consented redemption link"
     },
     {
@@ -222,11 +222,11 @@ export const sponsorshipData = {
       "direct_value_m": 0.01,
       "assisted_value_m": 0.23,
       "control_lift_m": 0.19,
-      "base_value_m": 0.97,
-      "roi_pct": -72.99,
+      "commercial_value_m": 0.19,
+      "roi_pct": -94.66,
       "cpqc_inr": 0.01,
-      "confidence": "Low",
-      "recommendation": "EXIT / REPLACE",
+      "quality_band": "Low quality",
+      "recommendation": "RENEGOTIATE / HOLD",
       "measurement_gap": "Need clean-room match and holdout design"
     }
   ],
@@ -439,18 +439,20 @@ export const sponsorshipData = {
     }
   ],
   "uncertainty": {
-    "p10": 48.7,
-    "p50": 66.9,
-    "p90": 84.0,
-    "min": 21.9,
-    "max": 114.7
+    "p10": -95.3,
+    "p50": -94.9,
+    "p90": -94.5,
+    "min": -96.0,
+    "max": -93.8
   },
   "portfolio": {
     "rights_fee_m": 71.7,
     "media_value_m": 641.9,
-    "base_value_m": 119.2,
-    "roi_pct": 66.3,
-    "renewal_value_m": 105.3
+    "commercial_value_m": 3.67,
+    "commercial_roi_pct": -94.9,
+    "fee_coverage_pct": 5.1,
+    "quality_contacts_m": 14716.9,
+    "test_priority_value_m": 2.89
   },
   "method": {
     "quality_formula": "26% visibility + 24% placement + 24% audience + 16% engagement + 10% conversion quality",
@@ -459,6 +461,6 @@ export const sponsorshipData = {
       "Assisted + retail",
       "Control-market lift"
     ],
-    "uncertainty": "4,000 deterministic-seed perturbation draws around modeled lift; not a real-world confidence interval"
+    "uncertainty": "4,000 deterministic-seed perturbation draws around simulated control-lift contribution; not a real-world confidence interval"
   }
 } as const;
