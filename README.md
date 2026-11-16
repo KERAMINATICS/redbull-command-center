@@ -6,7 +6,7 @@
 
 | Project | Business question | What it demonstrates | Evidence boundary |
 |---|---|---|---|
-| **Red Bull India Channel & Activation Analytics** | Which route-to-market channel should receive the next increment of growth investment in India, and what evidence would justify that decision? | Channel economics, consumer-growth KPIs, ₹1M investment scenario, forecast benchmark, city-channel commercial profiles, sports-activation measurement, and a static dashboard. | Public company sources establish context only. Channel, financial, consumer, forecast, and activation figures are simulated. The modeled recommendation—convenience as the scale/profit foundation and quick commerce as the incremental-growth candidate—is conditional on those assumptions, not a claim about actual Red Bull performance. |
+| **Red Bull India Channel & Activation Analytics** | Which route-to-market channel should receive the next increment of growth investment in India, and what evidence would justify that decision? | Six channels across six Indian cities and 24 months; channel economics, consumer-growth KPIs, ₹1M investment scenario, forecast benchmark, city-channel commercial profiles, sports-activation measurement, and a static dashboard. | Public company sources establish context only. Channel, financial, consumer, forecast, and activation figures are simulated. The modeled recommendation—convenience as the scale/profit foundation and quick commerce as the incremental-growth candidate—is conditional on those assumptions, not a claim about actual Red Bull performance. |
 | **IPL Sponsorship Commercial Value Engine** | Does league-level reach establish that an individual sponsor asset caused incremental contribution? | An interactive sponsorship decision dashboard with asset economics, contribution-only ROI, a separate media-equivalent exposure metric, scenario analysis, negotiation simulator, protected evidence workflows, and a treatment/control measurement plan. | JioStar’s public IPL reach is contextual. Sponsor-level assets, fees, and outcome fields in the demo are synthetic until real observations are uploaded. Media-equivalent value is not treated as profit or added to commercial ROI. |
 
 This repository contains both workstreams, but their data and brand claims are separate. The Red Bull analysis does **not** feed the IPL web app. Present each project as an independent portfolio case and never imply company access or endorsement.
@@ -17,9 +17,11 @@ The attached video’s method is translated into a reusable BA workflow: (1) beg
 
 ## Start here
 
-- **For the Red Bull channel case:** [`docs/case_study.md`](docs/case_study.md), [`site/index.html`](site/index.html), [`docs/model_card_and_validation.md`](docs/model_card_and_validation.md), and [`DEFENSE_GUIDE.md`](DEFENSE_GUIDE.md).
+- **For the Red Bull channel case:** [`docs/case_study.md`](docs/case_study.md), [`site/index.html`](site/index.html), [`site/README.md`](site/README.md), [`docs/model_card_and_validation.md`](docs/model_card_and_validation.md), [`docs/powerbi_dashboard_spec.md`](docs/powerbi_dashboard_spec.md), [`docs/repo_audit.md`](docs/repo_audit.md), and [`DEFENSE_GUIDE.md`](DEFENSE_GUIDE.md).
 - **For the IPL sponsorship case:** [`docs/ba-project-playbook.md`](docs/ba-project-playbook.md), [`docs/executive-memo.md`](docs/executive-memo.md), [`docs/measurement-plan.md`](docs/measurement-plan.md), and [`research/ipl-sponsorship-evidence.md`](research/ipl-sponsorship-evidence.md).
 - **For project scope and ownership:** [`docs/project_brief.md`](docs/project_brief.md) (owner: **KERAMINATICS**).
+
+The Red Bull case’s full deliverable map is in the linked case study and documentation; the IPL app’s model, data, and evidence boundaries are documented in the linked memo, measurement plan, and source ledger.
 
 ## Run the IPL web application
 
